@@ -1,6 +1,8 @@
-class Sidebar extends React.Component {
+import CategorieLink from './CategorieLink';
 
+class Sidebar extends React.Component {
   componentDidMount() {
+    // Initialisation du js de la Sidenav via materialize.min.js
     M.Sidenav.init(document.querySelector('.sidenav'));
   }
 
@@ -8,11 +10,9 @@ class Sidebar extends React.Component {
     return (
       <div>
         <ul id="slide-out" className="sidenav sidenav-fixed">
-          <li><a href="#!"><i className="material-icons">cloud</i>First Link With Icon</a></li>
-          <li><a href="#!">Second Link</a></li>
-          <li><div className="divider"></div></li>
-          <li><a className="subheader">Subheader</a></li>
-          <li><a className="waves-effect" href="#!">Third Link With Waves</a></li>
+          {
+            this.props.links.map(link => <CategorieLink {...link} key={link.textContent} />)
+          }
         </ul>
         <a href="#" data-target="slide-out" className="sidenav-trigger"><i className="material-icons">menu</i></a>
         <style jsx>{`
