@@ -1,4 +1,5 @@
 import Head from 'next/head'
+
 import Sidebar from './Sidebar'
 import Loader from '../Loader'
 
@@ -28,11 +29,17 @@ class Layout extends React.Component {
           <link rel="stylesheet" href="static/css/index.css" />
           <title>Project-Mama</title>
         </Head>
-
         {
           this.state.isFetching
             ? <Loader />
-            : <Sidebar links={this.state.links} />
+            : (
+              <React.Fragment>
+                <Sidebar links={this.state.links} />
+                <main className="content">
+                  {this.props.children}
+                </main>
+              </React.Fragment>
+            )
         }
         <script src="static/vendors/materialize.min.js"></script>
       </div>

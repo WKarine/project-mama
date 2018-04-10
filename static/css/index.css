@@ -1,0 +1,31 @@
+@font-face {
+    font-family: 'Neo';
+    src: url('../fonts/neo.eot'),
+         url('../fonts/neo.woff2') format('woff2'),
+         url('../fonts/neo.woff') format('woff'),
+         url('../fonts/neo.ttf') format('ttf'),
+         url('../fonts/neo.eot') format('eot');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html {
+  font-family: "Neo", sans-serif;
+  font-size: 20px;
+}
+
+.container {
+  /* On décale pour que le contenu ne soit pas masqué par la sidebar */
+  margin-left: 300px;
+  margin-right: 0;
+  padding-left: 2rem;
+}
+
+@media only screen and (max-width : 992px) {
+  .container {
+    /* On retire le décalage sur mobile */
+    margin: auto;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
