@@ -5,6 +5,6 @@ import Categorie from '../components/Categorie'
 
 export default () => (
   <Layout>
-    <Categorie name="perspectives" />
+    <Categorie name="qui-sommes-nous" />
   </Layout>
 )

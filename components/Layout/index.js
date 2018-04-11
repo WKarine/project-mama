@@ -3,22 +3,27 @@ import Head from 'next/head'
 import Sidebar from './Sidebar'
 import Loader from '../Loader'
 
-import LayoutService from "../../services/Layout/";
+import Services from "../../services";
 
 class Layout extends React.Component {
   state = {
+    categorieContent: ["dede"],
+    isFetching: true,
     links: [],
-    isFetching: true
   }
 
   async componentWillMount() {
+    const categorieName = this.props.children.props.name;
+
     this.setState({
-      links: await LayoutService.sidebar.getLinks(),
-      isFetching: false
+      categorieContent: await Services.categorie.getContent(categorieName),
+      isFetching: false,
+      links: await Services.sidebar.getLinks(),
     });
   }
 
   render() {
+
     return (
       <div className="container">
         <Head>
@@ -36,7 +41,8 @@ class Layout extends React.Component {
               <React.Fragment>
                 <Sidebar links={this.state.links} />
                 <main className="content">
-                  {this.props.children}
+                  {/* If fecthing is finished, pass categorieContent as prop of Categorie component */}
+                  {React.cloneElement(this.props.children, { content: this.state.categorieContent })}
                 </main>
               </React.Fragment>
             )

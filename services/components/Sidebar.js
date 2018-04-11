@@ -25,4 +25,5 @@ class SidebarService {
     return this.links;
   }
 }
+
 export default SidebarService;
