@@ -19,4 +19,4 @@ yarn-debug.log*
 yarn-error.log*
 
 # tokens
-firebase-db.js
+constantes/firebase-config.js
