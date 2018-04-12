@@ -2,6 +2,7 @@ import firebase from "firebase/app"
 import firestore from "firebase/firestore"
 
 import config from "../../constantes/firebase-config";
+import {replaceNewLines} from "../../utilities/format";
 
 class CategorieService {
   constructor() {
@@ -28,7 +29,7 @@ class CategorieService {
   async setContent(categorieName, textContent, id) {
     const content = await this.getContent(categorieName);
 
-    content[id].textContent = textContent;
+    content[id].textContent = replaceNewLines(textContent);
 
     this.db.collection("categorie").doc(categorieName).set({
       content: content
