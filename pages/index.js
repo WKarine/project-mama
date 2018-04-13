@@ -1,10 +1,11 @@
-import Layout from '../components/Layout'
+import Layout from "../components/Layout";
 
-import Categorie from '../components/Categorie'
-
+import Categorie from "../components/Categorie";
+import H2 from "../components/h2";
 
 export default () => (
   <Layout>
-    <Categorie name="perspectives" />
+    <H2>prout</H2>
+    {/* <Categorie name="perspectives" /> */}
   </Layout>
-)
+);
