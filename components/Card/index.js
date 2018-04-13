@@ -9,12 +9,7 @@ const Card = props => {
         {/* Si le h4 existe: */}
         {props.h4 && <h4>{props.h4}</h4>}
 
-        <span className={textClass}>
-          I am a very simple card. I am good at containing small bits of
-          information. I am convenient because I require little markup to use
-          effectively.<br />
-          <br />I am similar to what is called a panel in other frameworks.
-        </span>
+        <span className={textClass}>{props.content}</span>
         <span>
           <ul>{props.ul.map(liContent => <li>{liContent}</li>)}</ul>
         </span>

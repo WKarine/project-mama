@@ -7,7 +7,12 @@ import Card from "../components/Card";
 export default () => (
   <Layout>
     <div className="row">
-      <Card textStyle="white" cardClass="blue" ul={["lien 1", "lien2"]} />
+      <Card
+        content="gros caca"
+        textStyle="white"
+        cardClass="blue"
+        ul={["lien 1", "lien2"]}
+      />
     </div>
   </Layout>
 );
