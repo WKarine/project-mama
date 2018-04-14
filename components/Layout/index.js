@@ -18,12 +18,14 @@ const Layout = (props) => (
     </Head>
     <React.Fragment>
       <Sidebar categoryLinksTextContent={categoryLinksTextContent} />
+
       <main className="content">
         {
           props.children
         }
       </main>
     </React.Fragment>
+
     <script src="static/vendors/materialize.min.js"></script>
   </div>
 );
