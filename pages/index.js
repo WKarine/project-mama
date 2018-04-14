@@ -1,9 +1,8 @@
 import Layout from "../components/Layout";
 
-import Category from "../components/Category";
-
 export default () => (
   <Layout>
-    <h1>Test</h1>
+    <h1>Accueil</h1>
+    <p>Lorem ipsum dolor si amet.</p>
   </Layout>
 );
