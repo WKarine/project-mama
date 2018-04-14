@@ -1,9 +1,5 @@
-<<<<<<< HEAD
-import CategorieLink from './CategorieLink';
 import Link from 'next/link';
-=======
 import CategoryLink from './CategoryLink';
->>>>>>> Card
 
 class Sidebar extends React.Component {
   componentDidMount() {
@@ -19,11 +15,19 @@ class Sidebar extends React.Component {
           <Link href="/">
             <a><img className="logo center-align" src="static/images/logo.png" /></a>
           </Link>
+
           {
-            this.props.links.map(link => <CategoryLink {...link} key={link.textContent} />)
+            this.props.categoryLinksTextContent.map(link =>
+              <CategoryLink textContent={link} href={link} key={link} />
+            )
           }
+
         </ul>
-        <a href="#" data-target="slide-out" className="sidenav-trigger"><i className="material-icons">menu</i></a>
+
+        <a href="#" data-target="slide-out" className="sidenav-trigger">
+          <i className="material-icons">menu</i>
+        </a>
+
         <style jsx>{`
           .logo {
             display: block;

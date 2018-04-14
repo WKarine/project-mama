@@ -1,6 +1,5 @@
 import { brandColors } from "../../constantes/colors";
 
-// props.children: contenu enfant de la balise h2
 const H2 = props => {
   return (
     <h2>
