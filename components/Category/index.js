@@ -1,6 +1,6 @@
 import Services from "../../services";
 
-class Categorie extends React.Component {
+class Category extends React.Component {
   handleBlur = (e) => {
     const newContent = e.target.textContent;
     const id = e.target.dataset.id;
@@ -10,7 +10,7 @@ class Categorie extends React.Component {
 
     console.dir(e.target)
 
-    Services.categorie.setContent(this.props.name, newContent, id);
+    Services.Category.setContent(this.props.name, newContent, id);
   }
 
   render() {
@@ -32,4 +32,4 @@ class Categorie extends React.Component {
   }
 }
 
-export default Categorie;
+export default Category;

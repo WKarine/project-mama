@@ -1,10 +1,10 @@
 import Layout from '../components/Layout'
 
-import Categorie from '../components/Categorie'
+import Category from '../components/Category'
 
 
 export default () => (
   <Layout>
-    <Categorie name="qui-sommes-nous" />
+    <Category name="qui-sommes-nous" />
   </Layout>
 )

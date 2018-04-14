@@ -7,16 +7,16 @@ import Services from "../../services";
 
 class Layout extends React.Component {
   state = {
-    categorieContent: ["dede"],
+    // categoryContent: ["perspectives"],
     isFetching: true,
     links: [],
   }
 
   async componentWillMount() {
-    const categorieName = this.props.children.props.name;
+    // const categoryName = this.props.children.props.name;
 
     this.setState({
-      categorieContent: await Services.categorie.getContent(categorieName),
+      // categoryContent: await Services.Category.getContent(categoryName),
       isFetching: false,
       links: await Services.sidebar.getLinks(),
     });
@@ -41,8 +41,8 @@ class Layout extends React.Component {
               <React.Fragment>
                 <Sidebar links={this.state.links} />
                 <main className="content">
-                  {/* If fecthing is finished, pass categorieContent as prop of Categorie component */}
-                  {React.cloneElement(this.props.children, { content: this.state.categorieContent })}
+                  {/* If fecthing is finished, pass categoryContent as prop of Category component */}
+                  {React.cloneElement(this.props.children, { content: this.state.categoryContent })}
                 </main>
               </React.Fragment>
             )

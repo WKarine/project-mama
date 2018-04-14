@@ -2,9 +2,9 @@ import firebase from "firebase/app"
 import firestore from "firebase/firestore"
 
 import config from "../../constantes/firebase-config";
-import {replaceNewLines} from "../../utilities/format";
+import { replaceNewLines } from "../../utilities/format";
 
-class CategorieService {
+class CategoryService {
   constructor() {
     if (!firebase.apps.length) {
       firebase.initializeApp(config);
@@ -13,12 +13,12 @@ class CategorieService {
     this.db = firebase.firestore();
   }
 
-  async getContent(categorieName) {
-    const categorieRef = this.db.collection("categorie");
-    const categorieSnapshot = await categorieRef.get();
+  async getContent(categoryName) {
+    const categoryRef = this.db.collection("categorie");
+    const categorySnapshot = await categoryRef.get();
 
-    categorieSnapshot.forEach(doc => {
-      if (doc.id === categorieName) {
+    categorySnapshot.forEach(doc => {
+      if (doc.id === categoryName) {
         this.content = doc.data().content;
       }
     });
@@ -26,12 +26,12 @@ class CategorieService {
     return this.content;
   }
 
-  async setContent(categorieName, textContent, id) {
-    const content = await this.getContent(categorieName);
+  async setContent(categoryName, textContent, id) {
+    const content = await this.getContent(categoryName);
 
     content[id].textContent = replaceNewLines(textContent);
 
-    this.db.collection("categorie").doc(categorieName).set({
+    this.db.collection("Category").doc(categoryName).set({
       content: content
     }, { merge: true })
       .then(function () {
@@ -43,4 +43,4 @@ class CategorieService {
   }
 }
 
-export default CategorieService;
+export default CategoryService;
