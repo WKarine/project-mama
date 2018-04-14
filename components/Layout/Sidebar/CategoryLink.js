@@ -1,6 +1,6 @@
 import Link from 'next/link';
 
-const CategorieLink = ({ textContent, href }) => {
+const CategoryLink = ({ textContent, href }) => {
   return (
     <li key={textContent}>
       <Link href={href}>
@@ -12,4 +12,4 @@ const CategorieLink = ({ textContent, href }) => {
   );
 };
 
-export default CategorieLink;
+export default CategoryLink;

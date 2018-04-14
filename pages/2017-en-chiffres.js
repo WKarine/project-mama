@@ -1,9 +1,9 @@
 import Layout from "../components/Layout";
 
-import Categorie from "../components/Categorie";
+import Category from "../components/Category";
 
 export default () => (
   <Layout>
-    <Categorie name="2017-en-chiffres" />
+    <Category name="2017-en-chiffres" />
   </Layout>
 );

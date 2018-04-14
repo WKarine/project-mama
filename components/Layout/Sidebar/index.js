@@ -1,4 +1,4 @@
-import CategorieLink from './CategorieLink';
+import CategoryLink from './CategoryLink';
 
 class Sidebar extends React.Component {
   componentDidMount() {
@@ -11,7 +11,7 @@ class Sidebar extends React.Component {
       <div>
         <ul id="slide-out" className="sidenav sidenav-fixed">
           {
-            this.props.links.map(link => <CategorieLink {...link} key={link.textContent} />)
+            this.props.links.map(link => <CategoryLink {...link} key={link.textContent} />)
           }
         </ul>
         <a href="#" data-target="slide-out" className="sidenav-trigger"><i className="material-icons">menu</i></a>

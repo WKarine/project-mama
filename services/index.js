@@ -1,9 +1,9 @@
 import SidebarService from "./components/Sidebar";
-import CategorieService from "./components/Categorie";
+import CategoryService from "./components/Category";
 
 const Services = {
   sidebar: new SidebarService(),
-  categorie: new CategorieService()
+  category: new CategoryService()
 };
 
 
