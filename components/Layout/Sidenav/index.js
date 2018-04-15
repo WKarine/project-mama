@@ -1,8 +1,8 @@
 import Link from "next/link";
 import CategoryLink from "./CategoryLink";
-import { brandColors, hoverColors } from "../../../constantes/colors";
+import { sideNavColors } from "../../../constantes/colors";
 
-class Sidebar extends React.Component {
+class Sidenav extends React.Component {
   componentDidMount() {
     // Initialisation du js de la Sidenav via materialize.min.js
     M.Sidenav.init(document.querySelector(".sidenav"));
@@ -10,18 +10,20 @@ class Sidebar extends React.Component {
 
   render() {
     return (
-      <div id="slidebar-container">
-        <ul id="slide-out" className="sidenav sidenav-fixed">
-          <Link href="/">
-            <a>
-              <img className="logo center-align" src="static/images/logo.png" />
-            </a>
-          </Link>
+      <div>
+        <ul id="slide-out" className="sidenav sidenav-fixed bg-pan-right">
+
+          <div className="logo-container">
+            <Link href="/">
+              <a className="home-link"><img className="logo" src="static/images/logo.png" /></a>
+            </Link>
+          </div>
+
           {
             this.props.categoryLinks.map(link =>
               <CategoryLink textContent={link.textContent} href={link.href} key={link.textContent} />
-            )
-          }
+            )}
+
         </ul>
 
         <a href="#" data-target="slide-out" className="sidenav-trigger">
@@ -29,12 +31,15 @@ class Sidebar extends React.Component {
         </a>
 
         <style jsx>{`
-          .logo {
-            display: block;
-            max-width: 13rem;
-            margin: auto;
-            padding-top: 2rem;
-            padding-bottom: 2rem;
+          .logo-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            height: 200px;
+            width: 200px;
+            margin: 2rem auto;
+            background-color: white;
           }
 
           ul#slide-out:after {
@@ -54,6 +59,10 @@ class Sidebar extends React.Component {
             right: 0;
           }
 
+          .sidenav {
+            background-color: ${sideNavColors.backgroundColor};
+          }
+
           .sidenav-trigger {
             position: absolute;
             top: 1rem;
@@ -65,4 +74,4 @@ class Sidebar extends React.Component {
   }
 }
 
-export default Sidebar;
+export default Sidenav;

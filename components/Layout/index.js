@@ -1,8 +1,8 @@
 import Head from 'next/head'
 
-import Sidebar from './Sidebar'
+import Sidenav from './Sidenav'
 
-import { categoryLinks } from "../../models/components/Sidebar";
+import { categoryLinks } from "../../models/components/Sidenav";
 
 const Layout = (props) => (
   <div className="container">
@@ -17,7 +17,7 @@ const Layout = (props) => (
       <title>Project-Mama</title>
     </Head>
     <React.Fragment>
-      <Sidebar categoryLinks={categoryLinks} />
+      <Sidenav categoryLinks={categoryLinks} />
 
       <main className="content">
         {

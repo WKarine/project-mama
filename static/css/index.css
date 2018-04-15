@@ -16,7 +16,7 @@ h1 {
 }
 
 .container {
-  /* On décale pour que le contenu ne soit pas masqué par la sidebar */
+  /* On décale pour que le contenu ne soit pas masqué par la Sidenav */
   margin-left: 300px;
   margin-right: 0;
   padding-left: 2rem;

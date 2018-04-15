@@ -29,7 +29,6 @@ export default () => (
           position: relative;
           background-color: grey;
         }
-      `}
-    </style>
+    `}</style>
   </Layout>
 );
