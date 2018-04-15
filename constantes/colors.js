@@ -3,10 +3,12 @@ const brandColors = {
   purple: "#53378B",
   green: "#B1C903",
   orange: "#F29400",
+  fontColor: "whitesmoke"
 };
 
 const categoryColors = {
-  blue: "#00aeef"
+  blue: "#00aeef",
+  fontColor: "whitesmoke"
 };
 
 const sideNavColors = {

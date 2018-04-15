@@ -19,7 +19,7 @@ const Card = props => {
         {`
           .blue {
             background-color: ${categoryColors.blue};
-            color: white;
+            color: Whitesmoke;
           }
         `}
       </style>
