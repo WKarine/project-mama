@@ -12,18 +12,21 @@ class Sidenav extends React.Component {
     return (
       <div>
         <ul id="slide-out" className="sidenav sidenav-fixed bg-pan-right">
-
           <div className="logo-container">
             <Link href="/">
-              <a className="home-link"><img className="logo" src="static/images/logo.png" /></a>
+              <a className="home-link">
+                <img className="logo" src="static/images/logo.png" />
+              </a>
             </Link>
           </div>
 
-          {
-            this.props.categoryLinks.map(link =>
-              <CategoryLink textContent={link.textContent} href={link.href} key={link.textContent} />
-            )}
-
+          {this.props.categoryLinks.map(link => (
+            <CategoryLink
+              textContent={link.textContent}
+              href={link.href}
+              key={link.textContent}
+            />
+          ))}
         </ul>
 
         <a href="#" data-target="slide-out" className="sidenav-trigger">
@@ -46,10 +49,10 @@ class Sidenav extends React.Component {
             content: "";
             background: -webkit-linear-gradient(
               top,
-              rgba(230, 48, 109, 1) 0%,
-              rgba(83, 55, 139, 1) 30%,
-              rgba(177, 201, 3, 1) 60%,
-              rgba(242, 148, 0, 1) 100%
+              ${sideNavColors.pink} 0%,
+              ${sideNavColors.purple} 30%,
+              ${sideNavColors.green} 60%,
+              ${sideNavColors.orange} 100%
             );
             display: block;
             height: 100%;
