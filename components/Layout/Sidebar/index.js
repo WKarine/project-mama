@@ -17,10 +17,11 @@ class Sidebar extends React.Component {
               <img className="logo center-align" src="static/images/logo.png" />
             </a>
           </Link>
-
-          {this.props.categoryLinksTextContent.map(link => (
-            <CategoryLink textContent={link} href={link} key={link} />
-          ))}
+          {
+            this.props.categoryLinks.map(link =>
+              <CategoryLink textContent={link.textContent} href={link.href} key={link.textContent} />
+            )
+          }
         </ul>
 
         <a href="#" data-target="slide-out" className="sidenav-trigger">

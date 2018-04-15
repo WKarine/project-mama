@@ -2,7 +2,7 @@ import Head from 'next/head'
 
 import Sidebar from './Sidebar'
 
-import { categoryLinksTextContent } from "../../models/components/Sidebar";
+import { categoryLinks } from "../../models/components/Sidebar";
 
 const Layout = (props) => (
   <div className="container">
@@ -17,13 +17,15 @@ const Layout = (props) => (
       <title>Project-Mama</title>
     </Head>
     <React.Fragment>
-      <Sidebar categoryLinksTextContent={categoryLinksTextContent} />
+      <Sidebar categoryLinks={categoryLinks} />
+
       <main className="content">
         {
           props.children
         }
       </main>
     </React.Fragment>
+
     <script src="static/vendors/materialize.min.js"></script>
   </div>
 );

@@ -1,19 +1,18 @@
 import Layout from "../components/Layout";
-
-import Category from "../components/Category";
+import Head from "next/head";
 
 export default () => (
   <Layout>
-    <h1 className="principal-title">rapport annuel d'activités</h1>
+    <h1 className="main-title">rapport annuel d'activités</h1>
 
     <style jsx>
       {`
-        .principal-title {
+        .main-title {
           font-size: 4rem;
           font-variant: small-caps;
         }
 
-        .principal-title:after {
+        .main-title:after {
           width: 12rem;
           height: 0.8rem;
           content: "";
@@ -22,7 +21,7 @@ export default () => (
           background-color: grey;
         }
 
-        .principal-title:before {
+        .main-title:before {
           width: 12rem;
           height: 0.8rem;
           content: "";
