@@ -3,21 +3,32 @@ import Head from "next/head";
 
 export default () => (
   <Layout>
-    <Head>
-      <link rel="stylesheet" href="static/vendor/instagram.min.css" />
-    </Head>style
-    <style jsx global>{`
-      .container {
-        padding-left: 0;
-        margin: 0;
-        width: 100%;
-      }
+    <h1 className="main-title">rapport annuel d'activités</h1>
 
-      main.content {
-        background-image: url(static/images/home.jpg);
-        height: 100vh;
-        background-color: black;
-      }
+    <style jsx>
+      {`
+        .main-title {
+          font-size: 4rem;
+          font-variant: small-caps;
+        }
+
+        .main-title:after {
+          width: 12rem;
+          height: 0.8rem;
+          content: "";
+          display: inline-block;
+          position: relative;
+          background-color: grey;
+        }
+
+        .main-title:before {
+          width: 12rem;
+          height: 0.8rem;
+          content: "";
+          display: inline-block;
+          position: relative;
+          background-color: grey;
+        }
       `}
     </style>
   </Layout>
