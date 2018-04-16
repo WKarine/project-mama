@@ -22,7 +22,7 @@ const Layout = ({ children }) => (
     <React.Fragment>
       <Sidenav categoryLinks={categoryLinks} />
 
-      <main className="content">{children}</main>
+      <main id="content">{children}</main>
     </React.Fragment>
 
     <script src="static/vendors/materialize.min.js" />
