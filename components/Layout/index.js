@@ -4,6 +4,8 @@ import Sidenav from "./Sidenav";
 
 import { categoryLinks } from "../../models/components/Sidenav";
 
+import Footer from "../Layout/Footer";
+
 const Layout = props => (
   <div className="container">
     <Head>
@@ -27,6 +29,8 @@ const Layout = props => (
 
       <main className="content">{props.children}</main>
     </React.Fragment>
+
+    <Footer />
 
     <script src="static/vendors/materialize.min.js" />
   </div>
