@@ -34,7 +34,6 @@ sideNavColors.logo = {
 };
 
 // PAGES
-
 const indexColors = {
   intro: {
     color: "whitesmoke"
