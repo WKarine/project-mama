@@ -29,7 +29,6 @@ export default () => (
             <i className="material-icons left">insert_chart</i>commencer la
             visite
           </a>
-
         </section>
 
         <div className="row">
@@ -107,8 +106,7 @@ export default () => (
         }
 
         .year {
-          background-color: Whitesmoke;
-          background-opacity: 0.5;
+          background-color: rgba(245, 245, 245, 0.4);
           border: solid 5px White;
           font-size: 5rem;
           font-weight: bold;
