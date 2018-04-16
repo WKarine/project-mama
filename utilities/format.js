@@ -1,10 +1,10 @@
 const replaceNewLines = str => str.replace(/\n/g, "<br/>");
 
-const tronk = (str, n) => {
+const troncate = (str, maxChar) => {
   let r = str.replace(/\n|\s/g, " ");
-  let index = r.lastIndexOf(" ", n);
+  let index = r.lastIndexOf(" ", maxChar);
 
   return str.slice(0, index);
 };
 
-export { replaceNewLines, tronk };
+export { replaceNewLines, troncate };
