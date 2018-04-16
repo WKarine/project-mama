@@ -1,4 +1,5 @@
 import { categoryColors } from "../../../constantes/colors";
+import Link from "next/link";
 
 const Footer = props => (
   <footer className="page-footer">
@@ -18,29 +19,37 @@ const Footer = props => (
       <h5 className="white-text">Liens</h5>
       <ul>
         <li>
-          <a className="grey-text text-lighten-3" href="#!">
-            Réglement intérieur
-          </a>
+          <Link href="https://www.polesantetravail.fr/wp-content/uploads/2017/09/Reglement-interieur-POLE-SANTE-TRAVAIL-2017.pdf">
+            <a className="footer__link grey-text text-lighten-3">
+              Réglement intérieur
+            </a>
+          </Link>
         </li>
         <li>
-          <a className="grey-text text-lighten-3" href="#!">
-            Status
-          </a>
+          <Link href="https://www.polesantetravail.fr/wp-content/uploads/2017/09/Statuts-POLE-SANTE-TRAVAIL-2017.pdf">
+            <a className="footer__link grey-text text-lighten-3">Status</a>
+          </Link>
         </li>
         <li>
-          <a className="grey-text text-lighten-3" href="#!">
-            Conseil d'administration
-          </a>
+          <Link href="https://www.polesantetravail.fr/conseil-dadministration/">
+            <a className="footer__link grey-text text-lighten-3">
+              Conseil d'administration
+            </a>
+          </Link>
         </li>
         <li>
-          <a className="grey-text text-lighten-3" href="#!">
-            Commission de contrôle
-          </a>
+          <Link href="https://www.polesantetravail.fr/actualit%C3%A9s">
+            <a className="footer__link grey-text text-lighten-3">
+              Commission de contrôle
+            </a>
+          </Link>
         </li>
         <li>
-          <a className="grey-text text-lighten-3" href="#!">
-            PST Formation
-          </a>
+          <Link href="http://www.pstformation.com/">
+            <a className="footer__link grey-text text-lighten-3">
+              PST Formation
+            </a>
+          </Link>
         </li>
       </ul>
     </div>
@@ -49,20 +58,20 @@ const Footer = props => (
       <ul className="footer__buttons">
         <li>
           <a className="waves-effect btn-flat">
-            <i class="material-icons left">cloud</i>
-            button
+            <i class="material-icons left">message</i>
+            Contact
+          </a>
+        </li>
+        <li>
+          <a className="waves-effect btn-flat">
+            <i class="material-icons left">people</i>
+            Votre agence
           </a>
         </li>
         <li>
           <a className="waves-effect btn-flat">
             <i class="material-icons left">cloud</i>
-            button
-          </a>
-        </li>
-        <li>
-          <a className="waves-effect btn-flat">
-            <i class="material-icons left">cloud</i>
-            button
+            Twitter
           </a>
         </li>
       </ul>
@@ -104,11 +113,22 @@ const Footer = props => (
       .btn-flat {
         color: whitesmoke;
         border: 1px solid whitesmoke;
+        width: 12rem;
+      }
+
+      .btn-flat:hover {
+        border-color: ${categoryColors.orange} !important;
+        color: ${categoryColors.orange} !important;
+        transition: all 0.5s;
       }
 
       .footer-copyright {
         flex-basis: 100%;
         justify-content: center;
+      }
+
+      .footer__link:hover {
+        color: ${categoryColors.orange} !important;
       }
     `}</style>
   </footer>
