@@ -28,7 +28,7 @@ html {
 }
 
 #content {
-  animation: fade-in 0.25s ease-out forwards;
+  animation: fade-in 0.5s ease-out forwards;
 }
 
 @keyframes fade-in {

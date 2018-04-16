@@ -1,3 +1,4 @@
+// GLOBAL
 const brandColors = {
   pink: "#E6306D",
   purple: "#53378B",
@@ -6,16 +7,20 @@ const brandColors = {
 };
 
 const categoryColors = {
-  blue: "#667db6",
+  blue: "#0082c8",
   blueGradient: `linear-gradient(
     to top,
     #667db6,
     #0082c8,
     #0082c8,
     #667db6
-  )`
+  )`,
+  hover: {
+    blue: "#2579b7"
+  }
 };
 
+// COMPONENTS
 const sideNavColors = {
   backgroundColor: categoryColors.blue,
   backgroundGradient: categoryColors.blueGradient,
@@ -26,4 +31,12 @@ sideNavColors.logo = {
   backgroundColor: sideNavColors.fontColor
 };
 
-export { brandColors, categoryColors, sideNavColors };
+// PAGES
+
+const indexColors = {
+  intro: {
+    color: "whitesmoke"
+  }
+};
+
+export { brandColors, categoryColors, sideNavColors, indexColors };

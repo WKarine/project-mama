@@ -1,3 +1,4 @@
+// COMPONENTS
 const sideNavDimensions = {
   logo: {
     height: "13.33rem"
@@ -18,4 +19,17 @@ const loaderDimensions = {
   }
 };
 
-export { sideNavDimensions, loaderDimensions };
+// PAGES
+const indexDimensions = {
+  intro: {
+    height: "80vh",
+    width: "100%",
+    fontSize: "5rem",
+    border: {
+      height: "0.5rem",
+      width: "40%"
+    }
+  }
+};
+
+export { sideNavDimensions, loaderDimensions, indexDimensions };
