@@ -10,7 +10,7 @@ const Layout = ({ children }) => (
     <Head>
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
-  
+
       <link
         rel="icon"
         type="image/png"
@@ -28,14 +28,11 @@ const Layout = ({ children }) => (
     <React.Fragment>
       <Sidenav categoryLinks={categoryLinks} />
 
-      <main className="content">{props.children}</main>
-    </React.Fragment>
-
       <main id="content">{children}</main>
     </React.Fragment>
-  
+
     <Footer />
-    
+
     <script src="static/vendors/materialize.min.js" />
   </div>
 );

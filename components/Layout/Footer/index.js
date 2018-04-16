@@ -64,12 +64,10 @@ const Footer = props => (
       {`
         footer {
           background-color: ${brandColors.purple};
-          bottom: 0;
           color: Whitesmoke;
           display: flex;
           justify-content: space-between;
           padding: 0.5rem;
-          position: absolute;
         }
 
         img {
