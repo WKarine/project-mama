@@ -1,75 +1,77 @@
 import Link from "next/link";
+
 import CategoryLink from "./CategoryLink";
+import SubCategory from "./SubCategory";
+
 import { sideNavColors } from "../../../constantes/colors";
+import { sideNavDimensions } from "../../../constantes/dimensions";
 
 class Sidenav extends React.Component {
   componentDidMount() {
-    // Initialisation du js de la Sidenav via materialize.min.js
-    M.Sidenav.init(document.querySelector(".sidenav"));
+    // Dès que le composant est initialisé on initialise aussi le js de materialize
+    // Afin que la sidebar et les sous-menu fonctionnent correctement
+    M.AutoInit();
   }
 
   render() {
+    const { categoryLinks } = this.props;
+
     return (
       <div>
-        <ul id="slide-out" className="sidenav sidenav-fixed bg-pan-right">
-          <div className="logo-container">
-            <Link href="/">
-              <a className="home-link">
-                <img className="logo" src="static/images/logo.png" />
-              </a>
-            </Link>
-          </div>
+        <ul id="slide-out" className="sidenav sidenav-fixed z-depth-1">
+          <Link href="/">
+            <div className="logo-container">
+              <img className="logo" src="static/images/logo.jpg" />
+            </div>
+          </Link>
 
-          {this.props.categoryLinks.map(link => (
-            <CategoryLink
-              textContent={link.textContent}
-              href={link.href}
-              key={link.textContent}
-            />
-          ))}
+          {/* On affiche tout les liens, array = sous-menu, sinon lien normal */}
+          {categoryLinks.map(
+            categoryLink =>
+              Array.isArray(categoryLink) ? (
+                <SubCategory
+                  title={categoryLink[0]}
+                  key={categoryLink[0]}
+                  subCategoryLinks={categoryLink.slice(1)}
+                />
+              ) : (
+                <CategoryLink
+                  textContent={categoryLink.textContent}
+                  href={categoryLink.href}
+                  key={categoryLink.textContent}
+                />
+              )
+          )}
         </ul>
 
+        {/* icon pour toggle la sideNav */}
         <a href="#" data-target="slide-out" className="sidenav-trigger">
-          <i className="material-icons">menu</i>
+          <i className="medium material-icons">menu</i>
         </a>
 
         <style jsx>{`
           .logo-container {
-            display: flex;
-            justify-content: center;
             align-items: center;
+            background-color: ${sideNavColors.logo.backgroundColor};
             border-radius: 50%;
-            height: 200px;
-            width: 200px;
+            cursor: pointer;
+            display: flex;
+            height: ${sideNavDimensions.logo.height};
+            justify-content: center;
             margin: 2rem auto;
-            background-color: white;
-          }
-
-          ul#slide-out:after {
-            content: "";
-            background: -webkit-linear-gradient(
-              top,
-              ${sideNavColors.pink} 0%,
-              ${sideNavColors.purple} 30%,
-              ${sideNavColors.green} 60%,
-              ${sideNavColors.orange} 100%
-            );
-            display: block;
-            height: 100%;
-            width: 0.5rem;
-            position: absolute;
-            top: 0;
-            right: 0;
+            width: ${sideNavDimensions.logo.width};
           }
 
           .sidenav {
-            background-color: ${sideNavColors.backgroundColor};
+            background: ${sideNavColors.backgroundColor}; /* fallback for old browsers */
+            background: ${sideNavColors.backgroundGradient}; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
           }
 
           .sidenav-trigger {
+            left: 1rem;
             position: absolute;
             top: 1rem;
-            left: 1rem;
+            z-index: 10;
           }
         `}</style>
       </div>

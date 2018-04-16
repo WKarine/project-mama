@@ -14,7 +14,18 @@ const categoryLinks = [
   {
     textContent: "santé des salariés",
     href: "sante-des-salaries"
-  }
+  },
+  [
+    "sous menu",
+    {
+      textContent: "test",
+      href: "test"
+    },
+    {
+      textContent: "autre test",
+      href: "autre-test"
+    }
+  ]
 ];
 
 export { categoryLinks };

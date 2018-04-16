@@ -11,10 +11,6 @@ html {
   font-family: "Neo", sans-serif;
 }
 
-h1 {
-  font-size: 2.4rem;
-}
-
 .container {
   /* On décale pour que le contenu ne soit pas masqué par la Sidenav */
   margin-left: 300px;
@@ -29,4 +25,23 @@ h1 {
     padding-left: 0;
     padding-right: 0;
   }
+}
+
+#content {
+  animation: fade-in 0.5s ease-out forwards;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+h1 {
+  font-size: 2.5rem;
+  text-align: center;
 }

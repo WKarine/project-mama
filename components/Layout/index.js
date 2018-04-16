@@ -1,21 +1,22 @@
 import Head from "next/head";
 
 import Sidenav from "./Sidenav";
+import Footer from "../Layout/Footer";
 
 import { categoryLinks } from "../../models/components/Sidenav";
 
-import Footer from "../Layout/Footer";
-
-const Layout = props => (
+const Layout = ({ children }) => (
   <div className="container">
     <Head>
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
+  
       <link
         rel="icon"
         type="image/png"
         href="../../static/images/favicon.ico"
       />
+
       <link
         href="https://fonts.googleapis.com/icon?family=Material+Icons"
         rel="stylesheet"
@@ -30,8 +31,11 @@ const Layout = props => (
       <main className="content">{props.children}</main>
     </React.Fragment>
 
+      <main id="content">{children}</main>
+    </React.Fragment>
+  
     <Footer />
-
+    
     <script src="static/vendors/materialize.min.js" />
   </div>
 );
