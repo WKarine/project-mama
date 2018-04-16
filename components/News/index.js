@@ -1,3 +1,6 @@
+import { troncate } from "../../utilities/format";
+import { MAX_CHAR } from "../../constantes/news";
+
 const News = () => (
   <div className="news collection">
     <a className="collection-item news__link" href="#!">
@@ -5,10 +8,10 @@ const News = () => (
         Prévenir les situations à Risque Psychosocial
       </h3>
       <p className="news__summary">
-        Le MEDEF Lille Métropole vous invite à un prochain « Rendez-vous de la
-        prévention » sur le thème : Prévenir les situations à Risque
-        Psychosocial Mardi 17 avril 2018 de 9h à 17h Campus Entreprises et Cités
-        40 rue Eugène Jacquet à Marcq-en-Barœul…
+        {troncate(
+          "Le MEDEF Lille Métropole vous invite à un prochain « Rendez-vous de la prévention » sur le thème : Prévenir les situations à Risque Psychosocial Mardi 17 avril 2018 de 9h à 17h Campus Entreprises et Cités 40 rue Eugène Jacquet à Marcq-en-Barœul…",
+          MAX_CHAR
+        )}
       </p>
     </a>
     <a className="collection-item news__link" href="#!">
