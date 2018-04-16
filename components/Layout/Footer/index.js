@@ -1,116 +1,116 @@
-import { brandColors } from "../../../constantes/colors";
+import { categoryColors } from "../../../constantes/colors";
 
 const Footer = props => (
-  <footer>
-    <img src="../../static/images/download.png" />
-    <p>
-      LA SANTÉ DES ENTREPRISES ET DES SALARIÉS AU COEUR DE NOS PRÉOCCUPATIONS //
-      Actions globales de prévention / Conseils sur la santé et la sécurité /
-      Suivi de santé individuel / Indicateurs et traçabilité des expositions
-    </p>
+  <footer className="page-footer">
+    <div className="footer__section footer__logo">
+      <img className="responsive-img" src="static/images/logo-footer.png" />
+    </div>
 
-    <ul className="links">
-      <li>Liens</li>
-      <li>
-        <a href="https://www.polesantetravail.fr/wp-content/uploads/2017/09/Reglement-interieur-POLE-SANTE-TRAVAIL-2017.pdf">
-          Réglement intérieur
-        </a>
-      </li>
-      <li>
-        <a href="https://www.polesantetravail.fr/wp-content/uploads/2017/09/Statuts-POLE-SANTE-TRAVAIL-2017.pdf">
-          Statuts
-        </a>
-      </li>
-      <li>
-        <a href="https://www.polesantetravail.fr/conseil-dadministration/">
-          Conseil d'administration
-        </a>
-      </li>
-      <li>
-        <a href="https://www.polesantetravail.fr/commission-de-controle/">
-          Commission de contrôle
-        </a>
-      </li>
-      <li>
-        <a href="http://www.pstformation.com/">PST Formation</a>
-      </li>
-    </ul>
+    <div className="footer__section footer__mission">
+      <p className="grey-text text-lighten-4">
+        LA SANTÉ DES ENTREPRISES ET DES SALARIÉS AU COEUR DE NOS PRÉOCCUPATIONS
+        // Actions globales de prévention / Conseils sur la santé et la sécurité
+        / Suivi de santé individuel / Indicateurs et traçabilité des expositions
+      </p>
+    </div>
 
-    <ul className="link-button">
-      <li>
-        <a href="https://www.polesantetravail.fr/contact/#contact-form">
-          <a className="waves-effect waves-light btn-large">
-            <i className="material-icons left">message</i>Contact
+    <div className="footer__section">
+      <h5 className="white-text">Liens</h5>
+      <ul>
+        <li>
+          <a className="grey-text text-lighten-3" href="#!">
+            Réglement intérieur
           </a>
-        </a>
-      </li>
-      <li>
-        <a href="https://www.polesantetravail.fr/contact/#centre">
-          <a className="waves-effect waves-light btn-large">
-            <i className="material-icons left">gps_fixed</i>Votre centre
+        </li>
+        <li>
+          <a className="grey-text text-lighten-3" href="#!">
+            Status
           </a>
-        </a>
-      </li>
-      <li>
-        <a href="https://twitter.com/PST_Nord">
-          <a className="waves-effect waves-light btn-large">
-            <i className="material-icons left">title</i>Twitter
+        </li>
+        <li>
+          <a className="grey-text text-lighten-3" href="#!">
+            Conseil d'administration
           </a>
-        </a>
-      </li>
-    </ul>
+        </li>
+        <li>
+          <a className="grey-text text-lighten-3" href="#!">
+            Commission de contrôle
+          </a>
+        </li>
+        <li>
+          <a className="grey-text text-lighten-3" href="#!">
+            PST Formation
+          </a>
+        </li>
+      </ul>
+    </div>
 
-    <style jsx>
-      {`
-        footer {
-          background-color: ${brandColors.purple};
-          color: Whitesmoke;
-          display: flex;
-          justify-content: space-between;
-          padding: 0.5rem;
-        }
+    <div className="footer__section">
+      <ul className="footer__buttons">
+        <li>
+          <a className="waves-effect btn-flat">
+            <i class="material-icons left">cloud</i>
+            button
+          </a>
+        </li>
+        <li>
+          <a className="waves-effect btn-flat">
+            <i class="material-icons left">cloud</i>
+            button
+          </a>
+        </li>
+        <li>
+          <a className="waves-effect btn-flat">
+            <i class="material-icons left">cloud</i>
+            button
+          </a>
+        </li>
+      </ul>
+    </div>
 
-        img {
-          display: block;
-          max-height: 100px;
-          margin: auto;
-        }
+    <div className="footer-copyright">© 2014 Copyright Text</div>
+    <style jsx>{`
+      .page-footer {
+        background-color: ${categoryColors.blue};
+        display: flex;
+        flex-wrap: wrap;
+      }
 
-        p {
-          display: block;
-          max-width: 200px;
-          margin: auto;
-          padding: 1rem;
-        }
+      .footer__section {
+        flex-basis: 25%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
 
-        .links {
-          display: block;
-          margin: auto;
-          padding: 0.5rem;
-        }
+      .footer__logo {
+        max-width: 150px;
+        margin: auto;
+      }
 
-        .links a {
-          color: Whitesmoke;
-        }
+      .footer__mission {
+        font-size: 0.7rem;
+        padding: 0 0.5rem;
+      }
 
-        .links a:hover {
-          color: ${brandColors.orange};
-        }
+      .footer__buttons {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+      }
 
-        .link-button li {
-          padding: 0.5rem;
-        }
+      .btn-flat {
+        color: whitesmoke;
+        border: 1px solid whitesmoke;
+      }
 
-        .btn-large {
-          height: 60px;
-          width: 200px;
-        }
-
-        .link-button a {
-          font-size: 1rem;
-        }
-      `}
-    </style>
+      .footer-copyright {
+        flex-basis: 100%;
+        justify-content: center;
+      }
+    `}</style>
   </footer>
 );
 
