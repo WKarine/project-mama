@@ -1,34 +1,107 @@
-import Layout from "../components/Layout";
 import Head from "next/head";
+
+import Layout from "../components/Layout";
+import News from "../components/News";
+
+import { categoryColors, indexColors } from "../constantes/colors";
+import { indexDimensions } from "../constantes/dimensions";
 
 export default () => (
   <Layout>
-    <h1 className="main-title">rapport annuel d'activités</h1>
+    <div className="row">
+      <div className="col s12">
+        <section className="intro z-depth-1">
+          <h1 className="intro__title">
+            rapport annuel
+            <br />
+            d'activités
+          </h1>
 
-    <style jsx>
+          <a className="intro__discover waves-effect waves-light btn-large">
+            <i className="material-icons left">insert_chart</i>commencer la
+            visite
+          </a>
+
+          <a className="intro__survey waves-effect waves-light  btn-flat">
+            <i className="material-icons left">question_answer</i>accéder au
+            questionnaire
+          </a>
+        </section>
+
+        <div className="row">
+          <div className="col s12 m6">
+            <News />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <style jsx global>
       {`
-        .main-title {
-          font-size: 4rem;
+        .intro {
+          background: url("static/images/home.jpg");
+          background-size: cover;
+          height: ${indexDimensions.intro.height};
+          margin-top: 5vh;
+          position: relative;
+          width: ${indexDimensions.intro.width};
+        }
+
+        .intro__title {
+          color: ${indexColors.intro.color};
+          font-size: ${indexDimensions.intro.fontSize};
           font-variant: small-caps;
+          margin-top: 0;
+          padding-top: 10rem;
+          text-align: center;
         }
 
-        .main-title:after {
-          width: 12rem;
-          height: 0.8rem;
+        .intro__title:before {
+          background-color: ${indexColors.intro.color};
+          height: ${indexDimensions.intro.border.height};
           content: "";
-          display: inline-block;
+          display: block;
           position: relative;
-          background-color: grey;
+          left: 20%;
+          width: ${indexDimensions.intro.border.width};
         }
 
-        .main-title:before {
-          width: 12rem;
-          height: 0.8rem;
+        .intro__title:after {
+          background-color: ${indexColors.intro.color};
+          height: ${indexDimensions.intro.border.height};
           content: "";
-          display: inline-block;
+          display: block;
+          left: 40%;
+          margin-top: 1rem;
           position: relative;
-          background-color: grey;
+          width: ${indexDimensions.intro.border.width};
         }
-    `}</style>
+
+        .intro__discover,
+        .intro__survey {
+          bottom: 1rem;
+          position: absolute;
+          transition: transform 0.2s ease-out;
+        }
+
+        .intro__discover {
+          background: ${categoryColors.blue};
+          right: 1rem;
+        }
+
+        .intro__survey {
+          bottom: 1rem;
+          color: ${indexColors.intro.color};
+          left: 1rem;
+        }
+
+        .intro__discover:hover,
+        .intro__discover:active,
+        .intro__discover:focus {
+          background-color: ${categoryColors.hover.blue};
+          transform: translateY(-0.1rem);
+        }
+      `}
+    </style>
   </Layout>
 );
