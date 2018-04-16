@@ -1,4 +1,5 @@
 import Head from "next/head";
+import { sideNavColors } from "../constantes/colors";
 
 import Layout from "../components/Layout";
 import News from "../components/News";
@@ -17,15 +18,18 @@ export default () => (
             d'activités
           </h1>
 
-          <a className="intro__discover waves-effect waves-light btn-large">
-            <i className="material-icons left">insert_chart</i>commencer la
-            visite
-          </a>
+          <span className="year"> 2017 </span>
 
           <a className="intro__survey waves-effect waves-light  btn-flat">
             <i className="material-icons left">question_answer</i>accéder au
             questionnaire
           </a>
+
+          <a className="intro__discover waves-effect waves-light btn-large">
+            <i className="material-icons left">insert_chart</i>commencer la
+            visite
+          </a>
+
         </section>
 
         <div className="row">
@@ -100,6 +104,16 @@ export default () => (
         .intro__discover:focus {
           background-color: ${categoryColors.hover.blue};
           transform: translateY(-0.1rem);
+        }
+
+        .year {
+          background-color: Whitesmoke;
+          background-opacity: 0.5;
+          border: solid 5px White;
+          font-size: 5rem;
+          font-weight: bold;
+          margin-left: 60%;
+          padding: 1.5rem;
         }
       `}
     </style>
