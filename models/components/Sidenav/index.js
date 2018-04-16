@@ -117,10 +117,10 @@ const categoryLinks = [
       href: "immobiliers-investissements"
     }
   ],
-  [
-    "Bilan financier",
-  ],
-
+  {
+    textContent: "Bilan financier",
+    href: "bilan-financier"
+  },
 ];
 
 export { categoryLinks };
