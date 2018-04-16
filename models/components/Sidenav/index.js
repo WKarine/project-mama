@@ -1,10 +1,10 @@
 const categoryLinks = [
   {
-    textContent: "Perspectives",
+    textContent: "perspectives",
     href: "perspectives"
   },
   [
-    "Fiche d'identité",
+    "fiche d'identité",
     {
       textContent: "Qui sommes-nous",
       href: "qui-sommes-nous"
@@ -19,7 +19,7 @@ const categoryLinks = [
     }
   ],
   [
-    "Cartographie des entreprises",
+    "cartographie des entreprises",
     {
       textContent: "Un territoire contrasté",
       href: "territoire-contraste"
@@ -34,7 +34,7 @@ const categoryLinks = [
     }
   ],
   [
-    "Veiller sur la santé",
+    "veiller sur la santé",
     {
       textContent: "Un suivi de santé adapté",
       href: "suivi-de-sante"
@@ -54,10 +54,10 @@ const categoryLinks = [
     {
       textContent: "Le suivi en chiffres",
       href: "suivi-en-chiffres"
-    },
+    }
   ],
   [
-    "Ecouter et accompagner ",
+    "ecouter et accompagner ",
     {
       textContent: "Evaluation des risques",
       href: "aide-evaluation-risques"
@@ -85,10 +85,10 @@ const categoryLinks = [
     {
       textContent: "Formation des salariés",
       href: "formation-des-salaries"
-    },
+    }
   ],
   [
-    "Mener des actions",
+    "mener des actions",
     {
       textContent: "CHRD",
       href: "chrd"
@@ -103,7 +103,7 @@ const categoryLinks = [
     }
   ],
   [
-    "Mettre des moyens",
+    "mettre des moyens",
     {
       textContent: "Relations adhérents",
       href: "relations-adherents"
@@ -118,9 +118,9 @@ const categoryLinks = [
     }
   ],
   {
-    textContent: "Bilan financier",
+    textContent: "bilan financier",
     href: "bilan-financier"
-  },
+  }
 ];
 
 export { categoryLinks };
