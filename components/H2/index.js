@@ -7,13 +7,13 @@ const H2 = props => {
       <style jsx>
         {`
           h2 {
-            font-size: 3rem;
+            font-size: 2.5rem;
             font-variant: small-caps;
           }
           h2:before {
             margin-right: 1rem;
-            width: 1.5rem;
-            height: 1.5rem;
+            width: 1.3rem;
+            height: 1.3rem;
             content: "";
             display: inline-block;
             position: relative;
