@@ -6,7 +6,7 @@ import Footer from "../Layout/Footer";
 import { categoryLinks } from "../../models/components/Sidenav";
 
 const Layout = ({ children }) => (
-  <div className="container">
+  <div className="container-fluid">
     <Head>
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
