@@ -3,7 +3,7 @@ import Layout from "../components/Layout";
 export default () => (
   <Layout>
     <div className="row">
-      <h1>Perspectives</h1>
+      <h1 className="main-title">Perspectives</h1>
       <div className="col m12 ">
         <img
           className="responsive-img photo-director col m3"
