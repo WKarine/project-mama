@@ -16,6 +16,13 @@ const ImageCard = ({ imageSrc, title, children }) => (
       </span>
       {children}
     </div>
+    <style jsx>
+      {`
+        .card {
+          width: 350px;
+        }
+      `}
+    </style>
   </div>
 );
 
