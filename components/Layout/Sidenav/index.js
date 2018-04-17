@@ -18,7 +18,7 @@ class Sidenav extends React.Component {
 
     return (
       <div>
-        <ul id="slide-out" className="sidenav sidenav-fixed z-depth-1">
+        <ul id="slide-out" className="sidenav z-depth-1">
           <Link href="/">
             <div className="logo-container">
               <img className="logo" src="static/images/logo.jpg" />
