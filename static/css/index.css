@@ -45,6 +45,7 @@ html {
   text-align: center;
   color: #0082c8;
   font-variant: small-caps;
+  margin-bottom: 3rem;
 }
 
 .main-title:after {
