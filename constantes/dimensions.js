@@ -22,13 +22,8 @@ const loaderDimensions = {
 // PAGES
 const indexDimensions = {
   intro: {
-    height: "80vh",
-    width: "100%",
-    fontSize: "5rem",
-    border: {
-      height: "0.5rem",
-      width: "40%"
-    }
+    height: "100vh",
+    fontSize: "5rem"
   }
 };
 

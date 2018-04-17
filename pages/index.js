@@ -10,14 +10,12 @@ import { indexDimensions } from "../constantes/dimensions";
 export default () => (
   <Layout>
     <div className="row">
-      <div className="col s12">
-        <section className="intro z-depth-1">
-          <h1 className="intro__title">
-            rapport annuel
-            <br />
-            d'activités
-          </h1>
+      <section className="intro z-depth-1">
+        <div className="col s12 m4 offset-m4">
+          <h1 className="intro__title">rapport annuel d'activités</h1>
+        </div>
 
+        <div className="col s12">
           <span className="year"> 2017 </span>
 
           <a className="intro__survey waves-effect waves-light  btn-flat">
@@ -29,73 +27,61 @@ export default () => (
             <i className="material-icons left">insert_chart</i>commencer la
             visite
           </a>
-        </section>
 
-        <div className="row">
+          {/* <div className="row">
           <div className="col s12 m6">
             <News />
           </div>
+        </div> */}
         </div>
-      </div>
+      </section>
     </div>
 
-    <style jsx global>
+    <style jsx>
       {`
+        .col {
+          padding: 0 !important;
+        }
+
         .intro {
           background: url("static/images/home.jpg");
           background-size: cover;
           height: ${indexDimensions.intro.height};
-          margin-top: 5vh;
           position: relative;
-          width: ${indexDimensions.intro.width};
         }
 
         .intro__title {
           color: ${indexColors.intro.color};
           font-size: ${indexDimensions.intro.fontSize};
           font-variant: small-caps;
-          margin-top: 0;
-          padding-top: 10rem;
+          border: 5px solid ${indexColors.intro.color};
+          background-color: rgba(0, 0, 0, 0.5);
+          padding 2.5rem;
+          margin-top: 20%;
           text-align: center;
-        }
-
-        .intro__title:before {
-          background-color: ${indexColors.intro.color};
-          height: ${indexDimensions.intro.border.height};
-          content: "";
-          display: block;
-          position: relative;
-          left: 20%;
-          width: ${indexDimensions.intro.border.width};
-        }
-
-        .intro__title:after {
-          background-color: ${indexColors.intro.color};
-          height: ${indexDimensions.intro.border.height};
-          content: "";
-          display: block;
-          left: 40%;
-          margin-top: 1rem;
-          position: relative;
-          width: ${indexDimensions.intro.border.width};
         }
 
         .intro__discover,
         .intro__survey {
-          bottom: 1rem;
+          bottom: 20%;
           position: absolute;
           transition: transform 0.2s ease-out;
         }
 
         .intro__discover {
           background: ${categoryColors.blue};
-          right: 1rem;
+          right: 30%;
         }
 
         .intro__survey {
-          bottom: 1rem;
           color: ${indexColors.intro.color};
-          left: 1rem;
+          left: 30%;
+        }
+
+        .intro__survey:hover,
+        .intro__survey:active,
+        .intro__survey:focus {
+          transform: translateY(-0.1rem);
         }
 
         .intro__discover:hover,
@@ -112,6 +98,7 @@ export default () => (
           font-weight: bold;
           margin-left: 60%;
           padding: 1.5rem;
+          display: none;
         }
       `}
     </style>
