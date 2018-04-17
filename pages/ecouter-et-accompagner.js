@@ -4,7 +4,7 @@ export default () => (
   <Layout>
     <div className="row">
       <div className="col s12">
-        <h1 className="main-title">éouter et accompagner</h1>
+        <h1 className="main-title">écouter et accompagner</h1>
       </div>
     </div>
 
