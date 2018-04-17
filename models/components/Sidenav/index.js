@@ -5,6 +5,7 @@ const categoryLinks = [
   },
   [
     "fiche d'identité",
+    "fiche-identite",
     {
       textContent: "Qui sommes-nous",
       href: "qui-sommes-nous"
@@ -15,18 +16,19 @@ const categoryLinks = [
     },
     {
       textContent: "Chiffres clés",
-      href: "chiffres cles"
+      href: "chiffres-cles"
     }
   ],
   [
     "cartographie des entreprises",
+    "cartographie-entreprises",
     {
       textContent: "Un territoire contrasté",
       href: "territoire-contraste"
     },
     {
       textContent: "Le profil des entreprises",
-      href: "profil entreprises"
+      href: "profil-entreprises"
     },
     {
       textContent: "L'état de santé des salariés",
@@ -35,6 +37,7 @@ const categoryLinks = [
   ],
   [
     "veiller sur la santé",
+    "veiller-sante",
     {
       textContent: "Un suivi de santé adapté",
       href: "suivi-de-sante"
@@ -58,6 +61,7 @@ const categoryLinks = [
   ],
   [
     "ecouter et accompagner ",
+    "ecouter-et-accompagner",
     {
       textContent: "Evaluation des risques",
       href: "aide-evaluation-risques"
@@ -89,6 +93,7 @@ const categoryLinks = [
   ],
   [
     "mener des actions",
+    "mener-des-actions",
     {
       textContent: "CHRD",
       href: "chrd"
@@ -104,6 +109,7 @@ const categoryLinks = [
   ],
   [
     "mettre des moyens",
+    "mettre-des-moyens",
     {
       textContent: "Relations adhérents",
       href: "relations-adherents"

@@ -6,7 +6,7 @@ export default () => (
       <h1>Perspectives</h1>
         <div className="col m12 ">       
           
-          <img className="responsive-img photo-director col m3" src="static/images/perspectives/hardy.png" titre="director"/>
+          <img className="responsive-img photo-director col m3" src="static/images/perspectives/hardy.png" title="director"/>
             
             <p>Depuis 2011, la santé au travail évolue pour s’adapter au monde de l’entreprise, 
             aux salariés et aux ressources des Services de Santé au Travail Inter-entreprises.</p>
@@ -104,6 +104,5 @@ export default () => (
         
       `}
     </style>
-
   </Layout>
 );

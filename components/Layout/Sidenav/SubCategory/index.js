@@ -2,7 +2,7 @@ import SubCategoryLink from "./SubCategoryLink";
 
 import { sideNavColors } from "../../../../constantes/colors";
 
-const SubCategory = ({ title, subCategoryLinks }) => (
+const SubCategory = ({ href, title, subCategoryLinks }) => (
   <ul className="collapsible">
     <li className="collapsible-item">
       <div className="sub-category collapsible-header">{title}</div>
@@ -12,7 +12,7 @@ const SubCategory = ({ title, subCategoryLinks }) => (
           {/* On affiche chaque liens */}
           {subCategoryLinks.map(subCategoryLink => (
             <SubCategoryLink
-              href={`${title}#${subCategoryLink.href}`}
+              href={`${href}#${subCategoryLink.href}`}
               key={subCategoryLink.href}
             >
               {subCategoryLink.textContent}

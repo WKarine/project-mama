@@ -30,9 +30,10 @@ class Sidenav extends React.Component {
             categoryLink =>
               Array.isArray(categoryLink) ? (
                 <SubCategory
-                  title={categoryLink[0]}
-                  key={categoryLink[0]}
-                  subCategoryLinks={categoryLink.slice(1)}
+                  title={categoryLink[0]} // textContent de la catégorie
+                  href={categoryLink[1]} // href
+                  key={categoryLink[0]} // Nécessaire a react pour gérer le virtual dom
+                  subCategoryLinks={categoryLink.slice(2)} // Les liens
                 />
               ) : (
                 <CategoryLink
