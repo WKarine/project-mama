@@ -58,19 +58,19 @@ const Footer = props => (
       <ul className="footer__buttons">
         <li>
           <a className="waves-effect btn-flat">
-            <i class="material-icons left">message</i>
+            <i className="material-icons left">message</i>
             Contact
           </a>
         </li>
         <li>
           <a className="waves-effect btn-flat">
-            <i class="material-icons left">people</i>
+            <i className="material-icons left">people</i>
             Votre agence
           </a>
         </li>
         <li>
           <a className="waves-effect btn-flat">
-            <i class="material-icons left">cloud</i>
+            <i className="material-icons left">cloud</i>
             Twitter
           </a>
         </li>
