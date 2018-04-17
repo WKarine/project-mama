@@ -50,6 +50,12 @@ export default () => (
           position: relative;
         }
 
+        @media only screen and (max-width : 992px) {
+          .intro {
+            background-position: 50%;
+          }
+        }
+
         .intro__title {
           color: ${indexColors.intro.color};
           font-size: ${indexDimensions.intro.fontSize};
@@ -61,21 +67,46 @@ export default () => (
           text-align: center;
         }
 
+        @media only screen and (max-width : 992px) {
+          .intro__title {
+            font-size: 3rem;
+            border: none;
+            background-color: transparent;
+          }
+        }
+
         .intro__discover,
         .intro__survey {
           bottom: 20%;
           position: absolute;
           transition: transform 0.2s ease-out;
+          width: 20rem;
         }
 
         .intro__discover {
           background: ${categoryColors.blue};
-          right: 30%;
+          right: 20%;
+        }
+
+        @media only screen and (max-width : 992px) {
+          .intro__discover {
+            font-size: 1rem;
+            left: calc(50% - 10rem);
+            bottom: 30%;
+          }
         }
 
         .intro__survey {
           color: ${indexColors.intro.color};
-          left: 30%;
+          left: 20%;
+        }
+
+        @media only screen and (max-width : 992px) {
+          .intro__survey {
+            font-size: 1rem;
+            left: calc(50% - 10rem);
+            bottom: 5%;
+          }
         }
 
         .intro__survey:hover,
