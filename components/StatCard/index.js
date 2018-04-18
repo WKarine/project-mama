@@ -18,7 +18,7 @@ const StatCard = ({ cardClass, icone, children }) => {
 
       <style jsx global>
         {`
-          .stat-card .card-panel {
+          .stat-card.card-panel {
             display: flex;
             justify-content: center;
             flex-direction: column;
