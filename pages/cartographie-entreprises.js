@@ -9,9 +9,7 @@ export default () => (
         <h1 className="main-title">
           La cartographie des entreprises adhérentes
         </h1>
-        <H2 className="secondary-title" id="territoire-contraste">
-          Un territoire contrasté
-        </H2>
+        <H2 id="territoire-contraste">Un territoire contrasté</H2>
 
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
@@ -104,9 +102,7 @@ export default () => (
           nisl a arcu interdum, vitae fermentum neque semper. Aliquam quis ipsum
           tellus. Nulla et pellentesque felis.
         </p>
-        <H2 className="secondary-title" id="profil-entreprises">
-          Le profil des entreprises
-        </H2>
+        <H2 id="profil-entreprises">Le profil des entreprises</H2>
         <H3 className="third-title">Répartition des adhérents par taille</H3>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
@@ -199,9 +195,7 @@ export default () => (
           nisl a arcu interdum, vitae fermentum neque semper. Aliquam quis ipsum
           tellus. Nulla et pellentesque felis.
         </p>
-        <H2 className="secondary-title" id="etat-de-sante">
-          L'état de santé des salariés
-        </H2>
+        <H2 id="etat-de-sante">L'état de santé des salariés</H2>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
           lacus nisi, pharetra id euismod et, tempor iaculis erat. Suspendisse
