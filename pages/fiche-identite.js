@@ -4,6 +4,7 @@ import SimpleCard from "../components/SimpleCard";
 import Carousel from "../components/Carousel";
 import StatCard from "../components/StatCard";
 
+
 export default () => (
   <Layout>
     <div className="row">
@@ -294,7 +295,7 @@ export default () => (
       </div>
 
       <div className="col s12">
-        <H2>qui sommes-nous ?</H2>
+        <H2 id="qui-sommes-nous">qui sommes-nous ?</H2>
       </div>
     </div>
 
@@ -356,7 +357,7 @@ export default () => (
 
     <div className="row">
       <div className="col s12">
-        <H2>les évènements marquant de l'année</H2>
+        <H2 id="evenements-annees">les évènements marquant de l'année</H2>
       </div>
     </div>
     <div className="row">
@@ -382,7 +383,7 @@ export default () => (
 
     <div className="row">
       <div className="col s12">
-        <H2>les chiffres clés</H2>
+        <H2 id="chiffres-cles">les chiffres clés</H2>
       </div>
     </div>
 
@@ -397,7 +398,7 @@ export default () => (
       </div>
 
       <div className="col s12 m3">
-        <StatCard icone="wc" cardClass="white">
+        <StatCard icone="home" cardClass="white">
           <strong>32 252</strong>
           <span>entreprises adhérentes</span>
           <strong>476 848</strong>
