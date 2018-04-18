@@ -1,5 +1,5 @@
 import Layout from "../components/Layout";
-import Card from "../components/Card";
+import SimpleCard from "../components/SimpleCard";
 import H2 from "../components/H2";
 import H3 from "../components/H3";
 
