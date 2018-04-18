@@ -1,6 +1,6 @@
 import Layout from "../components/Layout";
 import H2 from "../components/H2";
-import Card from "../components/Card";
+import SimpleCard from "../components/SimpleCard";
 import Carousel from "../components/Carousel";
 import StatCard from "../components/StatCard";
 
@@ -300,7 +300,7 @@ export default () => (
 
     <div className="row">
       <div className="col s12 m3 presentation">
-        <Card cardClass="white">
+        <SimpleCard cardClass="white">
           Association Paritaire sans but lucratif, PÔLE SANTÉ TRAVAIL bénéficie
           du statut d'association de type loi 1901.<br />
           Agréée par le Ministère du travail pour exercer ses missions de suivi
@@ -313,17 +313,19 @@ export default () => (
           </ul>
           Toutes les entreprises de ce secteur adhèrent à PÔLE SANTÉ TRAVAIL
           avec le paiement d’une cotisation.
-        </Card>
+        </SimpleCard>
       </div>
 
       <div className="col s12 m3">
-        <Card cardClass="blue">
+        <SimpleCard cardClass="blue">
           PLUSIEURS INSTANCES GOUVERNENT L’ASSOCIATION :<br />
           <ul className="card__list">
             <li>
               <strong className="card__strong">
                 un conseil d’administration paritaire
-              </strong> avec un collège employeurs et un collège salariés qui définit la politique du service de santé au travail.
+              </strong>{" "}
+              avec un collège employeurs et un collège salariés qui définit la
+              politique du service de santé au travail.
             </li>
             <li>
               Une commission de contrôle qui a pour mission de surveiller
@@ -334,16 +336,21 @@ export default () => (
             <li>
               <strong className="card__strong">
                 une commission médico technique
-              </strong> qui formule des propositions relatives aux priorités du service et
+              </strong>{" "}
+              qui formule des propositions relatives aux priorités du service et
               aux actions pluridisciplinaires à mener pour établir le projet de
               service.
             </li>
           </ul>
-        </Card>
+        </SimpleCard>
       </div>
 
       <div className="col s12 m6">
-        <img className="responsive-img" width="600" src="static/images/identite/carte_2017_sans_chiffre.png"/>
+        <img
+          className="responsive-img"
+          width="600"
+          src="static/images/identite/carte_2017_sans_chiffre.png"
+        />
       </div>
     </div>
 
@@ -354,17 +361,22 @@ export default () => (
     </div>
     <div className="row">
       <div className="col s12 m3">
-        
-        <Card cardClass="blue">
-          <strong className="card__strong">
-          26 évènements
-          </strong><br/>
-          <span> ont été organisés par le service communication afin d'accompagner les nouveauté en santé travai et promouvoir ainsi les nouvelles missions du service.<br/>
-          Chaque évènements est une opportunité de promotion et de valorisation des métiers et de l'image  du service et de la santé  au travail en général.</span>
-        </Card>
+        <SimpleCard cardClass="blue">
+          <strong className="card__strong">26 évènements</strong>
+          <br />
+          <span>
+            {" "}
+            ont été organisés par le service communication afin d'accompagner
+            les nouveauté en santé travai et promouvoir ainsi les nouvelles
+            missions du service.<br />
+            Chaque évènements est une opportunité de promotion et de
+            valorisation des métiers et de l'image du service et de la santé au
+            travail en général.
+          </span>
+        </SimpleCard>
       </div>
       <div className="col s12 m9">
-        <Carousel/>
+        <Carousel />
       </div>
     </div>
 
@@ -395,13 +407,13 @@ export default () => (
         </StatCard>
       </div>
     </div>
-    
+
     <style jsx>
-    {`
-      img{
-        width:
-      }
-    `}
+      {`
+        img {
+          width: ;
+        }
+      `}
     </style>
   </Layout>
 );

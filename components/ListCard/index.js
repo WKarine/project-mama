@@ -1,3 +1,4 @@
+// A finir, voir IconCard ou SimpleCard comme example
 import { categoryColors } from "../../constantes/colors";
 
 const ListCard = props => (
