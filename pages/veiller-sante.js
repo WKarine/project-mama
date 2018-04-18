@@ -1,6 +1,7 @@
 import Layout from "../components/Layout";
 import H2 from "../components/H2";
 import H3 from "../components/H3";
+import Card from "../components/Card";
 
 export default () => (
   <Layout>
@@ -24,23 +25,77 @@ export default () => (
       <H3 className="third-title">
         Tous les examens, les examens complémentaires
       </H3>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-        lacus nisi, pharetra id euismod et, tempor iaculis erat. Suspendisse
-        ullamcorper vehicula lacinia. Nullam non mauris a sem euismod
-        scelerisque pretium id nunc. Vestibulum posuere urna non mi convallis
-        accumsan. Nullam placerat posuere venenatis. Duis ligula sapien,
-        scelerisque eget rhoncus at, accumsan eu sem. Praesent ut massa sit amet
-        ex lobortis interdum et eget dolor. Vivamus ac elit felis. Donec nisi
-        lacus, laoreet at dui sit amet, bibendum convallis ligula. Integer eget
-        venenatis erat. Proin sit amet volutpat risus. Sed rhoncus aliquet
-        blandit. Ut porta orci quis erat fringilla sodales. Curabitur posuere
-        scelerisque facilisis. Curabitur id varius erat, nec consectetur orci.
-        Proin congue, sem non iaculis tincidunt, orci sapien lobortis felis, non
-        blandit leo leo in diam. Nulla sodales, magna in facilisis rhoncus, diam
-        nulla pellentesque lectus, sed volutpat erat risus sit amet lacus.
-        Vivamus pharetra pharetra diam. Praesent eget
-      </p>
+      <p>ici la card</p>
+
+      <div className="col s12">
+        <div className="col s6">
+          <strong className="card-title">
+            Les examens en centre de santé travail
+          </strong>
+          <p>
+            Le médecin du travail peut demander la réalisation de certains
+            examens en adéquation avec le métier ou le secteur d’activité du
+            salarié ou sa santé.
+          </p>
+          <p>
+            Ainsi, l’équipe santé travail peut réaliser les examens suivants
+            lors des visites en centre de santé au travail : vue, audition,
+            physiologie, biologie.
+          </p>
+        </div>
+        <div className="col s6">
+          <strong className="card-title">Les examens du plateau médical</strong>
+          <p>
+            PÔLE SANTÉ TRAVAIL a intégré un plateau médical regroupant 24
+            spécialités : cardiologie, pneumologie, ORL, psychologie,
+            dermatologie, etc.
+          </p>
+          <p>
+            Le salarié qui vient en visite de santé au travail peut être de
+            nouveau convoqué pour passer des examens prescrits par le médecin du
+            travail. Cela participe au suivi de santé et permet d’éclairer le
+            diagnostic du médecin du travail. Ces services sont compris dans la
+            cotisation.
+          </p>
+        </div>
+      </div>
+
+      <div classeName="partner col s12">
+        <div className="col s4">
+          <p>
+            Pôle Santé Travail a noué un partenariat avec CERBALLIANCE, un
+            laboratoire d’analyses biologiques.
+          </p>
+
+          <p>
+            Aujourd’hui, toutes nos analyses passent par ce laboratoire à la
+            suite des prélévements effectués par nos équipes sur prescription du
+            médecin du travail
+          </p>
+        </div>
+
+        <div className="col s8">
+          <p>
+            Pôle Santé Travail a noué un partenariat avec CERBALLIANCE, un
+            laboratoire d’analyses biologiques.
+          </p>
+          <p>
+            Aujourd’hui, toutes nos analyses passent par ce laboratoire à la
+            suite des prélévements effectués par nos équipes sur prescription du
+            médecin du travail
+          </p>
+          <p>
+            Pôle Santé Travail a noué un partenariat avec CERBALLIANCE, un
+            laboratoire d’analyses biologiques.
+          </p>
+          <p>
+            Aujourd’hui, toutes nos analyses passent par ce laboratoire à la
+            suite des prélévements effectués par nos équipes sur prescription du
+            médecin du travail
+          </p>
+        </div>
+      </div>
+
       <H2 className="secondary-title" id="sante-travail-equipe">
         La santé au travail, un travail d'équipe
       </H2>
@@ -92,17 +147,6 @@ export default () => (
         Vivamus pharetra pharetra diam. Praesent eget placerat felis, et tempus
         nulla. Donec id nulla maximus libero suscipit maximus quis in urna. Sed
         nec ipsum vel orci viverra maximus libero suscipit maximus quis in urna.
-        Sed nec ipsum vel orci viverra dignissim quis sed ipsum. Nam quis felis
-        ac dolor ullamcorper ultrices et iaculis ipsum. Suspendisse vitae felis
-        nec nibh aliquam pretium quis in mauris. Integer non justo tellus. Donec
-        sem nulla, rhoncus ultrices sem et, congue pellentesque magna. Nullam a
-        dui vehicula ligula commodo dignissim non vitae diam. Cras eleifend a ex
-        vel laoreet. Vivamus luctus urna nec neque fringilla, eget eleifend
-        ligula pretium. Praesent tincidunt ligula neque, id faucibus urna
-        facilisis vitae. Nullam nec lacus rutrum, aliquet velit eu, gravida
-        massa. Morbi viverra vitae tortor at congue. Duis fermentum nunc at
-        ullamcorper iaculis. Quisque id lorem urna. Morbi velit odio, convallis
-        at consectetur ut, vestibulum ut nulla. Curabitur lectus quam, semper at
         turpis eu, viverra bibendum erat. Sed blandit quis ante id eleifend.
         Cras neque dui, semper tincidunt rutrum et, suscipit in augue. Etiam id
         lectus purus. Vivamus enim nisl, sagittis vel varius ut, blandit at
@@ -176,19 +220,6 @@ export default () => (
         Proin congue, sem non iaculis tincidunt, orci sapien lobortis felis, non
         blandit leo leo in diam. Nulla sodales, magna in facilisis rhoncus, diam
         nulla pellentesque lectus, sed volutpat erat risus sit amet lacus.
-        Vivamus pharetra pharetra diam. Praesent eget placerat felis, et tempus
-        nulla. Donec id nulla maximus libero suscipit maximus quis in urna. Sed
-        nec ipsum vel orci viverra dignissim quis sed ipsum. Nam quis felis ac
-        dolor ullamcorper ultrices et iaculis ipsum. Suspendisse vitae felis nec
-        nibh aliquam pretium quis in mauris. Integer non justo tellus. Donec sem
-        nulla, rhoncus ultrices sem et, congue pellentesque magna. Nullam a dui
-        vehicula ligula commodo dignissim non vitae diam. Cras eleifend a ex vel
-        laoreet. Vivamus luctus urna nec neque fringilla, eget eleifend ligula
-        pretium. Praesent tincidunt ligula neque, id faucibus urna facilisis
-        vitae. Nullam nec lacus rutrum, aliquet velit eu, gravida massa. Morbi
-        viverra vitae tortor at congue. Duis fermentum nunc at ullamcorper
-        iaculis. Quisque id lorem urna. Morbi velit odio, convallis at
-        consectetur ut, vestibulum ut nulla. Curabitur lectus quam, semper at
         turpis eu, viverra bibendum erat. Sed blandit quis ante id eleifend.
         Cras neque dui, semper tincidunt rutrum et, suscipit in augue. Etiam id
         lectus purus. Vivamus enim nisl, sagittis vel varius ut, blandit at
@@ -217,7 +248,7 @@ export default () => (
           height: 50%;
         }
         strong {
-          font-size: 18px;
+          font-size: 22px;
           font-weight: bold;
         }
       `}
