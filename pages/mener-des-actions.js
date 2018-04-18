@@ -6,9 +6,7 @@ export default () => (
     <div className="row">
       <div className="col s12">
         <h1 className="main-title">CHRD</h1>
-        <H2 className="secondary-title" id="chrd">
-          CHRD
-        </H2>
+        <H2 id="chrd">CHRD</H2>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
           lacus nisi, pharetra id euismod et, tempor iaculis erat. Suspendisse
@@ -100,9 +98,7 @@ export default () => (
           nisl a arcu interdum, vitae fermentum neque semper. Aliquam quis ipsum
           tellus. Nulla et pellentesque felis.
         </p>
-        <H2 className="secondary-title" id="colorisk">
-          Colorisk
-        </H2>
+        <H2 id="colorisk">Colorisk</H2>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
           lacus nisi, pharetra id euismod et, tempor iaculis erat. Suspendisse
@@ -194,9 +190,7 @@ export default () => (
           nisl a arcu interdum, vitae fermentum neque semper. Aliquam quis ipsum
           tellus. Nulla et pellentesque felis.
         </p>
-        <H2 className="secondary-title" id="metiers-du-bois">
-          Les métiers du bois
-        </H2>
+        <H2 id="metiers-du-bois">Les métiers du bois</H2>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
           lacus nisi, pharetra id euismod et, tempor iaculis erat. Suspendisse

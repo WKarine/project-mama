@@ -10,9 +10,7 @@ export default () => (
           Ecouter et accompagner les entreprises dans leur démarche de
           prévention
         </h1>
-        <H2 className="secondary-title" id="aide-evaluation-risques">
-          L'aide à l'évaluation des risques
-        </H2>
+        <H2 id="aide-evaluation-risques">L'aide à l'évaluation des risques</H2>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
           lacus nisi, pharetra id euismod et, tempor iaculis erat. Suspendisse
@@ -104,9 +102,7 @@ export default () => (
           nisl a arcu interdum, vitae fermentum neque semper. Aliquam quis ipsum
           tellus. Nulla et pellentesque felis.
         </p>
-        <H2 className="secondary-title" id="conseils-en-entreprise">
-          Conseils en entreprise
-        </H2>
+        <H2 id="conseils-en-entreprise">Conseils en entreprise</H2>
         <H3 className="third-title">Etudes de postes</H3>
         <H3 className="third-title">Organisation de travail</H3>
         <p>
@@ -200,7 +196,7 @@ export default () => (
           nisl a arcu interdum, vitae fermentum neque semper. Aliquam quis ipsum
           tellus. Nulla et pellentesque felis.
         </p>
-        <H2 className="secondary-title" id="action-en-milieu-de-travail">
+        <H2 id="action-en-milieu-de-travail">
           Les actions en milieu de travail
         </H2>
         <H3 className="third-title">Ergonomie - Métrologie</H3>
@@ -300,9 +296,7 @@ export default () => (
           nisl a arcu interdum, vitae fermentum neque semper. Aliquam quis ipsum
           tellus. Nulla et pellentesque felis.
         </p>
-        <H2 className="secondary-title" id="enquetes-diagnostic">
-          Enquêtes et diagnostic
-        </H2>
+        <H2 id="enquetes-diagnostic">Enquêtes et diagnostic</H2>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
           lacus nisi, pharetra id euismod et, tempor iaculis erat. Suspendisse
@@ -394,7 +388,7 @@ export default () => (
           nisl a arcu interdum, vitae fermentum neque semper. Aliquam quis ipsum
           tellus. Nulla et pellentesque felis.
         </p>
-        <H2 className="secondary-title" id="drogues-alcool">
+        <H2 id="drogues-alcool">
           Apporter des réponses adaptées face aux problématiques de consommation
           de drogues et d'alcool sur le lieu de travail
         </H2>
@@ -489,7 +483,7 @@ export default () => (
           nisl a arcu interdum, vitae fermentum neque semper. Aliquam quis ipsum
           tellus. Nulla et pellentesque felis.
         </p>
-        <H2 className="secondary-title" id="maintien-emploi">
+        <H2 id="maintien-emploi">
           Accompagner les entreprises et les salariés dans la recherche de
           solutions pour le maintien dans l'emploi
         </H2>
@@ -584,7 +578,7 @@ export default () => (
           nisl a arcu interdum, vitae fermentum neque semper. Aliquam quis ipsum
           tellus. Nulla et pellentesque felis.
         </p>
-        <H2 className="secondary-title" id="formation-des-salaries">
+        <H2 id="formation-des-salaries">
           La formation des salariés sur la santé au travil
         </H2>
         <p>

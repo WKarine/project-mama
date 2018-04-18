@@ -7,9 +7,7 @@ export default () => (
     <div className="row">
       <div className="col s12">
         <h1 className="main-title">Mettre des moyens au service d'un projet</h1>
-        <H2 className="secondary-title" id="relations-adherents">
-          Relation adhérents
-        </H2>
+        <H2 id="relations-adherents">Relation adhérents</H2>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
           lacus nisi, pharetra id euismod et, tempor iaculis erat. Suspendisse
@@ -101,9 +99,7 @@ export default () => (
           nisl a arcu interdum, vitae fermentum neque semper. Aliquam quis ipsum
           tellus. Nulla et pellentesque felis.
         </p>
-        <H2 className="secondary-title" id="communication">
-          Communication
-        </H2>
+        <H2 id="communication">Communication</H2>
         <H3 className="third-title">
           Les supports d'information et de communication
         </H3>
@@ -199,9 +195,7 @@ export default () => (
           nisl a arcu interdum, vitae fermentum neque semper. Aliquam quis ipsum
           tellus. Nulla et pellentesque felis.
         </p>
-        <H2 className="secondary-title" id="immobiliers-investissements">
-          Immobiliers et investissements
-        </H2>
+        <H2 id="immobiliers-investissements">Immobiliers et investissements</H2>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
           lacus nisi, pharetra id euismod et, tempor iaculis erat. Suspendisse
