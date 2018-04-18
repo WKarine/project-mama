@@ -41,7 +41,7 @@ const SimpleCard = ({ cardClass, children }) => {
           }
 
           .simple-card .card__strong {
-            font-size: 1.3rem;
+            font-size: 1.5rem;
             font-variant: small-caps;
           }
         `}

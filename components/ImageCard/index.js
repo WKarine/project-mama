@@ -1,5 +1,5 @@
 const ImageCard = ({ imageSrc, title, children }) => (
-  <div className="card">
+  <div className="card image-card">
     <div className="card-image waves-effect waves-block waves-light">
       <img className="activator" src={imageSrc} />
     </div>
@@ -23,6 +23,10 @@ const ImageCard = ({ imageSrc, title, children }) => (
       {`
         .card {
           width: 350px;
+        }
+
+        .image-card .card-title {
+          font-size: 1.2rem;
         }
       `}
     </style>

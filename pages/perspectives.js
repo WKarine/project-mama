@@ -1,95 +1,118 @@
 import Layout from "../components/Layout";
-
+import { categoryColors } from "../constantes/colors";
 export default () => (
   <Layout>
     <div className="row">
-      <h1 className="main-title">Perspectives</h1>
-      <div className="col m12 ">
-        <img
-          className="responsive-img photo-director col m3"
-          src="static/images/perspectives/hardy.png"
-          title="director"
-        />
+      <div className="col s12 m8 offset-m2 ">
+        <h1 className="main-title">Perspectives</h1>
+      </div>
 
-        <p>
-          Depuis 2011, la santé au travail évolue pour s’adapter au monde de
-          l’entreprise, aux salariés et aux ressources des Services de Santé au
-          Travail Inter-entreprises.
-        </p>
+      <div className="col s12 m3 offset-m2">
+        <figure>
+          <img
+            className="responsive-img photo-director"
+            src="static/images/perspectives/hardy.png"
+            title="director"
+          />
 
-        <p>
-          2016 est à ce titre une année charnière et PÔLE SANTÉ TRAVAIL s’est
-          investi sur le plan national pour peser dans les débats et contribuer
-          à l’écriture d’une nouvelle loi, qui s’écarte des systématismes pour
-          permettre un suivi de santé adapté aux métiers, aux conditions de
-          travail, à l’âge et aux situations personnelles des salariés.
-        </p>
+          <figcaption>
+            <strong>"Louis-Marie Hardy,</strong>
+            <br />Directeur Général Pôle Santé Travail"
+          </figcaption>
+        </figure>
+      </div>
 
-        <p>
-          Une nouvelle loi qui replace la prévention au cœur de nos métiers avec
-          une diminution des obligations liées au suivi de santé, permettant
-          ainsi au médecin du travail de coordonner des actions collectives dans
-          une démarche globale de prévention.
-        </p>
+      <div className="row">
+        <div className="col s12 m5">
+          <p>
+            Depuis 2011, la santé au travail évolue pour s’adapter au monde de
+            l’entreprise, aux salariés et aux ressources des Services de Santé
+            au Travail Inter-entreprises.
+          </p>
 
-        <p>
-          Une nouvelle loi qui donne du sens à l’action en entreprise, valorise
-          le conseil et la proximité avec les entreprises et les branches
-          professionnelles. Une nouvelle loi qui permette aussi au salarié de
-          comprendre qu’il a une place majeure dans ce dispositif et que le
-          service de santé au travail est présent tout au long de son parcours
-          professionnel pour l’accompagner dans ses évolutions et pour prévenir
-          la désinsertion professionnelle.
-        </p>
+          <p>
+            2016 est à ce titre une année charnière et PÔLE SANTÉ TRAVAIL s’est
+            investi sur le plan national pour peser dans les débats et
+            contribuer à l’écriture d’une nouvelle loi, qui s’écarte des
+            systématismes pour permettre un suivi de santé adapté aux métiers,
+            aux conditions de travail, à l’âge et aux situations personnelles
+            des salariés.
+          </p>
 
-        <p>
-          La loi a été publiée le 8 août 2016 sous l’appellation LOI n°
-          2016-1088 relative au travail, à la modernisation du dialogue social
-          et à la sécurisation des parcours professionnels (article 102). Le
-          décret d’application a été publié le 27 décembre 2016. L’année 2017
-          sera consacrée à sa mise en application.
-        </p>
+          <p>
+            Une nouvelle loi qui replace la prévention au cœur de nos métiers
+            avec une diminution des obligations liées au suivi de santé,
+            permettant ainsi au médecin du travail de coordonner des actions
+            collectives dans une démarche globale de prévention.
+          </p>
 
-        <p>
-          PÔLE SANTÉ TRAVAIL a anticipé ces avancées et l’année 2016 a été
-          marquée par :{" "}
-        </p>
+          <p>
+            Une nouvelle loi qui donne du sens à l’action en entreprise,
+            valorise le conseil et la proximité avec les entreprises et les
+            branches professionnelles. Une nouvelle loi qui permette aussi au
+            salarié de comprendre qu’il a une place majeure dans ce dispositif
+            et que le service de santé au travail est présent tout au long de
+            son parcours professionnel pour l’accompagner dans ses évolutions et
+            pour prévenir la désinsertion professionnelle.
+          </p>
+        </div>
+      </div>
 
-        <strong>
-          UNE ORGANISATION CENTRÉE AUTOUR DE L’ÉQUIPE SANTÉ TRAVAIL{" "}
-        </strong>
+      <div className="row">
+        <div className="col s12 m5 offset-m2">
+          <p>
+            La loi a été publiée le 8 août 2016 sous l’appellation LOI n°
+            2016-1088 relative au travail, à la modernisation du dialogue social
+            et à la sécurisation des parcours professionnels (article 102). Le
+            décret d’application a été publié le 27 décembre 2016. L’année 2017
+            sera consacrée à sa mise en application.
+          </p>
 
-        <p>
-          La santé au travail est un travail d’équipe et le déploiement de notre
-          organisation s’est poursuivi. Plus de 50% des professionnels de
-          terrain rentrent aujourd’hui dans ce dispositif soit 56 équipes sur
-          l’ensemble du territoire de PÔLE SANTÉ TRAVAIL.
-        </p>
+          <p>
+            PÔLE SANTÉ TRAVAIL a anticipé ces avancées et l’année 2016 a été
+            marquée par:
+          </p>
 
-        <strong>
-          UNE POLITIQUE PATRIMONIALE AMBITIEUSE QUI FAVORISE UN SUIVI DE SANTÉ
-          DE QUALITÉ{" "}
-        </strong>
+          <strong>
+            UNE ORGANISATION CENTRÉE AUTOUR DE L’ÉQUIPE SANTÉ TRAVAIL
+          </strong>
 
-        <p>
-          PÔLE SANTÉ TRAVAIL poursuit un double objectif à travers la mise en
-          place de sa politique patrimoniale : offrir aux équipes de terrain un
-          outil de travail adapté et permettre aux salariés des entreprises
-          adhérentes de recevoir le meilleur suivi de santé possible. En 2016,
-          les travaux de rénovation ou d’agrandissement ont concerné
-          Hallennes-lez- Haubourdin et Leers. Le centre de Lille Jeanne d’Arc a
-          subi de grandes transformations pour accueillir les équipes de Lille
-          Masséna.
-        </p>
+          <p>
+            La santé au travail est un travail d’équipe et le déploiement de
+            notre organisation s’est poursuivi. Plus de 50% des professionnels
+            de terrain rentrent aujourd’hui dans ce dispositif soit 56 équipes
+            sur l’ensemble du territoire de PÔLE SANTÉ TRAVAIL.
+          </p>
 
-        <p>
-          Le maillage territorial s’est affiné et en 2016, nous comptons 24
-          centres de santé au travail.
-        </p>
+          <strong>
+            UNE POLITIQUE PATRIMONIALE AMBITIEUSE QUI FAVORISE UN SUIVI DE SANTÉ
+            DE QUALITÉ
+          </strong>
 
+          <p>
+            PÔLE SANTÉ TRAVAIL poursuit un double objectif à travers la mise en
+            place de sa politique patrimoniale : offrir aux équipes de terrain
+            un outil de travail adapté et permettre aux salariés des entreprises
+            adhérentes de recevoir le meilleur suivi de santé possible. En 2016,
+            les travaux de rénovation ou d’agrandissement ont concerné
+            Hallennes-lez- Haubourdin et Leers. Le centre de Lille Jeanne d’Arc
+            a subi de grandes transformations pour accueillir les équipes de
+            Lille Masséna.
+          </p>
+
+          <p>
+            Le maillage territorial s’est affiné et en 2016, nous comptons 24
+            centres de santé au travail.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div className="row">
+      <div className="col s12 m5 offset-m5 ">
         <strong>
           UNE MEILLEURE TRAÇABILITÉ ET UNE VALORISATION DE NOS ACTIONS AUTOUR
-          D’UN PROJET DIGITAL : SANTÉ TRAVAIL 3.0{" "}
+          D’UN PROJET DIGITAL : SANTÉ TRAVAIL 3.0
         </strong>
 
         <p>
@@ -126,7 +149,11 @@ export default () => (
           identification des substances CMR et donc une action sur la
           substitution des produits.
         </p>
+      </div>
+    </div>
 
+    <div className="row">
+      <div className="col s12 m5 offset-m2 ">
         <strong>UNE COMMUNICATION EXTERNE ACTIVE</strong>
 
         <p>
@@ -158,21 +185,29 @@ export default () => (
           masse salariale sont investis dans la formation. La Direction des
           Ressources Humaines s’implique également dans des événements comme le
           congrès des internes en santé travail pour nouer des liens privilégiés
-          avec les médecins du travail de demain
+          avec les médecins du travail de demain.
         </p>
       </div>
     </div>
-
     <style jsx>
       {`
         .photo-director {
-          height: 50% !important;
+          border: 2px inset ${categoryColors.blue};
+          border-radius: 50%;
+          padding: 0;
+          margin-right: 1rem;
+        }
+        figcaption {
+          color: ${categoryColors.blue};
+          font-size: 1rem;
+          font-style: italic;
+          text-align: center;
         }
         p {
           text-align: justify;
         }
         strong {
-          font-size: 18px;
+          color: ${categoryColors.blue};
           font-weight: bold;
         }
       `}

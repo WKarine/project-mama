@@ -197,6 +197,11 @@ class Carousel extends React.Component {
             domicile.
           </ImageCard>
         </a>
+        <style jsx>{`
+          .carousel {
+            height: 350px;
+          }
+        `}</style>
       </div>
     );
   }

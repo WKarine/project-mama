@@ -1,6 +1,6 @@
 import { categoryColors } from "../../constantes/colors";
 
-const H2 = ({id, children}) => (
+const H2 = ({ id, children }) => (
   <h2 id={id}>
     {children}
     <style jsx>
@@ -17,6 +17,12 @@ const H2 = ({id, children}) => (
           height: 1rem;
           margin-right: 1rem;
           width: 1rem;
+        }
+
+        @media only screen and (max-width: 992px) {
+          h2 {
+            font-size: 2rem;
+          }
         }
       `}
     </style>

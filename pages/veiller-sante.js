@@ -1,5 +1,8 @@
 import Layout from "../components/Layout";
+<<<<<<< HEAD
 import IconCard from "../components/IconCard";
+=======
+>>>>>>> 691f46bacedc0af4299ea3fc50dd6d564ecdcc38
 import SimpleCard from "../components/SimpleCard";
 import H2 from "../components/H2";
 import H3 from "../components/H3";
@@ -59,7 +62,7 @@ export default () => (
         <h1 className="main-title">Veiller sur la santé des salariés</h1>
       </div>
       <div className="col s12">
-        <H2 className="secondary-title" id="suivi-de-sante">
+        <H2 id="suivi-de-sante">
           Un suivi de santé de qualité adapté à chaque salarié
         </H2>
       </div>
@@ -79,7 +82,7 @@ export default () => (
       {/* secondary section */}
 
       <div className="col s12">
-        <H2 className="secondary-title" id="parcours-de-sante">
+        <H2 id="parcours-de-sante">
           Un parcours de santé pour tous les salariés
         </H2>
       </div>
@@ -155,7 +158,7 @@ export default () => (
       {/* third section */}
 
       <div className="col s12">
-        <H2 className="secondary-title" id="sante-travail-equipe">
+        <H2 id="sante-travail-equipe">
           La santé au travail, un travail d'équipe
         </H2>
       </div>
@@ -353,9 +356,7 @@ export default () => (
       </div>
 
       <div className="col s12">
-        <H2 className="secondary-title" id="tracabilite">
-          La traçabilité des actions
-        </H2>
+        <H2 id="tracabilite">La traçabilité des actions</H2>
       </div>
       <div className="col s12">
         <p>
@@ -374,9 +375,7 @@ export default () => (
       </div>
 
       <div className="col s12">
-        <H2 className="secondary-title" id="suivi-en-chiffres">
-          Le suivi de santé en chiffres
-        </H2>
+        <H2 id="suivi-en-chiffres">Le suivi de santé en chiffres</H2>
       </div>
 
       <div className="col s12">
