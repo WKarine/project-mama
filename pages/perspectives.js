@@ -1,16 +1,27 @@
 import Layout from "../components/Layout";
+import { categoryColors } from "../constantes/colors";
 
 export default () => (
   <Layout>
     <div className="row">
-      <h1 className="main-title">Perspectives</h1>
-      <div className="col m12 ">
-        <img
-          className="responsive-img photo-director col m3"
-          src="static/images/perspectives/hardy.png"
-          title="director"
-        />
+      <div className="col s12 m8 offset-m2 ">
+        <h1 className="main-title">Perspectives</h1>
+      </div>
 
+      <div className="col s12 m3 offset-m2">
+        <figure>
+          <img
+            className="responsive-img photo-director"
+            src="static/images/perspectives/hardy.png"
+            title="director"
+          />
+          <figcaption>
+            <strong>"Louis-Marie Hardy,</strong>
+            <br />Directeur Général Pôle Santé Travail"
+          </figcaption>
+        </figure>
+      </div>
+      <div className="col s12 m5">
         <p>
           Depuis 2011, la santé au travail évolue pour s’adapter au monde de
           l’entreprise, aux salariés et aux ressources des Services de Santé au
@@ -41,7 +52,9 @@ export default () => (
           professionnel pour l’accompagner dans ses évolutions et pour prévenir
           la désinsertion professionnelle.
         </p>
+      </div>
 
+      <div className="col s12 m5 offset-m2">
         <p>
           La loi a été publiée le 8 août 2016 sous l’appellation LOI n°
           2016-1088 relative au travail, à la modernisation du dialogue social
@@ -52,11 +65,11 @@ export default () => (
 
         <p>
           PÔLE SANTÉ TRAVAIL a anticipé ces avancées et l’année 2016 a été
-          marquée par :{" "}
+          marquée par:
         </p>
 
         <strong>
-          UNE ORGANISATION CENTRÉE AUTOUR DE L’ÉQUIPE SANTÉ TRAVAIL{" "}
+          UNE ORGANISATION CENTRÉE AUTOUR DE L’ÉQUIPE SANTÉ TRAVAIL
         </strong>
 
         <p>
@@ -68,7 +81,7 @@ export default () => (
 
         <strong>
           UNE POLITIQUE PATRIMONIALE AMBITIEUSE QUI FAVORISE UN SUIVI DE SANTÉ
-          DE QUALITÉ{" "}
+          DE QUALITÉ
         </strong>
 
         <p>
@@ -86,10 +99,14 @@ export default () => (
           Le maillage territorial s’est affiné et en 2016, nous comptons 24
           centres de santé au travail.
         </p>
+      </div>
+    </div>
 
+    <div className="row">
+      <div className="col s12 m5 offset-m5 ">
         <strong>
           UNE MEILLEURE TRAÇABILITÉ ET UNE VALORISATION DE NOS ACTIONS AUTOUR
-          D’UN PROJET DIGITAL : SANTÉ TRAVAIL 3.0{" "}
+          D’UN PROJET DIGITAL : SANTÉ TRAVAIL 3.0
         </strong>
 
         <p>
@@ -126,7 +143,11 @@ export default () => (
           identification des substances CMR et donc une action sur la
           substitution des produits.
         </p>
+      </div>
+    </div>
 
+    <div className="row">
+      <div className="col s12 m5 offset-m2 ">
         <strong>UNE COMMUNICATION EXTERNE ACTIVE</strong>
 
         <p>
@@ -158,7 +179,7 @@ export default () => (
           masse salariale sont investis dans la formation. La Direction des
           Ressources Humaines s’implique également dans des événements comme le
           congrès des internes en santé travail pour nouer des liens privilégiés
-          avec les médecins du travail de demain
+          avec les médecins du travail de demain.
         </p>
       </div>
     </div>
@@ -166,13 +187,24 @@ export default () => (
     <style jsx>
       {`
         .photo-director {
-          height: 50% !important;
+          border: 2px inset ${categoryColors.blue};
+          border-radius: 50%;
+          padding: 0;
+          margin-right: 1rem;
         }
+        figcaption {
+          color: ${categoryColors.blue};
+          font-size: 1rem;
+          font-style: italic;
+          text-align: center;
+        }
+
         p {
           text-align: justify;
         }
+
         strong {
-          font-size: 18px;
+          color: ${categoryColors.blue};
           font-weight: bold;
         }
       `}
