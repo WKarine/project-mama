@@ -1,6 +1,6 @@
 import { categoryColors } from "../../constantes/colors";
 
-const H2 = ({ id, children }) => (
+const H2 = ({id, children}) => (
   <h2 id={id}>
     {children}
     <style jsx>
