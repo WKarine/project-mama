@@ -11,11 +11,11 @@ const categoryLinks = [
       href: "qui-sommes-nous"
     },
     {
-      textContent: "Evénements de l'année",
+      textContent: "Les événements de l'année",
       href: "evenement-annees"
     },
     {
-      textContent: "Chiffres clés",
+      textContent: "Les chiffres clés",
       href: "chiffres-cles"
     }
   ],

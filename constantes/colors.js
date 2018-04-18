@@ -9,6 +9,8 @@ const brandColors = {
 
 const categoryColors = {
   blue: "#0082c8",
+  green: "#20bf6b",
+  grey: "#d9d9d9",
   orange: "#F29400",
   blueGradient: `linear-gradient(
     to top,

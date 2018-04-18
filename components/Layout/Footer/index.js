@@ -15,8 +15,8 @@ const Footer = props => (
       </p>
     </div>
 
-    <div className="footer__section">
-      <h5 className="white-text">Liens</h5>
+    <div className="footer__section footer__linksContainer">
+      <h5 className="white-text">LIENS</h5>
       <ul>
         <li>
           <Link href="https://www.polesantetravail.fr/wp-content/uploads/2017/09/Reglement-interieur-POLE-SANTE-TRAVAIL-2017.pdf">
@@ -54,7 +54,7 @@ const Footer = props => (
       </ul>
     </div>
 
-    <div className="footer__section">
+    <div className="footer__section footer__buttonsContainer">
       <ul className="footer__buttons">
         <li>
           <a className="waves-effect btn-flat">
@@ -85,6 +85,13 @@ const Footer = props => (
         flex-wrap: wrap;
       }
 
+      @media only screen and (max-width: 992px) {
+        .page-footer {
+          align-items: center;
+          flex-wrap: wrap;
+        }
+      }
+
       .footer__section {
         flex-basis: 25%;
         display: flex;
@@ -97,9 +104,44 @@ const Footer = props => (
         margin: auto;
       }
 
+      @media only screen and (max-width: 992px) {
+        .footer__logo {
+          display: none;
+        }
+      }
+
       .footer__mission {
         font-size: 0.7rem;
         padding: 0 0.5rem;
+      }
+
+      @media only screen and (max-width: 992px) {
+        .footer__mission {
+          text-align: center;
+        }
+      }
+
+      @media only screen and (max-width: 992px) {
+        .footer__mission {
+          flex-basis: 100%;
+        }
+      }
+
+      @media only screen and (max-width: 992px) {
+        .footer__linksContainer,
+        .footer__buttonsContainer {
+          flex-basis: 50%;
+          text-align: center;
+        }
+      }
+
+      @media only screen and (max-width: 992px) {
+        .footer__linksContainer h5 {
+          margin-bottom: 0;
+        }
+        .footer__linksContainer a {
+          font-size: 1rem;
+        }
       }
 
       .footer__buttons {
@@ -107,13 +149,20 @@ const Footer = props => (
         display: flex;
         flex-direction: column;
         justify-content: space-around;
-        align-items: center;
       }
 
       .btn-flat {
         color: whitesmoke;
         border: 1px solid whitesmoke;
         width: 12rem;
+      }
+
+      @media only screen and (max-width: 992px) {
+        .btn-flat {
+          font-size: 0.6rem;
+          margin: 0.5rem 0;
+          width: 10rem;
+        }
       }
 
       .btn-flat:hover {

@@ -1,26 +1,27 @@
 import { categoryColors } from "../../constantes/colors";
 
-const H2 = ({id, children}) => (
-  <h2 id={id}>
+const H3 = ({ id, children }) => (
+  <h3 id={id}>
     {children}
     <style jsx>
       {`
-        h2 {
-          font-size: 3rem;
+        h3 {
+          font-size: 2rem;
           font-variant: small-caps;
         }
 
-        h2:before {
-          background-color: ${categoryColors.blue};
+        h3:before {
+          background-color: ${categoryColors.grey};
           content: "";
           display: inline-block;
           height: 1rem;
+          margin-left: 2rem;
           margin-right: 1rem;
           width: 1rem;
         }
       `}
     </style>
-  </h2>
+  </h3>
 );
 
-export default H2;
+export default H3;
