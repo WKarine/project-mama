@@ -34,14 +34,14 @@ html {
   }
 }
 
-.main-title {
+h1 {
   text-align: center;
   color: #0082c8;
   font-variant: small-caps;
   margin-bottom: 3rem;
 }
 
-.main-title:after {
+h1:after {
   content: ""; /* This is necessary for the pseudo element to work. */
   display: block; /* This will put the pseudo element on its own line. */
   margin: 0 auto; /* This will center the border. */
