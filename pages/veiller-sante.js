@@ -1,8 +1,5 @@
 import Layout from "../components/Layout";
-<<<<<<< HEAD
 import IconCard from "../components/IconCard";
-=======
->>>>>>> 691f46bacedc0af4299ea3fc50dd6d564ecdcc38
 import SimpleCard from "../components/SimpleCard";
 import H2 from "../components/H2";
 import H3 from "../components/H3";
