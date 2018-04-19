@@ -17,7 +17,6 @@ class Index extends React.Component {
   }
 
   render() {
-    console.dir(this.props);
     return (
       <Layout>
         <div className="row">
@@ -45,7 +44,7 @@ class Index extends React.Component {
             <div className="row">
               <div className="col s12 m6">
                 <section className="news">
-                  <News />
+                  <News dataList={this.props} />
                 </section>
               </div>
             </div>
