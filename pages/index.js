@@ -17,6 +17,7 @@ class Index extends React.Component {
   }
 
   render() {
+    console.dir(this.props);
     return (
       <Layout>
         <div className="row">
@@ -37,16 +38,19 @@ class Index extends React.Component {
                 <i className="material-icons left">insert_chart</i>commencer la
                 visite
               </a>
-
-              {/* <div className="row">
-          <div className="col s12 m6">
-            <News />
-          </div>
-        </div> */}
             </div>
           </section>
-        </div>
 
+          <div className="container">
+            <div className="row">
+              <div className="col s12 m6">
+                <section className="news">
+                  <News />
+                </section>
+              </div>
+            </div>
+          </div>
+        </div>
         <style jsx>
           {`
         .col {
