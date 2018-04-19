@@ -72,7 +72,22 @@ class Sidenav extends React.Component {
             left: 1rem;
             position: absolute;
             top: 1rem;
-            z-index: 10;
+            z-index: 9;
+          }
+
+          ::-webkit-scrollbar {
+            width: 0.5rem;
+          }
+
+          ::-webkit-scrollbar-track {
+            -webkit-box-shadow: 0 0 6px rgba(0, 0, 0, 0.8);
+            border-radius: 2px;
+            background: ${sideNavColors.scrollBar};
+          }
+
+          ::-webkit-scrollbar-thumb {
+            border-radius: 2px;
+            background: white;
           }
         `}</style>
       </div>
