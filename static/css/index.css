@@ -57,7 +57,9 @@ html {
 }
 
 #content p {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 @media only screen and (max-width: 992px) {
