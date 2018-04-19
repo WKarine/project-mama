@@ -4,6 +4,7 @@ import SimpleCard from "../components/SimpleCard";
 import H2 from "../components/H2";
 import H3 from "../components/H3";
 import StatCard from "../components/StatCard";
+import Link from "next/link";
 
 const dataList = [
   {
@@ -112,17 +113,19 @@ export default () => (
         </p>
 
         <div classeName="partner">
-          <img
-            className="responsive-img photo logo-partner"
-            src="static/images/suivi-sante/logo-partner.jpg"
-            title="logo-partner"
-          />
-
+          <Link href="http://www.cerballiance.fr/home">
+            <a target="_blank">
+              <img
+                className="responsive-img photo logo-partner"
+                src="static/images/suivi-sante/logo-partner.jpg"
+                title="logo-partner"
+              />
+            </a>
+          </Link>
           <p>
             Pôle Santé Travail a noué un partenariat avec CERBALLIANCE, un
             laboratoire d’analyses biologiques.
           </p>
-
           <p>
             Aujourd’hui, toutes nos analyses passent par ce laboratoire à la
             suite des prélévements effectués par nos équipes sur prescription du
@@ -180,7 +183,7 @@ export default () => (
           Le curriculum laboris est confidentiel, il ne peut être transmis à
           l’employeur.
         </p>
-        <p>Ici la card</p>
+        <strong>79 EQUIPES SANTE TRAVAIL</strong>
       </div>
 
       <div className="col s12 m6">
@@ -356,29 +359,72 @@ export default () => (
         <H2 id="tracabilite">La traçabilité des actions</H2>
       </div>
       <div className="col s12">
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-          lacus nisi, pharetra id euismod et, tempor iaculis erat. Suspendisse
-          ullamcorper vehicula lacinia. Nullam non mauris a sem euismod
-          scelerisque pretium id nunc. Vestibulum posuere urna non mi convallis
-          accumsan. Nullam placerat posuere venenatis. Duis ligula sapien,
-          scelerisque eget rhoncus at, accumsan eu sem. Praesent ut massa sit
-          amet ex lobortis interdum et eget dolor. Vivamus ac elit felis. Donec
-          nisi lacus, laoreet at dui sit amet, bibendum convallis ligula.
-          Integer eget venenatis erat. Proin sit amet volutpat risus. Sed
-          rhoncus aliquet blandit. Ut porta orci quis erat fringilla sodales.
-          Curabitur posuere scelerisque facilisis.
-        </p>
+        <p>Section en construction</p>
       </div>
 
       <div className="col s12">
         <H2 id="suivi-en-chiffres">Le suivi de santé en chiffres</H2>
       </div>
 
-      <div className="col s12">
-        <p>
-          neque semper. Aliquam quis ipsum tellus. Nulla et pellentesque felis.
-        </p>
+      <div className="col s12 m3">
+        <StatCard icone="people" cardClass="blue">
+          <strong>30 068</strong>
+          <p>Examens d'aptitude à l'embauche</p>
+
+          <strong>17 459</strong>
+          <p>Examens d'aptitude périodiques</p>
+
+          <strong>6 634</strong>
+          <p>Examens à la demande du salarié</p>
+        </StatCard>
+      </div>
+
+      <div className="col s12 m3">
+        <StatCard icone="people" cardClass="blue">
+          <strong>7 601</strong>
+          <p>Examens à la demande de l'employeur</p>
+
+          <strong>8 715</strong>
+          <p>Examens à la demande du médecin du travail</p>
+
+          <strong>11 709</strong>
+          <p>Examens de pré-reprise</p>
+        </StatCard>
+      </div>
+
+      <div className="col s12 m3">
+        <StatCard icone="people" cardClass="blue">
+          <strong>82 450</strong>
+          <p>Avis d'aptitude</p>
+
+          <strong>4 510</strong>
+          <p>Avis d'inaptitude</p>
+
+          <strong>4 508</strong>
+          <p>Salariés déclarés inaptes</p>
+
+          <strong>14 265</strong>
+          <p>Propositions d'aménagements</p>
+        </StatCard>
+      </div>
+
+      <div className="col s12 m3">
+        <StatCard icone="people" cardClass="blue">
+          <strong>44 336</strong>
+          <p>VIP à l'embauche réalisées par les médecins</p>
+
+          <strong>21 717</strong>
+          <p>VIP à l'embauche réalisées par les infirmiers</p>
+
+          <strong>20 811</strong>
+          <p>VIP périodiques réalisées par les médecins</p>
+
+          <strong>225</strong>
+          <p>Visites intermédiaires (postes à risques) par les médecins</p>
+
+          <strong>2 961</strong>
+          <p>Visites intermédiaires par les infirmiers</p>
+        </StatCard>
       </div>
     </div>
 
