@@ -65,11 +65,13 @@ export default () => (
         <H3>Dispositif de surveillence</H3>
 
         <div className="col s12 m6 offset-m3">
-          <img
-            className="responsive-img photo-schema"
-            src="static/images/suivi-sante/schema.png"
-            title="schema"
-          />
+          <a href="static/images/suivi-sante/schema.png">
+            <img
+              className="responsive-img photo-schema"
+              src="static/images/suivi-sante/schema.png"
+              title="schema"
+            />
+          </a>
         </div>
 
         <H2 id="parcours-de-sante">
@@ -78,15 +80,15 @@ export default () => (
 
         <H3>Tous les examens, les examens complémentaires</H3>
 
-        <div className="col s12 m3">
+        <div className="col s12 m5 offset-m1">
           <IconCard cardClass="green" dataList={dataList} />
         </div>
 
-        <div className="col s12 m3">
+        <div className="col s12 m5 offset-m1">
           <IconCard cardClass="white" dataList={dataList_2} />
         </div>
 
-        <div className="col s12 m3">
+        <div className="col s12 m4 offset-m1">
           <strong>Les examens en centre de santé travail</strong>
           <p>
             Le médecin du travail peut demander la réalisation de certains
@@ -121,7 +123,7 @@ export default () => (
           </div>
         </div>
 
-        <div className="col s12 m3">
+        <div className="col s12 m5 offset-m2">
           <strong>Les examens du plateau médical</strong>
 
           <p>
@@ -147,7 +149,7 @@ export default () => (
           La santé au travail, un travail d'équipe
         </H2>
 
-        <div className="col s12 m6">
+        <div className="col s12 m6 offset-m1">
           <p>
             Chaque salarié bénéficie d’un curriculum laboris qui retrace son
             parcours professionnel.
@@ -174,17 +176,19 @@ export default () => (
           <strong>79 EQUIPES SANTE TRAVAIL</strong>
         </div>
 
-        <div className="col s12 m6">
-          <img
-            className="responsive-img photo-roue col s6"
-            src="static/images/suivi-sante/roue.png"
-            title="roue"
-          />
+        <div className="col s12 m5">
+          <a href="static/images/suivi-sante/roue.png">
+            <img
+              className="responsive-img photo-roue col s6"
+              src="static/images/suivi-sante/roue.png"
+              title="roue"
+            />
+          </a>
         </div>
 
         <H3>Présentation des acteurs</H3>
 
-        <div className="col s12 m6 offset-m6">
+        <div className="col s12 m6">
           <SimpleCard cardClass="white">
             <strong>Le médecin du travail</strong>
 
@@ -228,6 +232,49 @@ export default () => (
               <li>Animer une équipe santé travail </li>
             </ul>
           </SimpleCard>
+
+          <SimpleCard cardClass="white">
+            <strong>L'assistant d'équipe</strong>
+
+            <p>Une interface relationnelle</p>
+
+            <ul className="card__list">
+              <li>
+                Assurer un relationnel de premier niveau avec les entreprises
+                (information, suivi de dossier, etc.).
+              </li>
+
+              <li>
+                Prendre en charge l’aspect logistique des vacations santé
+                travail (convocations, prise de rendez-vous, accueil du public,
+                gestion des plannings, rédaction de courriers et de
+                compte-rendu).
+              </li>
+
+              <li>
+                Réaliser des examens complémentaires (visiotest, audio, BDV,
+                test urinaire…).
+              </li>
+
+              <li>
+                Assurer le recueil et la traçabilité des informations dans le
+                dossier médical du salarié.
+              </li>
+
+              <li>
+                Planifier, organiser les réunions d’équipe. Présence au CHSCT (à
+                la place du médecin avec des missions spécifiques)
+              </li>
+            </ul>
+          </SimpleCard>
+
+          <p>
+            Dans un second temps, si le médecin du travail le juge pertinent,
+            d’autres acteurs peuvent être mobilisés au service de l’entreprise
+            selon les problématiques :
+          </p>
+
+          <strong>ERGONOME, METROLOGUE, TOXICOLOGUE, etc</strong>
         </div>
 
         <div className="col s12 m6">
@@ -294,46 +341,7 @@ export default () => (
               </li>
             </ul>
           </SimpleCard>
-        </div>
 
-        <div className="col s12 m6 offset-m6">
-          <SimpleCard cardClass="white">
-            <strong>L'assistant d'équipe</strong>
-
-            <p>Une interface relationnelle</p>
-
-            <ul className="card__list">
-              <li>
-                Assurer un relationnel de premier niveau avec les entreprises
-                (information, suivi de dossier, etc.).
-              </li>
-
-              <li>
-                Prendre en charge l’aspect logistique des vacations santé
-                travail (convocations, prise de rendez-vous, accueil du public,
-                gestion des plannings, rédaction de courriers et de
-                compte-rendu).
-              </li>
-
-              <li>
-                Réaliser des examens complémentaires (visiotest, audio, BDV,
-                test urinaire…).
-              </li>
-
-              <li>
-                Assurer le recueil et la traçabilité des informations dans le
-                dossier médical du salarié.
-              </li>
-
-              <li>
-                Planifier, organiser les réunions d’équipe. Présence au CHSCT (à
-                la place du médecin avec des missions spécifiques)
-              </li>
-            </ul>
-          </SimpleCard>
-        </div>
-
-        <div className="col s12 m6">
           <SimpleCard cardClass="white">
             <strong>L'ASSISTANT SANTÉ TRAVAIL </strong>
 
@@ -367,15 +375,7 @@ export default () => (
           </SimpleCard>
         </div>
 
-        <div className="col s12">
-          <p>
-            Dans un second temps, si le médecin du travail le juge pertinent,
-            d’autres acteurs peuvent être mobilisés au service de l’entreprise
-            selon les problématiques :{" "}
-          </p>
-
-          <strong>ERGONOME, METROLOGUE, TOXICOLOGUE, etc</strong>
-        </div>
+        <div className="col s12" />
 
         <H2 id="tracabilite">La traçabilité des actions</H2>
 
