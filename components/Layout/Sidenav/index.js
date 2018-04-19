@@ -10,7 +10,14 @@ class Sidenav extends React.Component {
   componentDidMount() {
     // Dès que le composant est initialisé on initialise aussi le js de materialize
     // Afin que la sidebar et les sous-menu fonctionnent correctement
-    M.AutoInit();
+    const $sidenav = document.querySelector(".sidenav");
+    M.Sidenav.init($sidenav, {
+      preventScrolling: false
+    });
+
+    const $subCategories = document.querySelectorAll(".collapsible");
+    M.Collapsible.init($subCategories);
+    // M.AutoInit();
   }
 
   render() {
@@ -18,7 +25,7 @@ class Sidenav extends React.Component {
 
     return (
       <div>
-        <ul id="slide-out" className="sidenav z-depth-1">
+        <ul id="slide-out" className="sidenav sidenav-fixed z-depth-1">
           <Link href="/">
             <a className="logo-container">
               <img className="logo" src="static/images/logo.jpg" />
