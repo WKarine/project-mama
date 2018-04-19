@@ -9,7 +9,7 @@ export default () => (
       <div className="row">
         <H1>Perspectives</H1>
 
-        <div className="col s12 m3">
+        <div className="col s12 m4">
           <figure>
             <img
               className="responsive-img photo-director"
@@ -24,7 +24,7 @@ export default () => (
           </figure>
         </div>
 
-        <div className="col s12 m5">
+        <div className="col s12 m6 offset-m2">
           <p>
             Depuis 2011, la santé au travail évolue pour s’adapter au monde de
             l’entreprise, aux salariés et aux ressources des Services de Santé
@@ -58,7 +58,7 @@ export default () => (
           </p>
         </div>
 
-        <div className="col s12 m5">
+        <div className="col s12 m6">
           <p>
             La loi a été publiée le 8 août 2016 sous l’appellation LOI n°
             2016-1088 relative au travail, à la modernisation du dialogue social
