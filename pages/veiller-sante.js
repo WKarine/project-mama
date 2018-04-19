@@ -92,7 +92,6 @@ export default () => (
           </H3>
         </div>
 
-<<<<<<< HEAD
         <div className="col s12 m3">
           <IconCard cardClass="green" dataList={dataList} />
         </div>
@@ -102,7 +101,6 @@ export default () => (
 
         <div className="col s12 m3">
           <strong>Les examens en centre de santé travail</strong>
-=======
       <div className="col s12 m3">
         <strong>Les examens en centre de santé travail</strong>
         <p>
@@ -127,7 +125,6 @@ export default () => (
               />
             </a>
           </Link>
->>>>>>> Add content veiller santé
           <p>
             Le médecin du travail peut demander la réalisation de certains
             examens en adéquation avec le métier ou le secteur d’activité du
@@ -175,12 +172,10 @@ export default () => (
             cotisation.
           </p>
 
-<<<<<<< HEAD
           <div className="statsCards-container">
             <IconCard cardClass="white" dataList={dataList_3} />
           </div>
         </div>
-=======
       <div className="col s12 m6">
         <p>
           Chaque salarié bénéficie d’un curriculum laboris qui retrace son
@@ -203,7 +198,6 @@ export default () => (
         </p>
         <strong>79 EQUIPES SANTE TRAVAIL</strong>
       </div>
->>>>>>> Add content veiller santé
 
         {/* third section */}
 
@@ -341,7 +335,6 @@ export default () => (
           </SimpleCard>
         </div>
 
-<<<<<<< HEAD
         <div className="col s12 m6 offset-m6">
           <SimpleCard cardClass="white">
             <strong>L'assistant d'équipe</strong>
@@ -372,14 +365,12 @@ export default () => (
             </ul>
           </SimpleCard>
         </div>
-=======
       <div className="col s12">
         <H2 id="tracabilite">La traçabilité des actions</H2>
       </div>
       <div className="col s12">
         <p>Section en construction</p>
       </div>
->>>>>>> Add content veiller santé
 
         <div className="col s12 m6">
           <SimpleCard cardClass="white">
@@ -408,7 +399,6 @@ export default () => (
           </SimpleCard>
         </div>
 
-<<<<<<< HEAD
         <div className="col s12">
           <p>
             Dans un second temps, si le médecin du travail le juge pertinent,
@@ -447,7 +437,6 @@ export default () => (
             felis.
           </p>
         </div>
-=======
       <div className="col s12 m3">
         <StatCard icone="people" cardClass="blue">
           <strong>30 068</strong>
@@ -455,7 +444,6 @@ export default () => (
 
           <strong>17 459</strong>
           <p>Examens d'aptitude périodiques</p>
-
           <strong>6 634</strong>
           <p>Examens à la demande du salarié</p>
         </StatCard>
@@ -507,7 +495,6 @@ export default () => (
           <strong>2 961</strong>
           <p>Visites intermédiaires par les infirmiers</p>
         </StatCard>
->>>>>>> Add content veiller santé
       </div>
     </div>
 
