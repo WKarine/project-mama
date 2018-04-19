@@ -4,13 +4,18 @@ import Layout from "../components/Layout";
 
 class TestService extends React.Component {
   static async getInitialProps({ req }) {
-    const users = await Services.users.getAdmins();
-
-    return users;
+    const charts = await Services.charts.getCharts();
+    return charts;
   }
 
   render() {
-    return <Layout />;
+    return (
+      <Layout>
+        <div className="row">
+          <p>{this.props.charts}</p>
+        </div>
+      </Layout>
+    );
   }
 }
 
