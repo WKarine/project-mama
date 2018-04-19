@@ -57,6 +57,10 @@ const StatCard = ({ cardClass, icone, children }) => {
           .stat-card.card-blue span {
             color: ${categoryColors.fontColor} !important;
           }
+
+          .stat-card.card-blue p {
+            color: ${categoryColors.fontColor};
+          }
         `}
       </style>
     </div>

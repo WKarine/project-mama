@@ -1,28 +1,29 @@
 import Layout from "../components/Layout";
+import H1 from "../components/H1";
+
 import { categoryColors } from "../constantes/colors";
+
 export default () => (
   <Layout>
-    <div className="row">
-      <div className="col s12 m8 offset-m2 ">
-        <h1 className="main-title">Perspectives</h1>
-      </div>
-
-      <div className="col s12 m3 offset-m2">
-        <figure>
-          <img
-            className="responsive-img photo-director"
-            src="static/images/perspectives/hardy.png"
-            title="director"
-          />
-
-          <figcaption>
-            <strong>"Louis-Marie Hardy,</strong>
-            <br />Directeur Général Pôle Santé Travail"
-          </figcaption>
-        </figure>
-      </div>
-
+    <div className="container">
       <div className="row">
+        <H1>Perspectives</H1>
+
+        <div className="col s12 m3">
+          <figure>
+            <img
+              className="responsive-img photo-director"
+              src="static/images/perspectives/hardy.png"
+              title="director"
+            />
+
+            <figcaption>
+              <strong>"Louis-Marie Hardy,</strong>
+              <br />Directeur Général Pôle Santé Travail"
+            </figcaption>
+          </figure>
+        </div>
+
         <div className="col s12 m5">
           <p>
             Depuis 2011, la santé au travail évolue pour s’adapter au monde de
@@ -56,10 +57,8 @@ export default () => (
             pour prévenir la désinsertion professionnelle.
           </p>
         </div>
-      </div>
 
-      <div className="row">
-        <div className="col s12 m5 offset-m2">
+        <div className="col s12 m5">
           <p>
             La loi a été publiée le 8 août 2016 sous l’appellation LOI n°
             2016-1088 relative au travail, à la modernisation du dialogue social
@@ -106,10 +105,8 @@ export default () => (
           </p>
         </div>
       </div>
-    </div>
 
-    <div className="row">
-      <div className="col s12 m5 offset-m5 ">
+      <div className="col s12 m5">
         <strong>
           UNE MEILLEURE TRAÇABILITÉ ET UNE VALORISATION DE NOS ACTIONS AUTOUR
           D’UN PROJET DIGITAL : SANTÉ TRAVAIL 3.0
@@ -150,10 +147,8 @@ export default () => (
           substitution des produits.
         </p>
       </div>
-    </div>
 
-    <div className="row">
-      <div className="col s12 m5 offset-m2 ">
+      <div className="col s12 m5">
         <strong>UNE COMMUNICATION EXTERNE ACTIVE</strong>
 
         <p>
@@ -189,28 +184,30 @@ export default () => (
         </p>
       </div>
     </div>
-    <style jsx>
-      {`
-        .photo-director {
-          border: 2px inset ${categoryColors.blue};
-          border-radius: 50%;
-          padding: 0;
-          margin-right: 1rem;
-        }
-        figcaption {
-          color: ${categoryColors.blue};
-          font-size: 1rem;
-          font-style: italic;
-          text-align: center;
-        }
-        p {
-          text-align: justify;
-        }
-        strong {
-          color: ${categoryColors.blue};
-          font-weight: bold;
-        }
-      `}
-    </style>
+
+    <style jsx>{`
+      .photo-director {
+        border: 2px inset ${categoryColors.blue};
+        border-radius: 50%;
+        padding: 0;
+        margin-right: 1rem;
+      }
+
+      figcaption {
+        color: ${categoryColors.blue};
+        font-size: 1rem;
+        font-style: italic;
+        text-align: center;
+      }
+
+      p {
+        text-align: justify;
+      }
+
+      strong {
+        color: ${categoryColors.blue};
+        font-weight: bold;
+      }
+    `}</style>
   </Layout>
 );

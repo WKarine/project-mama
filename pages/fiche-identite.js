@@ -1,4 +1,5 @@
 import Layout from "../components/Layout";
+import H1 from "../components/H1";
 import H2 from "../components/H2";
 import SimpleCard from "../components/SimpleCard";
 import Carousel from "../components/Carousel";
@@ -10,13 +11,9 @@ export default () => (
   <Layout>
     <div className="container">
       <div className="row">
-        <div className="col s12">
-          <h1>fiche d'identité</h1>
-        </div>
+        <H1>fiche d'identité</H1>
 
-        <div className="col s12">
-          <H2 id="qui-sommes-nous">qui sommes-nous ?</H2>
-        </div>
+        <H2 id="qui-sommes-nous">qui sommes-nous ?</H2>
 
         <div className="col s12 m4">
           <SimpleCard cardClass="white">
@@ -68,9 +65,7 @@ export default () => (
           />
         </div>
 
-        <div className="col s12">
-          <H2>les évènements marquant de l'année</H2>
-        </div>
+        <H2>les évènements marquant de l'année</H2>
 
         <div className="col s12 m4">
           <div className="events__cardContainer">
@@ -124,21 +119,19 @@ export default () => (
         </div>
       </div>
     </div>
-    <style jsx>
-      {`
-        .events__cardContainer {
-          height: 350px;
-          display: flex;
-          justify-content: center;
-          align-items: flex-end;
-        }
+    <style jsx>{`
+      .events__cardContainer {
+        height: 350px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+      }
 
-        @media only screen and (max-width: 992px) {
-          .events__cardContainer {
-            height: initial;
-          }
+      @media only screen and (max-width: 992px) {
+        .events__cardContainer {
+          height: initial;
         }
-      `}
-    </style>
+      }
+    `}</style>
   </Layout>
 );

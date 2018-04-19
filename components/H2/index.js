@@ -1,8 +1,8 @@
 import { categoryColors } from "../../constantes/colors";
 
 const H2 = ({ id, children }) => (
-  <h2 id={id}>
-    {children}
+  <div className="col s12">
+    <h2 id={id}>{children}</h2>
     <style jsx>
       {`
         h2 {
@@ -26,7 +26,7 @@ const H2 = ({ id, children }) => (
         }
       `}
     </style>
-  </h2>
+  </div>
 );
 
 export default H2;

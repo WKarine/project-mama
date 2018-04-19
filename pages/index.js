@@ -50,8 +50,7 @@ class Index extends React.Component {
             </div>
           </div>
         </div>
-        <style jsx>
-          {`
+        <style jsx>{`
         .col {
           padding: 0 !important;
         }
@@ -144,8 +143,7 @@ class Index extends React.Component {
           padding: 1.5rem;
           display: none;
         }
-      `}
-        </style>
+      `}</style>
       </Layout>
     );
   }

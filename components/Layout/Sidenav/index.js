@@ -20,9 +20,9 @@ class Sidenav extends React.Component {
       <div>
         <ul id="slide-out" className="sidenav z-depth-1">
           <Link href="/">
-            <div className="logo-container">
+            <a className="logo-container">
               <img className="logo" src="static/images/logo.jpg" />
-            </div>
+            </a>
           </Link>
 
           {/* On affiche tout les liens, array = sous-menu, sinon lien normal */}
