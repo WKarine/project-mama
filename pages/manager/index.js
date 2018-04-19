@@ -5,11 +5,13 @@ import PanelAdmin from "./PanelAdmin";
 
 export default () => (
   <Layout>
-    <div className="row">
-      <div className="col s12">
-        <h1 className="main-title">Admin</h1>
-        <ConnectionForm />
-        <PanelAdmin />
+    <div className="container">
+      <div className="row">
+        <div className="col s12">
+          <h1>Admin</h1>
+          <ConnectionForm />
+          <PanelAdmin />
+        </div>
       </div>
     </div>
 
