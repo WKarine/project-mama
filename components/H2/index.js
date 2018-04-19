@@ -6,7 +6,7 @@ const H2 = ({ id, children }) => (
     <style jsx>
       {`
         h2 {
-          font-size: 3rem;
+          font-size: 2.5rem;
           font-variant: small-caps;
         }
 
@@ -14,9 +14,9 @@ const H2 = ({ id, children }) => (
           background-color: ${categoryColors.blue};
           content: "";
           display: inline-block;
-          height: 1rem;
+          height: 1.5rem;
           margin-right: 1rem;
-          width: 1rem;
+          width: 1.5rem;
         }
 
         @media only screen and (max-width: 992px) {
