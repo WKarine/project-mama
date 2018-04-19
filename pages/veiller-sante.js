@@ -4,6 +4,7 @@ import SimpleCard from "../components/SimpleCard";
 import H2 from "../components/H2";
 import H3 from "../components/H3";
 import StatCard from "../components/StatCard";
+import Link from "next/link";
 
 const dataList = [
   {
@@ -91,6 +92,7 @@ export default () => (
           </H3>
         </div>
 
+<<<<<<< HEAD
         <div className="col s12 m3">
           <IconCard cardClass="green" dataList={dataList} />
         </div>
@@ -100,12 +102,37 @@ export default () => (
 
         <div className="col s12 m3">
           <strong>Les examens en centre de santé travail</strong>
+=======
+      <div className="col s12 m3">
+        <strong>Les examens en centre de santé travail</strong>
+        <p>
+          Le médecin du travail peut demander la réalisation de certains examens
+          en adéquation avec le métier ou le secteur d’activité du salarié ou sa
+          santé.
+        </p>
+
+        <p>
+          Ainsi, l’équipe santé travail peut réaliser les examens suivants lors
+          des visites en centre de santé au travail : vue, audition,
+          physiologie, biologie.
+        </p>
+
+        <div classeName="partner">
+          <Link href="http://www.cerballiance.fr/home">
+            <a target="_blank">
+              <img
+                className="responsive-img photo logo-partner"
+                src="static/images/suivi-sante/logo-partner.jpg"
+                title="logo-partner"
+              />
+            </a>
+          </Link>
+>>>>>>> Add content veiller santé
           <p>
             Le médecin du travail peut demander la réalisation de certains
             examens en adéquation avec le métier ou le secteur d’activité du
             salarié ou sa santé.
           </p>
-
           <p>
             Ainsi, l’équipe santé travail peut réaliser les examens suivants
             lors des visites en centre de santé au travail : vue, audition,
@@ -148,10 +175,35 @@ export default () => (
             cotisation.
           </p>
 
+<<<<<<< HEAD
           <div className="statsCards-container">
             <IconCard cardClass="white" dataList={dataList_3} />
           </div>
         </div>
+=======
+      <div className="col s12 m6">
+        <p>
+          Chaque salarié bénéficie d’un curriculum laboris qui retrace son
+          parcours professionnel.
+        </p>
+        <p>
+          Pour le constituer l’équipe santé travail recherche pour chaque métier
+          exercé par le salarié les différentes expositions possibles (risques
+          physiques, chimiques, biologiques, organisationnels...).
+        </p>
+        <p>
+          Toutes les données seront tracées et ainsi conservées dans le dossier
+          médical santé travail. L’équipe santé travail évalue ainsi le risque
+          encouru par le salarié pour sa santé aujourd’hui mais aussi pour
+          demain.
+        </p>
+        <p>
+          Le curriculum laboris est confidentiel, il ne peut être transmis à
+          l’employeur.
+        </p>
+        <strong>79 EQUIPES SANTE TRAVAIL</strong>
+      </div>
+>>>>>>> Add content veiller santé
 
         {/* third section */}
 
@@ -289,6 +341,7 @@ export default () => (
           </SimpleCard>
         </div>
 
+<<<<<<< HEAD
         <div className="col s12 m6 offset-m6">
           <SimpleCard cardClass="white">
             <strong>L'assistant d'équipe</strong>
@@ -319,6 +372,14 @@ export default () => (
             </ul>
           </SimpleCard>
         </div>
+=======
+      <div className="col s12">
+        <H2 id="tracabilite">La traçabilité des actions</H2>
+      </div>
+      <div className="col s12">
+        <p>Section en construction</p>
+      </div>
+>>>>>>> Add content veiller santé
 
         <div className="col s12 m6">
           <SimpleCard cardClass="white">
@@ -347,6 +408,7 @@ export default () => (
           </SimpleCard>
         </div>
 
+<<<<<<< HEAD
         <div className="col s12">
           <p>
             Dans un second temps, si le médecin du travail le juge pertinent,
@@ -385,6 +447,67 @@ export default () => (
             felis.
           </p>
         </div>
+=======
+      <div className="col s12 m3">
+        <StatCard icone="people" cardClass="blue">
+          <strong>30 068</strong>
+          <p>Examens d'aptitude à l'embauche</p>
+
+          <strong>17 459</strong>
+          <p>Examens d'aptitude périodiques</p>
+
+          <strong>6 634</strong>
+          <p>Examens à la demande du salarié</p>
+        </StatCard>
+      </div>
+
+      <div className="col s12 m3">
+        <StatCard icone="people" cardClass="blue">
+          <strong>7 601</strong>
+          <p>Examens à la demande de l'employeur</p>
+
+          <strong>8 715</strong>
+          <p>Examens à la demande du médecin du travail</p>
+
+          <strong>11 709</strong>
+          <p>Examens de pré-reprise</p>
+        </StatCard>
+      </div>
+
+      <div className="col s12 m3">
+        <StatCard icone="people" cardClass="blue">
+          <strong>82 450</strong>
+          <p>Avis d'aptitude</p>
+
+          <strong>4 510</strong>
+          <p>Avis d'inaptitude</p>
+
+          <strong>4 508</strong>
+          <p>Salariés déclarés inaptes</p>
+
+          <strong>14 265</strong>
+          <p>Propositions d'aménagements</p>
+        </StatCard>
+      </div>
+
+      <div className="col s12 m3">
+        <StatCard icone="people" cardClass="blue">
+          <strong>44 336</strong>
+          <p>VIP à l'embauche réalisées par les médecins</p>
+
+          <strong>21 717</strong>
+          <p>VIP à l'embauche réalisées par les infirmiers</p>
+
+          <strong>20 811</strong>
+          <p>VIP périodiques réalisées par les médecins</p>
+
+          <strong>225</strong>
+          <p>Visites intermédiaires (postes à risques) par les médecins</p>
+
+          <strong>2 961</strong>
+          <p>Visites intermédiaires par les infirmiers</p>
+        </StatCard>
+>>>>>>> Add content veiller santé
       </div>
     </div>
 
