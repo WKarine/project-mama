@@ -3,8 +3,6 @@ import Layout from "../../components/Layout";
 import ConnectionForm from "./ConnectionForm";
 import PanelAdmin from "./PanelAdmin";
 
-const isRoot = Services.users.isRoot();
-
 export default () => (
   <Layout>
     <div className="row">
