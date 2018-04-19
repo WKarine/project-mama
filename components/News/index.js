@@ -1,43 +1,36 @@
 import Link from "next/link";
 
+import { categoryColors } from "../../constantes/colors";
+
 import { MAX_CHAR } from "../../constantes/news";
 
-const News = () => (
+const News = ({ dataList }) => (
   <ul className="news collapsible">
-    <li className="active">
-      <div className="news__title collapsible-header">First</div>
-      <div className="collapsible-body">
-        <p className="news__summary">
-          Lorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor
-          sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit amet.....Lorem
-          ipsum dolor sit amet.
-        </p>
-        <Link href="">
-          <a className="news__read waves-effect waves-light btn-small">
-            <i className="material-icons right">link</i>lire la suite
-          </a>
-        </Link>
-      </div>
-    </li>
+    {dataList.titles.map((title, i) => (
+      <li className="news__item" key={title}>
+        <div className="news__title collapsible-header">{title}</div>
+
+        <div className="collapsible-body">
+          <Link href={"https://www.polesantetravail.fr" + dataList.urls[i]}>
+            <a title="Lire la suite..." target="_blank">
+              <p className="news__summary">{dataList.summaries[i]}</p>
+            </a>
+          </Link>
+        </div>
+      </li>
+    ))}
     <style jsx>{`
-      .news {
-        position: relative;
+      .news .news__item {
+        background-color: ${categoryColors.blue};
       }
 
       .news .news__title {
-        font-size: 1.5rem;
+        font-size: 1rem;
       }
 
       .news .news__summary {
         font-size: 1rem !important;
-        margin-bottom: 2rem;
-      }
-
-      .news .news__read {
-        font-variant: small-caps;
-        position: absolute;
-        bottom: 1rem;
-        right: 1rem;
+        color: whitesmoke;
       }
     `}</style>
   </ul>
