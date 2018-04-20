@@ -2,7 +2,7 @@ import { ResponsivePie } from "@nivo/pie";
 
 console.dir(ResponsivePie);
 import Layout from "../components/Layout";
-const data = [
+const data1 = [
   {
     id: "ruby",
     label: "ruby",
@@ -51,6 +51,7 @@ export default () => (
   <Layout>
     <div className="container">
       <div className="row">
+        {/* perspectives, apres id blabla */}
         <ResponsivePie
           data={data}
           margin={{
@@ -90,6 +91,7 @@ export default () => (
             }
           ]}
         />
+        {/* deuxieme graphique, etc...*/}
       </div>
     </div>
 
