@@ -1,13 +1,13 @@
 import Head from "next/head";
-import { sideNavColors } from "../constantes/colors";
-
-import Services from "../services";
 
 import Layout from "../components/Layout";
 import News from "../components/News";
 
+import { sideNavColors } from "../constantes/colors";
 import { categoryColors, indexColors } from "../constantes/colors";
 import { indexDimensions } from "../constantes/dimensions";
+
+import Services from "../services";
 
 class Index extends React.Component {
   static async getInitialProps({ req }) {
