@@ -97,92 +97,91 @@ export default () => (
           </p>
         </div>
 
-        <strong className="AMT col s12">
-          20 425 Action en Milieu de Travail réalisées en 2017
-        </strong>
+        <div className="col s12 center-align">
+          <strong className="amt">
+            20 425 Action en Milieu de Travail réalisées en 2017
+          </strong>
+        </div>
 
-        <div className="col s12 m6">
+        <div className="col s12">
           <SimpleCard cardClass="white">
             <p>
               Les Actions en Milieu de Travail sont très diversifiées, adaptées
-              à chaque entreprise et à ses problématiques :
+              à chaque entreprise et à ses problématiques
             </p>
-            <ul className="card__list">
-              <li>
-                l’étude de poste en vue de l’amélioration des conditions de
-                travail, de leur adaptation dans certaines situations ou du
-                maintien dans l’emploi,{" "}
-              </li>
-              <li>
-                l’identification et l’analyse des risques professionnels,{" "}
-              </li>
-              <li>
-                la délivrance de conseils en matière d’organisation des secours
-                et des services d’urgence,{" "}
-              </li>
-              <li>des actions de sensibilisation, </li>
-              <li>
-                des mises en place de nouvelles techniques de production,
-                modifications d’équipements,{" "}
-              </li>
-              <li>l’évaluation des risques professionnels </li>
-            </ul>
+            <div className="card__list-container">
+              <ul className="card__list card__list-left">
+                <li>
+                  l’étude de poste en vue de l’amélioration des conditions de
+                  travail, de leur adaptation dans certaines situations ou du
+                  maintien dans l’emploi,
+                </li>
+                <li>
+                  l’identification et l’analyse des risques professionnels,
+                </li>
+                <li>
+                  la délivrance de conseils en matière d’organisation des
+                  secours et des services d’urgence,
+                </li>
+                <li>des actions de sensibilisation, </li>
+                <li>
+                  des mises en place de nouvelles techniques de production,
+                  modifications d’équipements,
+                </li>
+                <li>l’évaluation des risques professionnels </li>
+                <li>
+                  l’élaboration et la mise à jour de la fiche d’entreprise,
+                </li>
+              </ul>
+              <ul className="card__list card__list-right">
+                <li>
+                  la participation aux réunions du Comité d’Hygiène, de Sécurité
+                  et des Conditions de Travail,
+                </li>
+                <li>la réalisation de mesures métrologiques,</li>
+                <li>
+                  l’animation de campagnes d’information et de sensibilisation
+                  aux questions de santé publique en rapport avec l’activité
+                  professionnelle,
+                </li>
+                <li>les enquêtes épidémiologiques,</li>
+                <li>la formation aux risques spécifiques,</li>
+                <li>l’étude de toute nouvelle technique de production,</li>
+                <li>l’élaboration des actions de formation à la sécurité...</li>
+              </ul>
+            </div>
           </SimpleCard>
         </div>
 
-        <div className="col s12 m6">
-          <SimpleCard cardClass="white">
-            <ul className="card__list">
-              <li>
-                l’élaboration et la mise à jour de la fiche d’entreprise,{" "}
-              </li>
-              <li>
-                la participation aux réunions du Comité d’Hygiène, de Sécurité
-                et des Conditions de Travail,
-              </li>
-              <li>la réalisation de mesures métrologiques,</li>
-              <li>
-                l’animation de campagnes d’information et de sensibilisation aux
-                questions de santé publique en rapport avec l’activité
-                professionnelle,
-              </li>
-              <li>les enquêtes épidémiologiques,</li>
-              <li>la formation aux risques spécifiques,</li>
-              <li>l’étude de toute nouvelle technique de production,</li>
-              <li>l’élaboration des actions de formation à la sécurité...</li>
-            </ul>
-          </SimpleCard>
-        </div>
         <div className="col s12">
-          <div className="col s12 m6">
-            <IconCard cardClass="green" dataList={dataList} />
-          </div>
-
-          <div className="col s12 m6">
-            <IconCard cardClass="white" dataList={dataList_2} />
-          </div>
+          <IconCard cardClass="green" dataList={dataList} />
         </div>
 
-        {/* mettre à l'horizontal */}
         <div className="col s12">
-          <IconCard cardClass="white" dataList={dataList_3} />
+          <IconCard cardClass="white" dataList={dataList_2} />
+        </div>
+
+        <div className="col s12">
+          <IconCard cardClass="green" dataList={dataList_3} />
         </div>
 
         <H3>Ergonomie - Métrologie</H3>
 
-        <div className="col s12">
-          Le service ergonomie intervient auprès des entreprises pour les aider
-          à structurer une démarche de prévention à partir d’une demande santé
-          travail sur les thématiques suivantes : TMS, RPS, conception/
-          corrections des espaces et outils de travail…
+        <div className="col s12 m6">
+          <p className="ergo__intro">
+            Le service ergonomie intervient auprès des entreprises pour les
+            aider à structurer une démarche de prévention à partir d’une demande
+            santé travail sur les thématiques suivantes : TMS, RPS, conception/
+            corrections des espaces et outils de travail…
+          </p>
         </div>
 
-        <div className="col s12 m4">
+        <div className="col s12 m6">
           <SimpleCard cardClass="white">
-            <strong>
+            <p>
               INTERVENTIONS ERGONOMIQUES EN PRÉVENTION DES RISQUES
               PROFESSIONNELS
-            </strong>
+            </p>
             <ul className="card__list">
               <li>
                 Information et conseil : 1er niveau d’intervention pour analyser
@@ -200,8 +199,8 @@ export default () => (
           </SimpleCard>
         </div>
 
-        <div className="graphic-section col s12 m8">
-          <StatCard cardClass="blue col s12 m4">
+        <div className="col s12 m6">
+          <StatCard className="risques-chimiques" cardClass="blue">
             <strong>27 %</strong>
             <span>
               D’ACTIONS RÉALISÉES EN PLUS QU’EN 2016 À EFFECTIFS CONSTANTS
@@ -213,8 +212,10 @@ export default () => (
               (CONDITIONS DE TRAVAIL/TMS ET RPS)
             </span>
           </StatCard>
+        </div>
 
-          <StatCard cardClass="blue col s12 m4">
+        <div className="col s12 m6">
+          <StatCard className="risques-chimiques" cardClass="blue">
             <strong>74 %</strong>
             <span>
               DES ACTIONS RÉALISÉES RELÈVENT DE LA DÉMARCHE DE PRÉVENTION
@@ -229,19 +230,23 @@ export default () => (
           </StatCard>
         </div>
 
-        <div className="graphic-section col s12">
-          <StatCard cardClass="blue col s12 m6">
+        <div className="col s12">
+          <StatCard cardClass="blue">
             <strong>471</strong>
             <span>DEMANDES D’INTERVENTION PARVENUES AU SERVICE ERGONOMIE</span>
           </StatCard>
-
-          <p className="col s12 m6">ici graphique en cercle</p>
         </div>
 
-        <div className="graphic-section col s12">
-          <p className="col s12 m6">ici graphique en batons</p>
+        <div className="col s12">
+          <p>ici graphique en cercle</p>
+        </div>
 
-          <StatCard cardClass="blue s12 m6">
+        <div className="col s12">
+          <p>ici graphique en batons</p>
+        </div>
+
+        <div className="col s12">
+          <StatCard cardClass="blue">
             <strong>272</strong>
             <span>ACTIONS RÉALISÉES</span>
           </StatCard>
@@ -249,8 +254,8 @@ export default () => (
 
         <H3>Risque chimique</H3>
 
-        <div className="content-toxico col s12">
-          <SimpleCard cardClass="white col s12 m6">
+        <div className="col s12">
+          <SimpleCard cardClass="white">
             <p>
               Le Service Toxicologie intervient dans les domaines suivants :
             </p>
@@ -269,7 +274,7 @@ export default () => (
               et consultables dans TOXILIST.
             </p>
 
-            <div classeName="toxilist">
+            <div className="toxilist">
               <Link href="https://www.toxilist.fr/">
                 <a target="_blank">
                   <img
@@ -281,7 +286,9 @@ export default () => (
               </Link>
             </div>
           </SimpleCard>
+        </div>
 
+        <div className="col s12">
           <SimpleCard cardClass="white col s12 m6">
             <strong>VISITE D’ENTREPRISE ACCOMPAGNÉE VISITE DIAGNOSTIC</strong>
             <p>
@@ -303,8 +310,6 @@ export default () => (
           </SimpleCard>
         </div>
 
-        {/* mettre la card en HORIZONTAL */}
-
         <div className="col s12 m6">
           <StatCard cardClass="blue">
             <strong>332</strong>
@@ -321,18 +326,22 @@ export default () => (
           </StatCard>
         </div>
 
-        <div className="graphic-section col s12">
-          <StatCard cardClass="blue col s12 m6">
+        <div className="col s12">
+          <StatCard cardClass="blue">
             <strong>285</strong>
             <span>ACTIONS RÉALISÉES EN 2017</span>
           </StatCard>
-
-          <p className="col s12 m6">ici graphique en cercle</p>
         </div>
 
-        <div className="graphic-section col s12">
-          <p className="col s12 m6">ici graphique en batons</p>
+        <div className="col s12">
+          <p>ici graphique en cercle</p>
+        </div>
 
+        <div className="col s12">
+          <p>ici graphique en batons</p>
+        </div>
+
+        <div className="col s12">
           <StatCard cardClass="blue s12 m6">
             <strong>274</strong>
             <span>ENTREPRISES CONCERNÉES</span>
@@ -345,7 +354,7 @@ export default () => (
 
         <H3>Epidémiologie (Indicateurs Santé Travail)</H3>
 
-        <div className="col s12 m8">
+        <div className="col s12">
           <SimpleCard cardClass="white">
             <p>
               Les demandes d’intervention concernant les entreprises restent
@@ -366,7 +375,7 @@ export default () => (
               des données, analyses et rendus).
             </p>
 
-            <div classeName="evrest">
+            <div className="evrest">
               <Link href="http://evrest.istnf.fr">
                 <a target="_blank">
                   <img
@@ -380,7 +389,7 @@ export default () => (
           </SimpleCard>
         </div>
 
-        <div className="graphic-section col s12 m4">
+        <div className="col s12">
           <StatCard cardClass="blue">
             <strong>30</strong>
             <span>ÉTUDES ET ENQUÊTES EN DIRECTION DES ENTREPRISES</span>
@@ -391,7 +400,7 @@ export default () => (
 
         <H3>Etudes et projets</H3>
 
-        <div className="content-survey col s12">
+        <div className="col s12">
           <SimpleCard cardClass="white">
             <strong>OBSERVATOIRE EVREST</strong>
             <ul className="card__list">
@@ -420,7 +429,9 @@ export default () => (
               partenariat avec la CARSAT
             </li>
           </SimpleCard>
+        </div>
 
+        <div className="col s12">
           <SimpleCard cardClass="white">
             <ul className="card__list">
               <li>Communication</li>
@@ -445,7 +456,7 @@ export default () => (
             <ul className="card__list">
               <li>
                 Animation et accompagnement des équipes autour des dispositifs
-                SUMER et MCP :{" "}
+                SUMER et MCP :
               </li>
               <li>SUMER : de janvier à juin 2017</li>
               <li>MCP : quinzaine du 13 au 27 novembre 2017</li>
@@ -525,7 +536,7 @@ export default () => (
           </SimpleCard>
         </div>
 
-        <div className="col s12 m4">
+        <div className="col s12">
           <StatCard icone="local_bar" cardClass="blue">
             <strong>80</strong>
             <span>Consultations</span>
@@ -542,6 +553,7 @@ export default () => (
           Accompagner les entreprises et les salariés dans la recherche de
           solutions pour le maintien dans l'emploi
         </H2>
+
         <div className="col s12">
           <p>Section en construction</p>
         </div>
@@ -601,7 +613,7 @@ export default () => (
               politique globale de prévention des risques.
             </p>
 
-            <div classeName="pst">
+            <div className="pst">
               <Link href="http://www.pstformation.com/">
                 <a target="_blank">
                   <img
@@ -633,29 +645,25 @@ export default () => (
       </div>
     </div>
 
-    <style jsx>{`
-      .AMT {
-        text-align: center;
-        font-size: 25px;
+    <style jsx global>{`
+      .amt {
+        display: inline-block;
+        padding: 1rem 0;
+        font-size: 1.5rem;
       }
 
-      .graphic-section {
-        display: flex;
-        flex-direction: row;
+      @media only screen and (min-width: 992px) {
+        .ergo__intro {
+          height: 25rem;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          text-align: justify;
+        }
       }
 
-      .content-toxico {
-        display: flex;
-        flex-direction: row;
-      }
-
-      .content-survey {
-        display: flex;
-        flex-direction: row;
-      }
-      .evrest {
-        font-size: 25px;
-        font-weight: bold;
+      .risques-chimiques {
+        min-height: 30rem;
       }
     `}</style>
   </Layout>

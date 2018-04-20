@@ -62,7 +62,7 @@ export default () => (
           Un suivi de santé de qualité adapté à chaque salarié
         </H2>
 
-        <H3>Dispositif de surveillence</H3>
+        <H3>Dispositif de surveillance</H3>
 
         <div className="col s12 m6 offset-m3">
           <a href="static/images/suivi-sante/schema.png">
@@ -101,7 +101,7 @@ export default () => (
             physiologie, biologie.
           </p>
 
-          <div classeName="partner">
+          <div className="partner">
             <Link href="http://www.cerballiance.fr/home">
               <a target="_blank">
                 <img
@@ -202,7 +202,7 @@ export default () => (
                 Éviter toute altération de la santé des travailleurs du fait de
                 leur travail, notamment en surveillant leurs conditions
                 d'hygiène au travail, les risques de contagion et leur état de
-                santé.{" "}
+                santé.
               </li>
 
               <li>
@@ -213,7 +213,7 @@ export default () => (
               <li>
                 Mener des actions en entreprise pour améliorer les conditions de
                 travail, agir en prévention de manière collective sur la santé
-                des salariés.{" "}
+                des salariés.
               </li>
 
               <li>
@@ -226,7 +226,7 @@ export default () => (
               <li>
                 Contribuer à la veille épidémiologique en menant des études, des
                 enquêtes, en contribuant à la recherche et participer à la
-                traçabilité des expositions professionnelles.{" "}
+                traçabilité des expositions professionnelles.
               </li>
 
               <li>Animer une équipe santé travail </li>
@@ -286,7 +286,7 @@ export default () => (
             <ul className="card__list">
               <li>
                 Réaliser des entretiens santé travail infirmiers (à la demande
-                du médecin du travail et sous la responsabilité de celui-ci){" "}
+                du médecin du travail et sous la responsabilité de celui-ci)
               </li>
 
               <li>
@@ -299,19 +299,19 @@ export default () => (
               <li>
                 Sensibiliser les salariés aux conséquences de certaines
                 conditions de travail sur la santé, et à leur prévention
-                (conseils adaptés, etc.).{" "}
+                (conseils adaptés, etc.).
               </li>
 
               <li>
                 Apprécier et identifier, au travers d’une écoute active, les
                 aspects collectifs du travail, permettant au médecin
-                d’entreprendre d’éventuelles actions collectives.{" "}
+                d’entreprendre d’éventuelles actions collectives.
               </li>
 
               <li>
                 Participer au réseau de vigilance en Santé Travail, via la
                 passation de questionnaires validés portant sur le travail et la
-                santé des salariés.{" "}
+                santé des salariés.
               </li>
 
               <li>Réaliser les examens complémentaires </li>
@@ -320,13 +320,13 @@ export default () => (
 
               <li>
                 Toute action relative à une problématique individuelle
-                médico-professionnelle :{" "}
+                médico-professionnelle :
               </li>
 
               <li>
                 Études de postes, suivi des préconisations du médecin du
                 travail, par rapport à une problématique médicale, enquêtes
-                Accidents du Travail / Maladies Professionnelles.{" "}
+                Accidents du Travail / Maladies Professionnelles.
               </li>
 
               <li>
@@ -337,7 +337,7 @@ export default () => (
 
               <li>
                 Présence en CHSCT (à la place du médecin, avec une mission
-                spécifique).{" "}
+                spécifique).
               </li>
             </ul>
           </SimpleCard>
@@ -357,7 +357,7 @@ export default () => (
 
               <li>
                 Assister administrativement ou participer à une action de
-                prévention de courte durée.{" "}
+                prévention de courte durée.
               </li>
 
               <li>Décrire un poste de travail. </li>
@@ -369,7 +369,7 @@ export default () => (
 
               <li>
                 Réaliser des mesures métrologiques (bruit / ambiance lumineuse /
-                qualité de l’air…).{" "}
+                qualité de l’air…).
               </li>
             </ul>
           </SimpleCard>

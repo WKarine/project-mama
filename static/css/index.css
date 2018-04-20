@@ -11,15 +11,6 @@ html {
   font-family: "Neo", sans-serif;
 }
 
-@media only screen and (max-width: 992px) {
-  .container {
-    /* On retire le décalage sur mobile */
-    margin: auto;
-    padding-left: 0;
-    padding-right: 0;
-  }
-}
-
 #content {
   animation: fade-in 0.5s ease-out forwards;
 }
@@ -31,12 +22,6 @@ html {
 
   100% {
     opacity: 1;
-  }
-}
-
-@media only screen and (max-width: 992px) {
-  .secondary-title {
-    font-size: 1rem;
   }
 }
 
