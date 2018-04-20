@@ -224,8 +224,10 @@ export default () => (
 
       strong {
         color: ${categoryColors.blue};
+        display: block;
         font-size: 1.4rem;
         font-weight: bold;
+        text-align: center;
       }
     `}</style>
   </Layout>
