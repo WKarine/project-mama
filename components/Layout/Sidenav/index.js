@@ -75,13 +75,6 @@ class Sidenav extends React.Component {
             background: ${sideNavColors.backgroundGradient}; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
           }
 
-          .sidenav-trigger {
-            left: 1rem;
-            position: absolute;
-            top: 1rem;
-            z-index: 9;
-          }
-
           ::-webkit-scrollbar {
             width: 0.5rem;
           }
@@ -95,6 +88,27 @@ class Sidenav extends React.Component {
           ::-webkit-scrollbar-thumb {
             border-radius: 2px;
             background: white;
+          }
+
+          .sidenav-trigger {
+            z-index: 9;
+          }
+
+          @media only screen and (max-width: 992px) {
+            .sidenav-trigger {
+              font-size: 1.5rem;
+              background-color: ${sideNavColors.backgroundColor};
+              color: whitesmoke;
+              border-radius: 50%;
+              width: 5rem;
+              height: 5rem;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              position: fixed;
+              bottom: 2rem;
+              right: 2rem;
+            }
           }
         `}</style>
       </div>
