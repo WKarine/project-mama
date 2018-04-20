@@ -62,7 +62,7 @@ export default () => (
           Un suivi de santé de qualité adapté à chaque salarié
         </H2>
 
-        <H3>Dispositif de surveillence</H3>
+        <H3>Dispositif de surveillance</H3>
 
         <div className="col s12 m6 offset-m3">
           <a href="static/images/suivi-sante/schema.png">
