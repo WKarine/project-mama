@@ -2,8 +2,8 @@ import classnames from "classnames";
 
 import { categoryColors } from "../../constantes/colors";
 
-const StatCard = ({ cardClass, icone, children }) => {
-  const classes = classnames("stat-card", "card-panel", {
+const StatCard = ({ cardClass, icone, children, className }) => {
+  const classes = classnames("stat-card", "card-panel", className, {
     "card-blue": cardClass === "blue",
     "card-white": cardClass === "white"
   });
@@ -28,7 +28,7 @@ const StatCard = ({ cardClass, icone, children }) => {
           }
 
           .stat-card span {
-            font-size: 1.5rem;
+            font-size: 1rem;
             font-variant: small-caps;
           }
 

@@ -9,7 +9,14 @@ const H1 = ({ id, children }) => (
         text-align: center;
         color: ${categoryColors.blue};
         font-variant: small-caps;
+        font-size: 2rem;
         margin-bottom: 3rem;
+      }
+
+      @media only screen and (max-width: 992px) {
+        h1 {
+          font-size: 1.5rem;
+        }
       }
 
       h1:after {

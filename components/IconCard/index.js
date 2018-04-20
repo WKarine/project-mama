@@ -11,7 +11,7 @@ const IconCard = ({ cardClass, dataList }) => {
   return (
     <div className={classes}>
       {dataList.map(data => (
-        <div className="card__section">
+        <div className="card__section" key={data.textContent}>
           <div className="card__left">
             <i className="card__icon large material-icons">{data.icon}</i>
             <p className="card__textContent">{data.textContent}</p>
@@ -22,6 +22,9 @@ const IconCard = ({ cardClass, dataList }) => {
         </div>
       ))}
       <style jsx>{`
+        .icon-card {
+          overflow-x: hidden;
+        }
         .icon-card.card.green {
           background-color: ${categoryColors.green};
           color: whitesmoke;
@@ -72,8 +75,10 @@ const IconCard = ({ cardClass, dataList }) => {
         .icon-card .card__textContent {
           text-align: center;
           font-variant: small-caps;
-          font-size: 1.5rem;
+          font-size: 1rem;
           font-weight: bold;
+          padding-left: 1rem;
+          padding-right: 1rem;
         }
 
         .icon-card .card__right {
@@ -83,7 +88,7 @@ const IconCard = ({ cardClass, dataList }) => {
         }
 
         .icon-card .card__stat {
-          font-size: 5rem;
+          font-size: 3rem;
         }
       `}</style>
     </div>
