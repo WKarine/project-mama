@@ -1,51 +1,39 @@
-import { troncate } from "../../utilities/format";
+import Link from "next/link";
+
+import { categoryColors } from "../../constantes/colors";
+
 import { MAX_CHAR } from "../../constantes/news";
 
-const News = () => (
-  <div className="news collection">
-    <a className="collection-item news__link" href="#!">
-      <h3 className="news__title">
-        Prévenir les situations à Risque Psychosocial
-      </h3>
-      <p className="news__summary">
-        {troncate(
-          "Le MEDEF Lille Métropole vous invite à un prochain « Rendez-vous de la prévention » sur le thème : Prévenir les situations à Risque Psychosocial Mardi 17 avril 2018 de 9h à 17h Campus Entreprises et Cités 40 rue Eugène Jacquet à Marcq-en-Barœul…",
-          MAX_CHAR
-        )}
-      </p>
-    </a>
-    <a className="collection-item news__link" href="#!">
-      Alvin
-    </a>
-    <a className="collection-item news__link" href="#!">
-      Alvin
-    </a>
-    <a className="collection-item news__link" href="#!">
-      Alvin
-    </a>
+const News = ({ dataList }) => (
+  <ul className="news collapsible">
+    {dataList.titles.map((title, i) => (
+      <li className="news__item" key={title}>
+        <div className="news__title collapsible-header">{title}</div>
+
+        <div className="collapsible-body">
+          <Link href={"https://www.polesantetravail.fr" + dataList.urls[i]}>
+            <a title="Lire la suite..." target="_blank">
+              <p className="news__summary">{dataList.summaries[i]}</p>
+            </a>
+          </Link>
+        </div>
+      </li>
+    ))}
     <style jsx>{`
-      .news {
-        margin-top: 2rem;
+      .news .news__item {
+        background-color: ${categoryColors.blue};
       }
 
-      .news__link {
-        color: black !important;
+      .news .news__title {
+        font-size: 1rem;
       }
 
-      .news__link:hover {
-        background-color: #0082c8 !important;
-        color: whitesmoke !important;
-      }
-
-      .news__title {
-        font-size: 1.5rem;
-      }
-
-      .news__summary {
-        font-size: 0.75rem;
+      .news .news__summary {
+        font-size: 1rem !important;
+        color: whitesmoke;
       }
     `}</style>
-  </div>
+  </ul>
 );
 
 export default News;

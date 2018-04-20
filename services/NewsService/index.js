@@ -1,13 +1,31 @@
 import firebase from "firebase/app";
 import firestore from "firebase/firestore";
 
+import config from "../../constantes/firebase-config";
+
 export default class NewsService {
   constructor() {
-    console.log("coucou");
+    if (!firebase.apps.length) {
+      firebase.initializeApp(config);
+    }
+    this.db = firebase.firestore();
   }
 
-  getNews() {
-    // on va chercher les infos dans la bdd
-    // return les infoos
+  async getNews() {
+    const newsRef = this.db.collection("news");
+    let news = [];
+
+    try {
+      const newsData = await newsRef.get();
+
+      newsData.forEach(doc => {
+        news = doc.data();
+      });
+
+      return news;
+    } catch (err) {
+      console.log("Error getting documents", err);
+      return;
+    }
   }
 }

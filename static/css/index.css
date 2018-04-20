@@ -11,22 +11,6 @@ html {
   font-family: "Neo", sans-serif;
 }
 
-.container {
-  /* On décale pour que le contenu ne soit pas masqué par la Sidenav */
-  margin-left: 300px;
-  margin-right: 0;
-  padding-left: 2rem;
-}
-
-@media only screen and (max-width: 992px) {
-  .container {
-    /* On retire le décalage sur mobile */
-    margin: auto;
-    padding-left: 0;
-    padding-right: 0;
-  }
-}
-
 #content {
   animation: fade-in 0.5s ease-out forwards;
 }
@@ -41,18 +25,24 @@ html {
   }
 }
 
-.main-title {
-  text-align: center;
-  color: #0082c8;
-  font-variant: small-caps;
-  margin-bottom: 3rem;
+#content p {
+  font-size: 1.2rem;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-.main-title:after {
-  content: ""; /* This is necessary for the pseudo element to work. */
-  display: block; /* This will put the pseudo element on its own line. */
-  margin: 0 auto; /* This will center the border. */
-  width: 50%; /* Change this to whatever width you want. */
-  padding-top: 20px; /* This creates some space between the element and the border. */
-  border-bottom: 0.25rem solid #0082c8; /* This creates the border. Replace black with whatever color you want. */
+@media only screen and (max-width: 992px) {
+  #content p {
+    font-size: 1rem;
+  }
+}
+
+#content {
+  padding-left: 300px;
+}
+
+@media only screen and (max-width: 992px) {
+  #content {
+    padding-left: 0;
+  }
 }

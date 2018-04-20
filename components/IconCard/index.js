@@ -3,7 +3,7 @@ import classNames from "classnames";
 import { categoryColors } from "../../constantes/colors";
 
 const IconCard = ({ cardClass, dataList }) => {
-  const classes = classNames("card", {
+  const classes = classNames("icon-card", "card", {
     green: cardClass === "green",
     white: cardClass === "white"
   });
@@ -11,7 +11,7 @@ const IconCard = ({ cardClass, dataList }) => {
   return (
     <div className={classes}>
       {dataList.map(data => (
-        <div className="card__section">
+        <div className="card__section" key={data.textContent}>
           <div className="card__left">
             <i className="card__icon large material-icons">{data.icon}</i>
             <p className="card__textContent">{data.textContent}</p>
@@ -22,68 +22,73 @@ const IconCard = ({ cardClass, dataList }) => {
         </div>
       ))}
       <style jsx>{`
-        .card.green {
+        .icon-card {
+          overflow-x: hidden;
+        }
+        .icon-card.card.green {
           background-color: ${categoryColors.green};
           color: whitesmoke;
         }
 
-        .card.white {
+        .icon-card.card.white {
           background-color: white;
           color: ${categoryColors.green};
         }
 
-        .card.card__left {
+        .icon-card.card .card__left {
           display: flex;
           flex-direction: column;
         }
 
-        .card.green .card__left {
+        .icon-card.card.green .card__left {
           border-right: 2px solid whitesmoke;
         }
 
-        .card.white .card__left {
+        .icon-card.card.white .card__left {
           border-right: 2px solid ${categoryColors.green};
         }
 
-        .card__section {
+        .icon-card .card__section {
           display: flex;
           padding: 2rem 0;
         }
 
-        .card.green .card__section:not(:last-child) {
+        .icon-card.card.green .card__section:not(:last-child) {
           border-bottom: 3px dashed whitesmoke;
         }
 
-        .card.white .card__section:not(:last-child) {
+        .icon-card.card.white .card__section:not(:last-child) {
           border-bottom: 3px dashed ${categoryColors.green};
         }
 
-        .card__left,
-        .card__right {
+        .icon-card .card__left,
+        .icon-card .card__right {
           flex-basis: 50%;
         }
 
-        .card__icon {
+        .icon-card .card__icon {
           display: flex;
           justify-content: center;
           align-items: center;
         }
 
-        .card__textContent {
+        .icon-card .card__textContent {
           text-align: center;
           font-variant: small-caps;
-          font-size: 1.5rem;
+          font-size: 1rem;
           font-weight: bold;
+          padding-left: 1rem;
+          padding-right: 1rem;
         }
 
-        .card__right {
+        .icon-card .card__right {
           display: flex;
           justify-content: center;
           align-items: center;
         }
 
-        .card__stat {
-          font-size: 5rem;
+        .icon-card .card__stat {
+          font-size: 3rem;
         }
       `}</style>
     </div>

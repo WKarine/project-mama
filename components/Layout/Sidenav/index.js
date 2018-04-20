@@ -10,7 +10,14 @@ class Sidenav extends React.Component {
   componentDidMount() {
     // Dès que le composant est initialisé on initialise aussi le js de materialize
     // Afin que la sidebar et les sous-menu fonctionnent correctement
-    M.AutoInit();
+    const $sidenav = document.querySelector(".sidenav");
+    M.Sidenav.init($sidenav, {
+      preventScrolling: false
+    });
+
+    const $subCategories = document.querySelectorAll(".collapsible");
+    M.Collapsible.init($subCategories);
+    // M.AutoInit();
   }
 
   render() {
@@ -18,11 +25,11 @@ class Sidenav extends React.Component {
 
     return (
       <div>
-        <ul id="slide-out" className="sidenav z-depth-1">
+        <ul id="slide-out" className="sidenav sidenav-fixed z-depth-1">
           <Link href="/">
-            <div className="logo-container">
+            <a className="logo-container">
               <img className="logo" src="static/images/logo.jpg" />
-            </div>
+            </a>
           </Link>
 
           {/* On affiche tout les liens, array = sous-menu, sinon lien normal */}
@@ -68,11 +75,40 @@ class Sidenav extends React.Component {
             background: ${sideNavColors.backgroundGradient}; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
           }
 
+          ::-webkit-scrollbar {
+            width: 0.5rem;
+          }
+
+          ::-webkit-scrollbar-track {
+            -webkit-box-shadow: 0 0 6px rgba(0, 0, 0, 0.8);
+            border-radius: 2px;
+            background: ${sideNavColors.scrollBar};
+          }
+
+          ::-webkit-scrollbar-thumb {
+            border-radius: 2px;
+            background: white;
+          }
+
           .sidenav-trigger {
-            left: 1rem;
-            position: absolute;
-            top: 1rem;
-            z-index: 10;
+            z-index: 9;
+          }
+
+          @media only screen and (max-width: 992px) {
+            .sidenav-trigger {
+              font-size: 1.5rem;
+              background-color: ${sideNavColors.backgroundColor};
+              color: whitesmoke;
+              border-radius: 50%;
+              width: 5rem;
+              height: 5rem;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              position: fixed;
+              bottom: 2rem;
+              right: 2rem;
+            }
           }
         `}</style>
       </div>

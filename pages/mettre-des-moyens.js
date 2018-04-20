@@ -1,298 +1,186 @@
 import Layout from "../components/Layout";
+import H1 from "../components/H1";
 import H2 from "../components/H2";
 import H3 from "../components/H3";
+import SimpleCard from "../components/SimpleCard";
+import StatCard from "../components/StatCard";
 
 export default () => (
   <Layout>
-    <div className="row">
-      <div className="col s12">
-        <h1 className="main-title">Mettre des moyens au service d'un projet</h1>
-        <H2 className="secondary-title" id="relations-adherents">
-          Relation adhérents
-        </H2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-          lacus nisi, pharetra id euismod et, tempor iaculis erat. Suspendisse
-          ullamcorper vehicula lacinia. Nullam non mauris a sem euismod
-          scelerisque pretium id nunc. Vestibulum posuere urna non mi convallis
-          accumsan. Nullam placerat posuere venenatis. Duis ligula sapien,
-          scelerisque eget rhoncus at, accumsan eu sem. Praesent ut massa sit
-          amet ex lobortis interdum et eget dolor. Vivamus ac elit felis. Donec
-          nisi lacus, laoreet at dui sit amet, bibendum convallis ligula.
-          Integer eget venenatis erat. Proin sit amet volutpat risus. Sed
-          rhoncus aliquet blandit. Ut porta orci quis erat fringilla sodales.
-          Curabitur posuere scelerisque facilisis. Curabitur id varius erat, nec
-          consectetur orci. Proin congue, sem non iaculis tincidunt, orci sapien
-          lobortis felis, non blandit leo leo in diam. Nulla sodales, magna in
-          facilisis rhoncus, diam nulla pellentesque lectus, sed volutpat erat
-          risus sit amet lacus. Vivamus pharetra pharetra diam. Praesent eget
-          placerat felis, et tempus nulla. Donec id nulla maximus libero
-          suscipit maximus quis in urna. Sed nec ipsum vel orci viverra
-          dignissim quis sed ipsum. Nam quis felis ac dolor ullamcorper ultrices
-          et iaculis ipsum. Suspendisse vitae felis nec nibh aliquam pretium
-          quis in mauris. Integer non justo tellus. Donec sem nulla, rhoncus
-          ultrices sem et, congue pellentesque magna. Nullam a dui vehicula
-          ligula commodo dignissim non vitae diam. Cras eleifend a ex vel
-          laoreet. Vivamus luctus urna nec neque fringilla, eget eleifend ligula
-          pretium. Praesent tincidunt ligula neque, id faucibus urna facilisis
-          vitae. Nullam nec lacus rutrum, aliquet velit eu, gravida massa. Morbi
-          viverra vitae tortor at congue. Duis fermentum nunc at ullamcorper
-          iaculis. Quisque id lorem urna. Morbi velit odio, convallis at
-          consectetur ut, vestibulum ut nulla. Curabitur lectus quam, semper at
-          turpis eu, viverra bibendum erat. Sed blandit quis ante id eleifend.
-          Cras neque dui, semper tincidunt rutrum et, suscipit in augue. Etiam
-          id lectus purus. Vivamus enim nisl, sagittis vel varius ut, blandit at
-          odio. Aliquam dignissim urna velit, eget dictum ex dictum non. Integer
-          molestie, ex ut porta tincidunt, urna enim rutrum justo, eu
-          pellentesque nisi nulla id justo. Sed in ullamcorper eros, a rutrum
-          nulla. Donec et neque in orci convallis dapibus nec ut enim. Donec
-          ullamcorper, mi eu condimentum mattis, dolor dolor faucibus libero, in
-          tempus magna ipsum vel risus. Phasellus facilisis tincidunt diam
-          blandit ultrices. Fusce ac ante dui. Praesent luctus faucibus
-          scelerisque. Aenean vulputate at eros accumsan dictum. Suspendisse
-          fringilla nunc diam, non elementum nulla malesuada ac. Phasellus
-          eleifend, dolor nec consectetur fermentum, ex eros sollicitudin magna,
-          a blandit erat nisl eget tortor. Proin lobortis consequat metus, quis
-          tincidunt risus eleifend ut. Integer convallis nisl a arcu interdum,
-          vitae fermentum neque semper. Aliquam quis ipsum tellus. Nulla et
-          pellentesque felis. Lorem ipsum dolor sit amet, consectetur adipiscing
-          elit. Suspendisse lacus nisi, pharetra id euismod et, tempor iaculis
-          erat. Suspendisse ullamcorper vehicula lacinia. Nullam non mauris a
-          sem euismod scelerisque pretium id nunc. Vestibulum posuere urna non
-          mi convallis accumsan. Nullam placerat posuere venenatis. Duis ligula
-          sapien, scelerisque eget rhoncus at, accumsan eu sem. Praesent ut
-          massa sit amet ex lobortis interdum et eget dolor. Vivamus ac elit
-          felis. Donec nisi lacus, laoreet at dui sit amet, bibendum convallis
-          ligula. Integer eget venenatis erat. Proin sit amet volutpat risus.
-          Sed rhoncus aliquet blandit. Ut porta orci quis erat fringilla
-          sodales. Curabitur posuere scelerisque facilisis. Curabitur id varius
-          erat, nec consectetur orci. Proin congue, sem non iaculis tincidunt,
-          orci sapien lobortis felis, non blandit leo leo in diam. Nulla
-          sodales, magna in facilisis rhoncus, diam nulla pellentesque lectus,
-          sed volutpat erat risus sit amet lacus. Vivamus pharetra pharetra
-          diam. Praesent eget placerat felis, et tempus nulla. Donec id nulla
-          maximus libero suscipit maximus quis in urna. Sed nec ipsum vel orci
-          viverra dignissim quis sed ipsum. Nam quis felis ac dolor ullamcorper
-          ultrices et iaculis ipsum. Suspendisse vitae felis nec nibh aliquam
-          pretium quis in mauris. Integer non justo tellus. Donec sem nulla,
-          rhoncus ultrices sem et, congue pellentesque magna. Nullam a dui
-          vehicula ligula commodo dignissim non vitae diam. Cras eleifend a ex
-          vel laoreet. Vivamus luctus urna nec neque fringilla, eget eleifend
-          ligula pretium. Praesent tincidunt ligula neque, id faucibus urna
-          facilisis vitae. Nullam nec lacus rutrum, aliquet velit eu, gravida
-          massa. Morbi viverra vitae tortor at congue. Duis fermentum nunc at
-          ullamcorper iaculis. Quisque id lorem urna. Morbi velit odio,
-          convallis at consectetur ut, vestibulum ut nulla. Curabitur lectus
-          quam, semper at turpis eu, viverra bibendum erat. Sed blandit quis
-          ante id eleifend. Cras neque dui, semper tincidunt rutrum et, suscipit
-          in augue. Etiam id lectus purus. Vivamus enim nisl, sagittis vel
-          varius ut, blandit at odio. Aliquam dignissim urna velit, eget dictum
-          ex dictum non. Integer molestie, ex ut porta tincidunt, urna enim
-          rutrum justo, eu pellentesque nisi nulla id justo. Sed in ullamcorper
-          eros, a rutrum nulla. Donec et neque in orci convallis dapibus nec ut
-          enim. Donec ullamcorper, mi eu condimentum mattis, dolor dolor
-          faucibus libero, in tempus magna ipsum vel risus. Phasellus facilisis
-          tincidunt diam blandit ultrices. Fusce ac ante dui. Praesent luctus
-          faucibus scelerisque. Aenean vulputate at eros accumsan dictum.
-          Suspendisse fringilla nunc diam, non elementum nulla malesuada ac.
-          Phasellus eleifend, dolor nec consectetur fermentum, ex eros
-          sollicitudin magna, a blandit erat nisl eget tortor. Proin lobortis
-          consequat metus, quis tincidunt risus eleifend ut. Integer convallis
-          nisl a arcu interdum, vitae fermentum neque semper. Aliquam quis ipsum
-          tellus. Nulla et pellentesque felis.
-        </p>
-        <H2 className="secondary-title" id="communication">
-          Communication
-        </H2>
-        <H3 className="third-title">
-          Les supports d'information et de communication
-        </H3>
-        <H3 className="third-title">Le Web/Site Web de Pôle Santé Travail</H3>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-          lacus nisi, pharetra id euismod et, tempor iaculis erat. Suspendisse
-          ullamcorper vehicula lacinia. Nullam non mauris a sem euismod
-          scelerisque pretium id nunc. Vestibulum posuere urna non mi convallis
-          accumsan. Nullam placerat posuere venenatis. Duis ligula sapien,
-          scelerisque eget rhoncus at, accumsan eu sem. Praesent ut massa sit
-          amet ex lobortis interdum et eget dolor. Vivamus ac elit felis. Donec
-          nisi lacus, laoreet at dui sit amet, bibendum convallis ligula.
-          Integer eget venenatis erat. Proin sit amet volutpat risus. Sed
-          rhoncus aliquet blandit. Ut porta orci quis erat fringilla sodales.
-          Curabitur posuere scelerisque facilisis. Curabitur id varius erat, nec
-          consectetur orci. Proin congue, sem non iaculis tincidunt, orci sapien
-          lobortis felis, non blandit leo leo in diam. Nulla sodales, magna in
-          facilisis rhoncus, diam nulla pellentesque lectus, sed volutpat erat
-          risus sit amet lacus. Vivamus pharetra pharetra diam. Praesent eget
-          placerat felis, et tempus nulla. Donec id nulla maximus libero
-          suscipit maximus quis in urna. Sed nec ipsum vel orci viverra
-          dignissim quis sed ipsum. Nam quis felis ac dolor ullamcorper ultrices
-          et iaculis ipsum. Suspendisse vitae felis nec nibh aliquam pretium
-          quis in mauris. Integer non justo tellus. Donec sem nulla, rhoncus
-          ultrices sem et, congue pellentesque magna. Nullam a dui vehicula
-          ligula commodo dignissim non vitae diam. Cras eleifend a ex vel
-          laoreet. Vivamus luctus urna nec neque fringilla, eget eleifend ligula
-          pretium. Praesent tincidunt ligula neque, id faucibus urna facilisis
-          vitae. Nullam nec lacus rutrum, aliquet velit eu, gravida massa. Morbi
-          viverra vitae tortor at congue. Duis fermentum nunc at ullamcorper
-          iaculis. Quisque id lorem urna. Morbi velit odio, convallis at
-          consectetur ut, vestibulum ut nulla. Curabitur lectus quam, semper at
-          turpis eu, viverra bibendum erat. Sed blandit quis ante id eleifend.
-          Cras neque dui, semper tincidunt rutrum et, suscipit in augue. Etiam
-          id lectus purus. Vivamus enim nisl, sagittis vel varius ut, blandit at
-          odio. Aliquam dignissim urna velit, eget dictum ex dictum non. Integer
-          molestie, ex ut porta tincidunt, urna enim rutrum justo, eu
-          pellentesque nisi nulla id justo. Sed in ullamcorper eros, a rutrum
-          nulla. Donec et neque in orci convallis dapibus nec ut enim. Donec
-          ullamcorper, mi eu condimentum mattis, dolor dolor faucibus libero, in
-          tempus magna ipsum vel risus. Phasellus facilisis tincidunt diam
-          blandit ultrices. Fusce ac ante dui. Praesent luctus faucibus
-          scelerisque. Aenean vulputate at eros accumsan dictum. Suspendisse
-          fringilla nunc diam, non elementum nulla malesuada ac. Phasellus
-          eleifend, dolor nec consectetur fermentum, ex eros sollicitudin magna,
-          a blandit erat nisl eget tortor. Proin lobortis consequat metus, quis
-          tincidunt risus eleifend ut. Integer convallis nisl a arcu interdum,
-          vitae fermentum neque semper. Aliquam quis ipsum tellus. Nulla et
-          pellentesque felis. Lorem ipsum dolor sit amet, consectetur adipiscing
-          elit. Suspendisse lacus nisi, pharetra id euismod et, tempor iaculis
-          erat. Suspendisse ullamcorper vehicula lacinia. Nullam non mauris a
-          sem euismod scelerisque pretium id nunc. Vestibulum posuere urna non
-          mi convallis accumsan. Nullam placerat posuere venenatis. Duis ligula
-          sapien, scelerisque eget rhoncus at, accumsan eu sem. Praesent ut
-          massa sit amet ex lobortis interdum et eget dolor. Vivamus ac elit
-          felis. Donec nisi lacus, laoreet at dui sit amet, bibendum convallis
-          ligula. Integer eget venenatis erat. Proin sit amet volutpat risus.
-          Sed rhoncus aliquet blandit. Ut porta orci quis erat fringilla
-          sodales. Curabitur posuere scelerisque facilisis. Curabitur id varius
-          erat, nec consectetur orci. Proin congue, sem non iaculis tincidunt,
-          orci sapien lobortis felis, non blandit leo leo in diam. Nulla
-          sodales, magna in facilisis rhoncus, diam nulla pellentesque lectus,
-          sed volutpat erat risus sit amet lacus. Vivamus pharetra pharetra
-          diam. Praesent eget placerat felis, et tempus nulla. Donec id nulla
-          maximus libero suscipit maximus quis in urna. Sed nec ipsum vel orci
-          viverra dignissim quis sed ipsum. Nam quis felis ac dolor ullamcorper
-          ultrices et iaculis ipsum. Suspendisse vitae felis nec nibh aliquam
-          pretium quis in mauris. Integer non justo tellus. Donec sem nulla,
-          rhoncus ultrices sem et, congue pellentesque magna. Nullam a dui
-          vehicula ligula commodo dignissim non vitae diam. Cras eleifend a ex
-          vel laoreet. Vivamus luctus urna nec neque fringilla, eget eleifend
-          ligula pretium. Praesent tincidunt ligula neque, id faucibus urna
-          facilisis vitae. Nullam nec lacus rutrum, aliquet velit eu, gravida
-          massa. Morbi viverra vitae tortor at congue. Duis fermentum nunc at
-          ullamcorper iaculis. Quisque id lorem urna. Morbi velit odio,
-          convallis at consectetur ut, vestibulum ut nulla. Curabitur lectus
-          quam, semper at turpis eu, viverra bibendum erat. Sed blandit quis
-          ante id eleifend. Cras neque dui, semper tincidunt rutrum et, suscipit
-          in augue. Etiam id lectus purus. Vivamus enim nisl, sagittis vel
-          varius ut, blandit at odio. Aliquam dignissim urna velit, eget dictum
-          ex dictum non. Integer molestie, ex ut porta tincidunt, urna enim
-          rutrum justo, eu pellentesque nisi nulla id justo. Sed in ullamcorper
-          eros, a rutrum nulla. Donec et neque in orci convallis dapibus nec ut
-          enim. Donec ullamcorper, mi eu condimentum mattis, dolor dolor
-          faucibus libero, in tempus magna ipsum vel risus. Phasellus facilisis
-          tincidunt diam blandit ultrices. Fusce ac ante dui. Praesent luctus
-          faucibus scelerisque. Aenean vulputate at eros accumsan dictum.
-          Suspendisse fringilla nunc diam, non elementum nulla malesuada ac.
-          Phasellus eleifend, dolor nec consectetur fermentum, ex eros
-          sollicitudin magna, a blandit erat nisl eget tortor. Proin lobortis
-          consequat metus, quis tincidunt risus eleifend ut. Integer convallis
-          nisl a arcu interdum, vitae fermentum neque semper. Aliquam quis ipsum
-          tellus. Nulla et pellentesque felis.
-        </p>
-        <H2 className="secondary-title" id="immobiliers-investissements">
-          Immobiliers et investissements
-        </H2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-          lacus nisi, pharetra id euismod et, tempor iaculis erat. Suspendisse
-          ullamcorper vehicula lacinia. Nullam non mauris a sem euismod
-          scelerisque pretium id nunc. Vestibulum posuere urna non mi convallis
-          accumsan. Nullam placerat posuere venenatis. Duis ligula sapien,
-          scelerisque eget rhoncus at, accumsan eu sem. Praesent ut massa sit
-          amet ex lobortis interdum et eget dolor. Vivamus ac elit felis. Donec
-          nisi lacus, laoreet at dui sit amet, bibendum convallis ligula.
-          Integer eget venenatis erat. Proin sit amet volutpat risus. Sed
-          rhoncus aliquet blandit. Ut porta orci quis erat fringilla sodales.
-          Curabitur posuere scelerisque facilisis. Curabitur id varius erat, nec
-          consectetur orci. Proin congue, sem non iaculis tincidunt, orci sapien
-          lobortis felis, non blandit leo leo in diam. Nulla sodales, magna in
-          facilisis rhoncus, diam nulla pellentesque lectus, sed volutpat erat
-          risus sit amet lacus. Vivamus pharetra pharetra diam. Praesent eget
-          placerat felis, et tempus nulla. Donec id nulla maximus libero
-          suscipit maximus quis in urna. Sed nec ipsum vel orci viverra
-          dignissim quis sed ipsum. Nam quis felis ac dolor ullamcorper ultrices
-          et iaculis ipsum. Suspendisse vitae felis nec nibh aliquam pretium
-          quis in mauris. Integer non justo tellus. Donec sem nulla, rhoncus
-          ultrices sem et, congue pellentesque magna. Nullam a dui vehicula
-          ligula commodo dignissim non vitae diam. Cras eleifend a ex vel
-          laoreet. Vivamus luctus urna nec neque fringilla, eget eleifend ligula
-          pretium. Praesent tincidunt ligula neque, id faucibus urna facilisis
-          vitae. Nullam nec lacus rutrum, aliquet velit eu, gravida massa. Morbi
-          viverra vitae tortor at congue. Duis fermentum nunc at ullamcorper
-          iaculis. Quisque id lorem urna. Morbi velit odio, convallis at
-          consectetur ut, vestibulum ut nulla. Curabitur lectus quam, semper at
-          turpis eu, viverra bibendum erat. Sed blandit quis ante id eleifend.
-          Cras neque dui, semper tincidunt rutrum et, suscipit in augue. Etiam
-          id lectus purus. Vivamus enim nisl, sagittis vel varius ut, blandit at
-          odio. Aliquam dignissim urna velit, eget dictum ex dictum non. Integer
-          molestie, ex ut porta tincidunt, urna enim rutrum justo, eu
-          pellentesque nisi nulla id justo. Sed in ullamcorper eros, a rutrum
-          nulla. Donec et neque in orci convallis dapibus nec ut enim. Donec
-          ullamcorper, mi eu condimentum mattis, dolor dolor faucibus libero, in
-          tempus magna ipsum vel risus. Phasellus facilisis tincidunt diam
-          blandit ultrices. Fusce ac ante dui. Praesent luctus faucibus
-          scelerisque. Aenean vulputate at eros accumsan dictum. Suspendisse
-          fringilla nunc diam, non elementum nulla malesuada ac. Phasellus
-          eleifend, dolor nec consectetur fermentum, ex eros sollicitudin magna,
-          a blandit erat nisl eget tortor. Proin lobortis consequat metus, quis
-          tincidunt risus eleifend ut. Integer convallis nisl a arcu interdum,
-          vitae fermentum neque semper. Aliquam quis ipsum tellus. Nulla et
-          pellentesque felis. Lorem ipsum dolor sit amet, consectetur adipiscing
-          elit. Suspendisse lacus nisi, pharetra id euismod et, tempor iaculis
-          erat. Suspendisse ullamcorper vehicula lacinia. Nullam non mauris a
-          sem euismod scelerisque pretium id nunc. Vestibulum posuere urna non
-          mi convallis accumsan. Nullam placerat posuere venenatis. Duis ligula
-          sapien, scelerisque eget rhoncus at, accumsan eu sem. Praesent ut
-          massa sit amet ex lobortis interdum et eget dolor. Vivamus ac elit
-          felis. Donec nisi lacus, laoreet at dui sit amet, bibendum convallis
-          ligula. Integer eget venenatis erat. Proin sit amet volutpat risus.
-          Sed rhoncus aliquet blandit. Ut porta orci quis erat fringilla
-          sodales. Curabitur posuere scelerisque facilisis. Curabitur id varius
-          erat, nec consectetur orci. Proin congue, sem non iaculis tincidunt,
-          orci sapien lobortis felis, non blandit leo leo in diam. Nulla
-          sodales, magna in facilisis rhoncus, diam nulla pellentesque lectus,
-          sed volutpat erat risus sit amet lacus. Vivamus pharetra pharetra
-          diam. Praesent eget placerat felis, et tempus nulla. Donec id nulla
-          maximus libero suscipit maximus quis in urna. Sed nec ipsum vel orci
-          viverra dignissim quis sed ipsum. Nam quis felis ac dolor ullamcorper
-          ultrices et iaculis ipsum. Suspendisse vitae felis nec nibh aliquam
-          pretium quis in mauris. Integer non justo tellus. Donec sem nulla,
-          rhoncus ultrices sem et, congue pellentesque magna. Nullam a dui
-          vehicula ligula commodo dignissim non vitae diam. Cras eleifend a ex
-          vel laoreet. Vivamus luctus urna nec neque fringilla, eget eleifend
-          ligula pretium. Praesent tincidunt ligula neque, id faucibus urna
-          facilisis vitae. Nullam nec lacus rutrum, aliquet velit eu, gravida
-          massa. Morbi viverra vitae tortor at congue. Duis fermentum nunc at
-          ullamcorper iaculis. Quisque id lorem urna. Morbi velit odio,
-          convallis at consectetur ut, vestibulum ut nulla. Curabitur lectus
-          quam, semper at turpis eu, viverra bibendum erat. Sed blandit quis
-          ante id eleifend. Cras neque dui, semper tincidunt rutrum et, suscipit
-          in augue. Etiam id lectus purus. Vivamus enim nisl, sagittis vel
-          varius ut, blandit at odio. Aliquam dignissim urna velit, eget dictum
-          ex dictum non. Integer molestie, ex ut porta tincidunt, urna enim
-          rutrum justo, eu pellentesque nisi nulla id justo. Sed in ullamcorper
-          eros, a rutrum nulla. Donec et neque in orci convallis dapibus nec ut
-          enim. Donec ullamcorper, mi eu condimentum mattis, dolor dolor
-          faucibus libero, in tempus magna ipsum vel risus. Phasellus facilisis
-          tincidunt diam blandit ultrices. Fusce ac ante dui. Praesent luctus
-          faucibus scelerisque. Aenean vulputate at eros accumsan dictum.
-          Suspendisse fringilla nunc diam, non elementum nulla malesuada ac.
-          Phasellus eleifend, dolor nec consectetur fermentum, ex eros
-          sollicitudin magna, a blandit erat nisl eget tortor. Proin lobortis
-          consequat metus, quis tincidunt risus eleifend ut. Integer convallis
-          nisl a arcu interdum, vitae fermentum neque semper. Aliquam quis ipsum
-          tellus. Nulla et pellentesque felis.
-        </p>
+    <div className="container">
+      <div className="row">
+        <H1>Mettre des moyens au service d'un projet</H1>
+
+        <H2 id="relations-adherents">Relation adhérents</H2>
+
+        <div className="col s12 m6">
+          <SimpleCard cardClass="blue">
+            <p>
+              PÔLE SANTÉ TRAVAIL poursuit une ambition, proposer une réelle
+              politique de service rendu aux entreprises adhérentes. Notre coeur
+              de métier, ce sont les actions concernant le suivi de santé et le
+              conseil en prévention des risques, en adéquation avec la
+              réglementation et la prescription médicale, cependant PÔLE SANTÉ
+              TRAVAIL a souhaité aussi intégrer dans ses équipes un service qui
+              soit un facilitateur, voire dans certains cas, un médiateur.
+            </p>
+
+            <p>
+              La relation-adhérents se déplace en entreprise sur leur demande ou
+              à l’initiative de PÔLE SANTÉ TRAVAIL. Une vingtaine de rendez-vous
+              sont fixés par mois.
+            </p>
+            <p>
+              Ces rencontres permettent aussi de recueillir les informations
+              essentielles qui permettront une mise en place facilitée du suivi
+              de santé, des actions plus pertinentes, des informations plus
+              ciblées. Il s’agit de comprendre les processus et trouver les
+              leviers d’amélioration et de performance de notre association.
+            </p>
+            <p>
+              La relation adhérents procède également à une évaluation des
+              outils d’interfaçage avec les entreprises comme l’espace adhérents
+              ou le portail pénibilité, dans l’optique d’améliorer ces outils,
+              régulièrement présentés en entreprise même, ce qui l’occasion de
+              recueillir en direct le ressenti des utilisateurs.
+            </p>
+
+            <p>
+              Cela facilite les relations entre le Service de Santé au Travail
+              et l’entreprise adhérente.
+            </p>
+          </SimpleCard>
+        </div>
+
+        <div className="col s12 m6">
+          <StatCard cardClass="white">
+            <strong>2 846</strong>
+            <span>ADHESIONS POUR</span>
+
+            <strong>15 221</strong>
+            <span>SALARIÉS SUIVIS</span>
+
+            <strong>3 385</strong>
+            <span>RADIATIONS POUR</span>
+
+            <strong>21 515</strong>
+            <span>SALARIÉS SUIVIS</span>
+          </StatCard>
+        </div>
+
+        <H2 id="communication">Communication</H2>
+
+        <H3>Les supports d'information et de communication</H3>
+
+        <div className="col s12 m6">
+          <StatCard cardClass="white">
+            <strong>138</strong>
+            <span>Supports réalisés ou mis à jour</span>
+          </StatCard>
+        </div>
+
+        <div className="col s12 m6">
+          <StatCard cardClass="white">
+            <span>Mettre les images des docs</span>
+          </StatCard>
+        </div>
+
+        <H3>Le Web/Site Web de Pôle Santé Travail</H3>
+
+        <div className="col s12 m8">
+          <SimpleCard cardClass="blue">
+            <div className="col s12 m6">
+              <StatCard cardClass="white">
+                <strong>185 451</strong>
+                <span>VISITES</span>
+
+                <strong>381 782</strong>
+                <span>PAGES VUES</span>
+
+                <strong>75 464</strong>
+                <span>VISITEURS UNIQUES</span>
+
+                <strong>69 240</strong>
+                <span>NOUVELLES VISITES</span>
+              </StatCard>
+            </div>
+
+            <p>NOUVEAU SITE INTERNET</p>
+
+            <p>
+              En 2017, PÔLE SANTÉ TRAVAIL a lancé un nouveau site web. Un comité
+              web pluridisciplinaire s’est réuni trois fois pour définir les
+              contenus et tester l’interface.
+            </p>
+
+            <p>
+              En parallèle, le service communication a élaboré un cahier des
+              charges et sélectionné un prestataire. Entre mars et octobre, le
+              site a été monté. Depuis octobre dernier, l’interface livrée
+              présente un système de double entrée employeur/salarié qui permet
+              de cibler davantage les informations diffusées.
+            </p>
+            <p>
+              Le site offre également une meilleure lisibilité des actions de
+              PÔLE SANTÉ TRAVAIL et valorise les documents de prévention et les
+              témoignages d’entreprises. L’objectif du projet était aussi de
+              mieux comprendre l’intérêt d’adhérer à nos services et rendre
+              lisibles les modalités d’adhésion.
+            </p>
+          </SimpleCard>
+        </div>
+
+        <div className="col s12 m4">
+          <StatCard cardClass="white">
+            <strong>8/10</strong>
+            <span>Note globale du site</span>
+            <p>Obtenue après enquête</p>
+          </StatCard>
+        </div>
+
+        <H2 id="immobiliers-investissements">Immobiliers et investissements</H2>
+
+        <div className="col s12 m6">
+          <SimpleCard cardClass="white">
+            <p>AMENAGEMENTS</p>
+            <ul className="card__list">
+              <li>Somain</li>
+              <li>Leers</li>
+              <li>Roubaix</li>
+              <li>Tourcoing</li>
+              <li>Caestre</li>
+              <li>Villeneuve d'ascq - La Plaine</li>
+              <li>Saint-Omer</li>
+              <li>Sainghin-en-Mélantois</li>
+              <li>Vauban (Siège)</li>
+            </ul>
+          </SimpleCard>
+        </div>
+
+        <div className="col s12 m6">
+          <SimpleCard cardClass="white">
+            <strong>OUVERTURE DES CENTRES</strong>
+
+            <p>Lomme Humanicité</p>
+            <ul className="card__list">
+              <li>OUVERTURE EN FEVRIER 2017</li>
+            </ul>
+            <p>Douai Dorignies</p>
+            <ul className="card__list">
+              <li>OUVERTURE EN DECEMBRE 2017</li>
+            </ul>
+            <figure>
+              <img
+                className="responsive-img photo-centre-douai"
+                src="static/images/mettre-des-moyens/centre-douai.jpg"
+                alt="photo centre douai"
+              />
+              <figcaption>
+                <strong>Centre de Douai Dorignies</strong>
+              </figcaption>
+            </figure>
+          </SimpleCard>
+        </div>
       </div>
     </div>
 

@@ -1,44 +1,56 @@
 import Head from "next/head";
-import { sideNavColors } from "../constantes/colors";
 
 import Layout from "../components/Layout";
 import News from "../components/News";
 
+import { sideNavColors } from "../constantes/colors";
 import { categoryColors, indexColors } from "../constantes/colors";
 import { indexDimensions } from "../constantes/dimensions";
 
-export default () => (
-  <Layout>
-    <div className="row">
-      <section className="intro z-depth-1">
-        <div className="col s12 m4 offset-m4">
-          <h1 className="intro__title">rapport annuel d'activités</h1>
-        </div>
+import Services from "../services";
 
-        <div className="col s12">
-          <span className="year"> 2017 </span>
+class Index extends React.Component {
+  static async getInitialProps({ req }) {
+    const news = await Services.news.getNews();
 
-          <a className="intro__survey waves-effect waves-light  btn-flat">
-            <i className="material-icons left">question_answer</i>accéder au
-            questionnaire
-          </a>
+    return news;
+  }
 
-          <a className="intro__discover waves-effect waves-light btn-large">
-            <i className="material-icons left">insert_chart</i>commencer la
-            visite
-          </a>
+  render() {
+    return (
+      <Layout>
+        <div className="row">
+          <section className="intro z-depth-1">
+            <div className="col s12 m4 offset-m4">
+              <h1 className="intro__title">rapport annuel d'activités</h1>
+            </div>
 
-          {/* <div className="row">
-          <div className="col s12 m6">
-            <News />
+            <div className="col s12">
+              <span className="year"> 2017 </span>
+
+              <a className="intro__survey waves-effect waves-light  btn-flat">
+                <i className="material-icons left">question_answer</i>accéder au
+                questionnaire
+              </a>
+
+              <a className="intro__discover waves-effect waves-light btn-large">
+                <i className="material-icons left">insert_chart</i>commencer la
+                visite
+              </a>
+            </div>
+          </section>
+
+          <div className="container">
+            <div className="row">
+              <div className="col s12 m6">
+                <section className="news">
+                  <News dataList={this.props} />
+                </section>
+              </div>
+            </div>
           </div>
-        </div> */}
         </div>
-      </section>
-    </div>
-
-    <style jsx>
-      {`
+        <style jsx>{`
         .col {
           padding: 0 !important;
         }
@@ -131,7 +143,10 @@ export default () => (
           padding: 1.5rem;
           display: none;
         }
-      `}
-    </style>
-  </Layout>
-);
+      `}</style>
+      </Layout>
+    );
+  }
+}
+
+export default Index;

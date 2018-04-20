@@ -29,7 +29,8 @@ const categoryColors = {
 const sideNavColors = {
   backgroundColor: categoryColors.blue,
   backgroundGradient: categoryColors.blueGradient,
-  fontColor: "whitesmoke"
+  fontColor: "whitesmoke",
+  scrollBar: categoryColors.blue
 };
 
 sideNavColors.logo = {
