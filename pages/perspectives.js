@@ -1,5 +1,6 @@
 import Layout from "../components/Layout";
 import H1 from "../components/H1";
+import ScrollAnimation from "react-animate-on-scroll";
 
 import { categoryColors } from "../constantes/colors";
 
@@ -72,9 +73,11 @@ export default () => (
               PÔLE SANTÉ TRAVAIL a anticipé ces avancées et l’année 2016 a été
               marquée par:
             </p>
-            <strong>
-              UNE ORGANISATION CENTRÉE AUTOUR DE L’ÉQUIPE SANTÉ TRAVAIL
-            </strong>
+            <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut">
+              <strong>
+                UNE ORGANISATION CENTRÉE AUTOUR DE L’ÉQUIPE SANTÉ TRAVAIL
+              </strong>
+            </ScrollAnimation>
           </div>
         </div>
 
@@ -86,10 +89,12 @@ export default () => (
               de terrain rentrent aujourd’hui dans ce dispositif soit 56 équipes
               sur l’ensemble du territoire de PÔLE SANTÉ TRAVAIL.
             </p>
-            <strong>
-              UNE POLITIQUE PATRIMONIALE AMBITIEUSE QUI FAVORISE UN SUIVI DE
-              SANTÉ DE QUALITÉ
-            </strong>
+            <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut">
+              <strong>
+                UNE POLITIQUE PATRIMONIALE AMBITIEUSE QUI FAVORISE UN SUIVI DE
+                SANTÉ DE QUALITÉ
+              </strong>
+            </ScrollAnimation>
             <p>
               PÔLE SANTÉ TRAVAIL poursuit un double objectif à travers la mise
               en place de sa politique patrimoniale : offrir aux équipes de
@@ -111,10 +116,12 @@ export default () => (
             </p>
           </div>
           <div className="col s12 m6 offset-m3">
-            <strong>
-              UNE MEILLEURE TRAÇABILITÉ ET UNE VALORISATION DE NOS ACTIONS
-              AUTOUR D’UN PROJET DIGITAL : SANTÉ TRAVAIL 3.0
-            </strong>
+            <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut">
+              <strong>
+                UNE MEILLEURE TRAÇABILITÉ ET UNE VALORISATION DE NOS ACTIONS
+                AUTOUR D’UN PROJET DIGITAL : SANTÉ TRAVAIL 3.0
+              </strong>
+            </ScrollAnimation>
           </div>
           <div className="col s12 m12">
             <p>
@@ -158,7 +165,9 @@ export default () => (
         </div>
         <div className="row">
           <div className="col s12 m5 offset-m4">
-            <strong>"UNE COMMUNICATION EXTERNE ACTIVE"</strong>
+            <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut">
+              <strong>"UNE COMMUNICATION EXTERNE ACTIVE"</strong>
+            </ScrollAnimation>
           </div>
         </div>
 
@@ -183,9 +192,11 @@ export default () => (
           </div>
 
           <div className="col s12 m5 offset-m4">
-            <strong>
-              "UNE POLITIQUE DE FORMATION ET DE RECRUTEMENT VOLONTARISTE"
-            </strong>
+            <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut">
+              <strong>
+                "UNE POLITIQUE DE FORMATION ET DE RECRUTEMENT VOLONTARISTE"
+              </strong>
+            </ScrollAnimation>
           </div>
 
           <div className="col s12 m8 offset-m2">
