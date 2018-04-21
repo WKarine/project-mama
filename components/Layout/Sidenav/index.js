@@ -24,7 +24,7 @@ class Sidenav extends React.Component {
     const { categoryLinks } = this.props;
 
     return (
-      <div>
+      <React.Fragment>
         <ul id="slide-out" className="sidenav sidenav-fixed z-depth-1">
           <Link href="/">
             <a className="logo-container">
@@ -53,7 +53,11 @@ class Sidenav extends React.Component {
         </ul>
 
         {/* icon pour toggle la sideNav */}
-        <a href="#" data-target="slide-out" className="sidenav-trigger">
+        <a
+          href="#"
+          data-target="slide-out"
+          className="btn-floating btn-large waves-effect waves-light sidenav-trigger"
+        >
           <i className="medium material-icons">menu</i>
         </a>
 
@@ -92,26 +96,21 @@ class Sidenav extends React.Component {
 
           .sidenav-trigger {
             z-index: 9;
+            position: fixed;
           }
 
           @media only screen and (max-width: 992px) {
             .sidenav-trigger {
-              font-size: 1.5rem;
-              background-color: ${sideNavColors.backgroundColor};
-              color: whitesmoke;
-              border-radius: 50%;
-              width: 5rem;
-              height: 5rem;
+              bottom: 1rem;
+              right: 1rem;
               display: flex;
               justify-content: center;
               align-items: center;
-              position: fixed;
-              bottom: 2rem;
-              right: 2rem;
+              background-color: ${sideNavColors.backgroundColor};
             }
           }
         `}</style>
-      </div>
+      </React.Fragment>
     );
   }
 }
