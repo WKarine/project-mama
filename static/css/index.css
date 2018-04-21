@@ -46,3 +46,17 @@ html {
     padding-left: 0;
   }
 }
+
+.chart-container {
+  width: 500px;
+  height: 500px;
+  margin: auto;
+  overflow: hidden;
+}
+
+@media only screen and (max-width: 992px) {
+  .chart-container {
+    width: 250px;
+    height: 250px;
+  }
+}
