@@ -1,8 +1,8 @@
 import { ResponsivePie } from "@nivo/pie";
 
-console.dir(ResponsivePie);
 import Layout from "../components/Layout";
-const data1 = [
+
+const data = [
   {
     id: "ruby",
     label: "ruby",
@@ -47,50 +47,54 @@ const data1 = [
   }
 ];
 
-export default () => (
+const TestNivo = () => (
   <Layout>
     <div className="container">
       <div className="row">
         {/* perspectives, apres id blabla */}
-        <ResponsivePie
-          data={data}
-          margin={{
-            top: 40,
-            right: 80,
-            bottom: 80,
-            left: 80
-          }}
-          innerRadius={0.5}
-          padAngle={0.7}
-          cornerRadius={3}
-          colors="d320c"
-          colorBy="id"
-          borderColor="inherit:darker(0.6)"
-          radialLabelsSkipAngle={10}
-          radialLabelsTextXOffset={6}
-          radialLabelsTextColor="#333333"
-          radialLabelsLinkOffset={0}
-          radialLabelsLinkDiagonalLength={16}
-          radialLabelsLinkHorizontalLength={24}
-          radialLabelsLinkStrokeWidth={1}
-          radialLabelsLinkColor="inherit"
-          slicesLabelsSkipAngle={10}
-          slicesLabelsTextColor="#333333"
-          animate={true}
-          motionStiffness={90}
-          motionDamping={15}
-          legends={[
-            {
-              anchor: "bottom",
-              direction: "row",
-              translateY: 56,
-              itemWidth: 100,
-              itemHeight: 14,
-              symbolSize: 14,
-              symbolShape: "circle"
-            }
-          ]}
-        />
+        <div className="col s12">
+          <div className="chart-container">
+            <ResponsivePie
+              data={data}
+              margin={{
+                top: 40,
+                right: 80,
+                bottom: 80,
+                left: 80
+              }}
+              innerRadius={0.5}
+              padAngle={0.7}
+              cornerRadius={3}
+              colors="d320c"
+              colorBy="id"
+              borderColor="inherit:darker(0.6)"
+              radialLabelsSkipAngle={10}
+              radialLabelsTextXOffset={6}
+              radialLabelsTextColor="#333333"
+              radialLabelsLinkOffset={0}
+              radialLabelsLinkDiagonalLength={16}
+              radialLabelsLinkHorizontalLength={24}
+              radialLabelsLinkStrokeWidth={1}
+              radialLabelsLinkColor="inherit"
+              slicesLabelsSkipAngle={10}
+              slicesLabelsTextColor="#333333"
+              animate={true}
+              motionStiffness={90}
+              motionDamping={15}
+              legends={[
+                {
+                  anchor: "bottom",
+                  direction: "row",
+                  translateY: 56,
+                  itemWidth: 100,
+                  itemHeight: 14,
+                  symbolSize: 14,
+                  symbolShape: "circle"
+                }
+              ]}
+            />
+          </div>
+        </div>
         {/* deuxieme graphique, etc...*/}
       </div>
     </div>
@@ -98,3 +102,5 @@ export default () => (
     <style jsx>{``}</style>
   </Layout>
 );
+
+export default TestNivo;
