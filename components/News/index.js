@@ -8,7 +8,7 @@ const News = ({ dataList }) => (
   <ul className="news collapsible">
     {dataList.titles.map((title, i) => (
       <li className="news__item" key={title}>
-        <div className="news__title collapsible-header">{title}</div>
+        <div className="news__title collapsible-header truncate">{title}</div>
 
         <div className="collapsible-body">
           <Link href={"https://www.polesantetravail.fr" + dataList.urls[i]}>
