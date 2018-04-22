@@ -64,7 +64,7 @@ class Sidenav extends React.Component {
         <style jsx>{`
           .logo-container {
             align-items: center;
-            background-color: ${sideNavColors.logo.backgroundColor};
+            background-color: white;
             border-radius: 50%;
             cursor: pointer;
             display: flex;

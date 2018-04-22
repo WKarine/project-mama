@@ -1,5 +1,6 @@
 import Layout from "../components/Layout";
 import H1 from "../components/H1";
+import ScrollAnimation from "react-animate-on-scroll";
 
 import { categoryColors } from "../constantes/colors";
 
@@ -18,7 +19,7 @@ export default () => (
                 alt="director"
               />
               <span className="card-title legend">
-                Louis-Marie Hardy, <br />Directeur général de Pôle Santé Travail
+                Louis-Marie Hardy, <br />Directeur général Pôle Santé Travail
               </span>
             </div>
           </div>
@@ -79,9 +80,11 @@ export default () => (
               PÔLE SANTÉ TRAVAIL a anticipé ces avancées et l’année 2016 a été
               marquée par:
             </p>
-            <strong>
-              UNE ORGANISATION CENTRÉE AUTOUR DE L’ÉQUIPE SANTÉ TRAVAIL
-            </strong>
+            <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut">
+              <strong>
+                UNE ORGANISATION CENTRÉE AUTOUR DE L’ÉQUIPE SANTÉ TRAVAIL
+              </strong>
+            </ScrollAnimation>
           </div>
         </div>
 
@@ -99,10 +102,12 @@ export default () => (
           </div>
 
           <div className="col s12 m8 offset-m2">
-            <strong>
-              UNE POLITIQUE PATRIMONIALE AMBITIEUSE QUI FAVORISE UN SUIVI DE
-              SANTÉ DE QUALITÉ
-            </strong>
+            <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut">
+              <strong>
+                UNE POLITIQUE PATRIMONIALE AMBITIEUSE QUI FAVORISE UN SUIVI DE
+                SANTÉ DE QUALITÉ
+              </strong>
+            </ScrollAnimation>
           </div>
 
           <div className="col s12 valign">
@@ -127,12 +132,16 @@ export default () => (
               centres de santé au travail.
             </p>
           </div>
+
           <div className="col s12 m8 offset-m2">
-            <strong>
-              UNE MEILLEURE TRAÇABILITÉ ET UNE VALORISATION DE NOS ACTIONS
-              AUTOUR D’UN PROJET DIGITAL : SANTÉ TRAVAIL 3.0
-            </strong>
+            <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut">
+              <strong>
+                UNE MEILLEURE TRAÇABILITÉ ET UNE VALORISATION DE NOS ACTIONS
+                AUTOUR D’UN PROJET DIGITAL : SANTÉ TRAVAIL 3.0
+              </strong>
+            </ScrollAnimation>
           </div>
+
           <div className="col s12 m12">
             <p>
               Santé travail 3.0 recouvre toutes les dimensions de notre métier.
@@ -174,7 +183,9 @@ export default () => (
         </div>
         <div className="row">
           <div className="col s12 m5 offset-m4">
-            <strong>"UNE COMMUNICATION EXTERNE ACTIVE"</strong>
+            <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut">
+              <strong>"UNE COMMUNICATION EXTERNE ACTIVE"</strong>
+            </ScrollAnimation>
           </div>
         </div>
 
@@ -199,9 +210,11 @@ export default () => (
           </div>
 
           <div className="col s12 m8 offset-m2">
-            <strong>
-              "UNE POLITIQUE DE FORMATION ET DE RECRUTEMENT VOLONTARISTE"
-            </strong>
+            <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut">
+              <strong>
+                "UNE POLITIQUE DE FORMATION ET DE RECRUTEMENT VOLONTARISTE"
+              </strong>
+            </ScrollAnimation>
           </div>
 
           <div className="col s12 m8 offset-m2">
@@ -239,6 +252,7 @@ export default () => (
 
       strong {
         color: ${categoryColors.blue};
+        display: block;
         font-size: 1.4rem;
         font-weight: bold;
         display: block;
