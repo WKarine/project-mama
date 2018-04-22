@@ -6,6 +6,8 @@ import H2 from "../components/H2";
 
 import StatCard from "../components/StatCard";
 
+import ScrollAnimation from "react-animate-on-scroll";
+
 export default () => (
   <Layout>
     <div className="container">
@@ -23,59 +25,83 @@ export default () => (
           </p>
         </div>
         <H2 id="chrd">CHRD (Cafés, Hôtels, Restaurants, Discothèques)</H2>
+        <div className="col s12 valign">
+          <div className="valign-left">
+            <Link href="http://www.chodevant.fr/">
+              <a target="_blank">
+                <ScrollAnimation animateIn="bounceInLeft" duration="1">
+                  <img
+                    className="responsive-img"
+                    src="static/images/mener-des-actions/bar.jpeg"
+                  />
+                </ScrollAnimation>
+              </a>
+            </Link>
+          </div>
+          <div className="valign-right">
+            <StatCard cardClass="blue">
+              <strong>1 724</strong>
+              <span>ENTREPRISES CONCERNEES</span>
 
-        <div className="col s12 m6">
-          <p>trouver une icone</p>
-          <Link href="http://www.chodevant.fr/">
-            <a target="_blank">www.chodevant.fr</a>
-          </Link>
-        </div>
-
-        <div className="col s12 m6">
-          <StatCard cardClass="blue">
-            <strong>1 724</strong>
-            <span>ENTREPRISES CONCERNEES</span>
-
-            <strong>13 047</strong>
-            <span>SALARIES CONCERNEES</span>
-          </StatCard>
+              <strong>13 047</strong>
+              <span>SALARIES CONCERNEES</span>
+            </StatCard>
+          </div>
         </div>
 
         <H2 id="colorisk">Colorisk (Peintres en bâtiments)</H2>
 
-        <div className="col s12 m6">
-          <StatCard cardClass="blue">
-            <strong>429</strong>
-            <span>ENTREPRISES CONCERNEES</span>
+        <div className="col s12 valign">
+          <div className="valign-left">
+            <StatCard cardClass="blue">
+              <strong>429</strong>
+              <span>ENTREPRISES CONCERNEES</span>
 
-            <strong>2 803</strong>
-            <span>SALARIES CONCERNEES</span>
-          </StatCard>
-        </div>
-
-        <div className="col s12 m6">
-          <p>trouver une icone</p>
-          <Link href="http://www.colorisk.fr/">
-            <a target="_blank">www.colorisk.fr</a>
-          </Link>
+              <strong>2 803</strong>
+              <span>SALARIES CONCERNEES</span>
+            </StatCard>
+          </div>
+          <div className="valign-right">
+            <Link href="http://www.colorisk.fr/">
+              <a target="_blank">
+                <ScrollAnimation animateIn="bounceInRight" duration="1">
+                  <img
+                    className="responsive-img"
+                    src="static/images/mener-des-actions/paint.jpeg"
+                  />
+                </ScrollAnimation>
+              </a>
+            </Link>
+          </div>
         </div>
 
         <H2 id="metiers-du-bois">Les métiers du bois</H2>
-        <div className="col s12 m6">
-          <p>trouver une icone</p>
-        </div>
 
-        <div className="col s12 m6">
-          <StatCard cardClass="blue">
-            <strong>511</strong>
-            <span>ENTREPRISES CONCERNEES</span>
+        <div className="col s12 valign">
+          <div className="valign-left">
+            <ScrollAnimation animateIn="bounceInLeft" duration="1">
+              <img
+                className="responsive-img"
+                src="static/images/mener-des-actions/wood.jpeg"
+              />
+            </ScrollAnimation>
+          </div>
+          <div className="valign-right">
+            <StatCard cardClass="blue">
+              <strong>511</strong>
+              <span>ENTREPRISES CONCERNEES</span>
 
-            <strong>4 939</strong>
-            <span>SALARIES CONCERNEES</span>
-          </StatCard>
+              <strong>4 939</strong>
+              <span>SALARIES CONCERNEES</span>
+            </StatCard>
+          </div>
         </div>
       </div>
     </div>
-    <style jsx>{``}</style>
+    <style jsx>{`
+      p {
+        text-align: center;
+      }
+    `}</style>
   </Layout>
 );
