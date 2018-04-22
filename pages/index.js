@@ -3,6 +3,7 @@ import Head from "next/head";
 import Layout from "../components/Layout";
 import News from "../components/News";
 import Loader from "../components/Loader";
+import Link from "next/link";
 
 import { sideNavColors } from "../constantes/colors";
 import { categoryColors, indexColors } from "../constantes/colors";
@@ -42,12 +43,15 @@ class Index extends React.Component {
 
               <div className="col s12">
                 <span className="year"> 2017 </span>
-
-                <a className="intro__survey waves-effect waves-light  btn-flat">
-                  <i className="material-icons left">question_answer</i>accéder
-                  au questionnaire
-                </a>
-
+                <Link href="https://polesantetravail.typeform.com/to/SQmWc8">
+                  <a
+                    target="_blank"
+                    className="intro__survey waves-effect waves-light  btn-flat"
+                  >
+                    <i className="material-icons left">question_answer</i>accéder
+                    au questionnaire
+                  </a>
+                </Link>
                 <a className="intro__discover waves-effect waves-light btn-large">
                   <i className="material-icons left">insert_chart</i>commencer
                   la visite
