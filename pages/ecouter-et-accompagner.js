@@ -57,12 +57,12 @@ export default () => (
   <Layout>
     <div className="container">
       <div className="row">
-        <H1>
+        <H1 id="aide-evaluation-risques">
           Ecouter et accompagner les entreprises dans leur démarche de
           prévention
         </H1>
 
-        <H2 id="aide-evaluation-risques">L'aide à l'évaluation des risques</H2>
+        <H2>L'aide à l'évaluation des risques</H2>
 
         <div className="col s12">
           <p>Section en construction</p>

@@ -9,9 +9,11 @@ export default () => (
   <Layout>
     <div className="container">
       <div className="row">
-        <H1>Mettre des moyens au service d'un projet</H1>
+        <H1 id="relations-adherents">
+          Mettre des moyens au service d'un projet
+        </H1>
 
-        <H2 id="relations-adherents">Relation adhérents</H2>
+        <H2>Relation adhérents</H2>
 
         <div className="col s12 m6">
           <SimpleCard cardClass="blue">

@@ -11,9 +11,9 @@ export default () => (
   <Layout>
     <div className="container">
       <div className="row">
-        <H1>fiche d'identité</H1>
+        <H1 id="qui-sommes-nous">fiche d'identité</H1>
 
-        <H2 id="qui-sommes-nous">qui sommes-nous ?</H2>
+        <H2>qui sommes-nous ?</H2>
 
         <div className="col s12 valign">
           <SimpleCard className="valign-left" cardClass="white">

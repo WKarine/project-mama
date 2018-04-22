@@ -56,11 +56,9 @@ export default () => (
   <Layout>
     <div className="container">
       <div className="row">
-        <H1>Veiller sur la santé des salariés</H1>
+        <H1 id="suivi-de-sante">veiller sur la santé des salariés</H1>
 
-        <H2 id="suivi-de-sante">
-          Un suivi de santé de qualité adapté à chaque salarié
-        </H2>
+        <H2>Un suivi de santé de qualité adapté à chaque salarié</H2>
 
         <H3>Dispositif de surveillance</H3>
 

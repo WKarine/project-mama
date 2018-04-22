@@ -12,7 +12,7 @@ export default () => (
   <Layout>
     <div className="container">
       <div className="row">
-        <H1 className="main-title">
+        <H1 id="chrd" className="main-title">
           Mener des actions au coeur des branches professionnelles
         </H1>
 
