@@ -1,10 +1,10 @@
 import classnames from "classnames";
 
-import { categoryColors } from "../../constantes/colors";
+import { brandColors } from "../../constantes/colors";
 
 const StatCard = ({ cardClass, icone, children, className }) => {
   const classes = classnames("stat-card", "card-panel", className, {
-    "card-blue": cardClass === "blue",
+    "card-colored": cardClass === "colored",
     "card-white": cardClass === "white"
   });
 
@@ -32,35 +32,39 @@ const StatCard = ({ cardClass, icone, children, className }) => {
             font-variant: small-caps;
           }
 
-          .stat-card.card-blue {
-            background-color: ${categoryColors.blue};
+          .stat-card.card-colored {
+            background-color: ${brandColors.actual};
           }
 
-          .stat-card.card-blue .material-icons {
-            color: ${categoryColors.fontColor};
+          .stat-card.card-colored .material-icons {
+            color: ${brandColors.fontColor};
           }
 
           .stat-card.card-white {
             background-color: white;
-            border: 1px solid ${categoryColors.blue};
+            border: 1px solid ${brandColors.actual};
           }
 
           .stat-card.card-white .material-icons {
-            color: ${categoryColors.blue};
+            color: ${brandColors.actual};
           }
 
           .stat-card.card-white strong,
           .stat-card.card-white span {
-            color: ${categoryColors.blue} !important;
+            color: ${brandColors.actual} !important;
           }
 
-          .stat-card.card-blue strong,
-          .stat-card.card-blue span {
-            color: ${categoryColors.fontColor} !important;
+          .stat-card.card-colored strong,
+          .stat-card.card-colored span {
+            color: white !important;
           }
 
-          .stat-card.card-blue p {
-            color: ${categoryColors.fontColor};
+          .stat-card.card-colored p {
+            color: white;
+          }
+
+          .stat-card.card-colored i {
+            color: white;
           }
         `}
       </style>

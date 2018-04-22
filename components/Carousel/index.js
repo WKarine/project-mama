@@ -201,6 +201,10 @@ class Carousel extends React.Component {
           .carousel {
             height: 350px;
           }
+
+          .carousel a {
+            color: initial !important;
+          }
         `}</style>
       </div>
     );

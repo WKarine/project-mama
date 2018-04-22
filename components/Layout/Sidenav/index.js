@@ -3,7 +3,7 @@ import Link from "next/link";
 import CategoryLink from "./CategoryLink";
 import SubCategory from "./SubCategory";
 
-import { sideNavColors } from "../../../constantes/colors";
+import { brandColors } from "../../../constantes/colors";
 import { sideNavDimensions } from "../../../constantes/dimensions";
 
 class Sidenav extends React.Component {
@@ -68,15 +68,14 @@ class Sidenav extends React.Component {
             border-radius: 50%;
             cursor: pointer;
             display: flex;
-            height: ${sideNavDimensions.logo.height};
+            height: 13.33rem;
             justify-content: center;
             margin: 2rem auto;
-            width: ${sideNavDimensions.logo.width};
+            width: 13.33rem;
           }
 
           .sidenav {
-            background: ${sideNavColors.backgroundColor}; /* fallback for old browsers */
-            background: ${sideNavColors.backgroundGradient}; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            background: ${brandColors.actual};
           }
 
           ::-webkit-scrollbar {
@@ -86,7 +85,7 @@ class Sidenav extends React.Component {
           ::-webkit-scrollbar-track {
             -webkit-box-shadow: 0 0 6px rgba(0, 0, 0, 0.8);
             border-radius: 2px;
-            background: ${sideNavColors.scrollBar};
+            background: ${brandColors.actual};
           }
 
           ::-webkit-scrollbar-thumb {
@@ -106,7 +105,7 @@ class Sidenav extends React.Component {
               display: flex;
               justify-content: center;
               align-items: center;
-              background-color: ${sideNavColors.backgroundColor};
+              background-color: ${brandColors.actual};
             }
           }
         `}</style>

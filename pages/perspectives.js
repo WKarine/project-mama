@@ -2,7 +2,7 @@ import Layout from "../components/Layout";
 import H1 from "../components/H1";
 import ScrollAnimation from "react-animate-on-scroll";
 
-import { categoryColors } from "../constantes/colors";
+import { brandColors } from "../constantes/colors";
 
 export default () => (
   <Layout>
@@ -251,7 +251,7 @@ export default () => (
       }
 
       strong {
-        color: ${categoryColors.blue};
+        color: ${brandColors.actual};
         display: block;
         font-size: 1.4rem;
         font-weight: bold;

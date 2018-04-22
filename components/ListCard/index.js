@@ -1,4 +1,4 @@
-import { categoryColors } from "../../constantes/colors";
+import { brandColors } from "../../constantes/colors";
 
 const ListCard = () => (
   <div className="list-card card-panel z-depth-0">
@@ -39,7 +39,7 @@ const ListCard = () => (
 
     <style jsx>{`
       .list-card h6 {
-        color: ${categoryColors.blue};
+        color: ${brandColors.actual};
         font-size: 2rem;
         font-variant: small-caps;
         text-align: center;
@@ -50,7 +50,7 @@ const ListCard = () => (
       }
 
       .list-card span {
-        color: ${categoryColors.blue};
+        color: ${brandColors.actual};
         display: inline-block;
         text-align: right;
         padding-right: 2rem;

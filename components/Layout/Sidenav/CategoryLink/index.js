@@ -10,7 +10,7 @@ const CategoryLink = ({ href, textContent }) => (
     <style jsx>
       {`
         .category-link {
-          color: ${sideNavColors.fontColor};
+          color: white;
           font-variant: small-caps;
           font-size: 1.5rem;
           letter-spacing: 0.1rem;

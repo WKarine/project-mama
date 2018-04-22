@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-import { categoryColors } from "../../constantes/colors";
+import { brandColors } from "../../constantes/colors";
 
 import { MAX_CHAR } from "../../constantes/news";
 
@@ -21,7 +21,7 @@ const News = ({ dataList }) => (
     ))}
     <style jsx>{`
       .news .news__item {
-        background-color: ${categoryColors.blue};
+        background-color: ${brandColors.actual};
       }
 
       .news .news__title {
@@ -30,7 +30,7 @@ const News = ({ dataList }) => (
 
       .news .news__summary {
         font-size: 1rem !important;
-        color: whitesmoke;
+        color: white;
       }
     `}</style>
   </ul>

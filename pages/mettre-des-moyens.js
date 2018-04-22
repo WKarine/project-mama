@@ -17,7 +17,7 @@ export default () => (
 
         <div className="col s12 valign">
           <div className="valign-left">
-            <SimpleCard cardClass="blue">
+            <SimpleCard cardClass="colored">
               <p>
                 PÔLE SANTÉ TRAVAIL poursuit une ambition, proposer une réelle
                 politique de service rendu aux entreprises adhérentes. Notre
@@ -37,7 +37,7 @@ export default () => (
             </SimpleCard>
           </div>
           <div className="valign-right">
-            <SimpleCard cardClass="blue">
+            <SimpleCard cardClass="colored">
               <p>
                 Ces rencontres permettent aussi de recueillir les informations
                 essentielles qui permettront une mise en place facilitée du
@@ -106,7 +106,7 @@ export default () => (
         <H3>Le Web/Site Web de Pôle Santé Travail</H3>
 
         <div className="col s12 m8">
-          <SimpleCard cardClass="blue">
+          <SimpleCard cardClass="colored">
             <div className="col s12 m6">
               <StatCard cardClass="white">
                 <strong>185 451</strong>

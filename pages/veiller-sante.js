@@ -79,7 +79,7 @@ export default () => (
         <H3>Tous les examens, les examens complémentaires</H3>
 
         <div className="col s12 m5 offset-m1">
-          <IconCard cardClass="green" dataList={dataList} />
+          <IconCard cardClass="colored" dataList={dataList} />
         </div>
 
         <div className="col s12 m5 offset-m1">
@@ -384,7 +384,7 @@ export default () => (
         <H2 id="suivi-en-chiffres">Le suivi de santé en chiffres</H2>
 
         <div className="col s12 m3">
-          <StatCard icone="people" cardClass="blue">
+          <StatCard icone="people" cardClass="colored">
             <strong>30 068</strong>
 
             <p>Examens d'aptitude à l'embauche</p>
@@ -400,7 +400,7 @@ export default () => (
         </div>
 
         <div className="col s12 m3">
-          <StatCard icone="people" cardClass="blue">
+          <StatCard icone="people" cardClass="colored">
             <strong>7 601</strong>
 
             <p>Examens à la demande de l'employeur</p>
@@ -416,7 +416,7 @@ export default () => (
         </div>
 
         <div className="col s12 m3">
-          <StatCard icone="people" cardClass="blue">
+          <StatCard icone="people" cardClass="colored">
             <strong>82 450</strong>
 
             <p>Avis d'aptitude</p>
@@ -436,7 +436,7 @@ export default () => (
         </div>
 
         <div className="col s12 m3">
-          <StatCard icone="people" cardClass="blue">
+          <StatCard icone="people" cardClass="colored">
             <strong>44 336</strong>
 
             <p>VIP à l'embauche réalisées par les médecins</p>

@@ -1,4 +1,4 @@
-import { categoryColors } from "../../../constantes/colors";
+import { brandColors } from "../../../constantes/colors";
 
 const ConnectionForm = () => (
   <div className="card-panel">

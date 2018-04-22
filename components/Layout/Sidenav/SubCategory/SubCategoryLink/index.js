@@ -12,7 +12,7 @@ const SubCategoryLink = ({ href, children }) => (
     <style jsx>
       {`
         .sub-category-link {
-          color: ${sideNavColors.fontColor};
+          color: white;
           font-size: ${sideNavDimensions.subCategory.fontSize};
           letter-spacing: 0.1rem;
           text-indent: 2rem;

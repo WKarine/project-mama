@@ -1,10 +1,10 @@
 import classnames from "classnames";
 
-import { categoryColors } from "../../constantes/colors";
+import { brandColors } from "../../constantes/colors";
 
 const SimpleCard = ({ cardClass, children, className }) => {
   const classes = classnames("simple-card", "card-panel", className, {
-    blue: cardClass === "blue",
+    colored: cardClass === "colored",
     white: cardClass === "white"
   });
 
@@ -31,26 +31,26 @@ const SimpleCard = ({ cardClass, children, className }) => {
             }
           }
 
-          .simple-card.blue .card__list li::before {
+          .simple-card.colored .card__list li::before {
             content: "• ";
-            color: ${categoryColors.fontColor};
+            color: white;
             margin-right: 1rem;
           }
 
           .simple-card.white .card__list li::before {
             content: "• ";
-            color: ${categoryColors.blue};
+            color: ${brandColors.actual};
             margin-right: 1rem;
           }
 
-          .simple-card.blue {
-            background-color: ${categoryColors.blue};
-            color: ${categoryColors.fontColor} !important;
+          .simple-card.colored {
+            background-color: ${brandColors.actual};
+            color: white !important;
           }
 
           .simple-card.white {
             background-color: white !important;
-            border: 1px solid ${categoryColors.blue};
+            border: 1px solid ${brandColors.actual};
           }
 
           .simple-card p {
@@ -58,7 +58,7 @@ const SimpleCard = ({ cardClass, children, className }) => {
           }
 
           .simple-card.white p {
-            color: ${categoryColors.blue};
+            color: ${brandColors.actual};
           }
 
           .simple-card .card__strong {

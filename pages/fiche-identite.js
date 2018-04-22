@@ -31,7 +31,7 @@ export default () => (
             avec le paiement d’une cotisation.
           </SimpleCard>
 
-          <SimpleCard className="valign-right" cardClass="blue">
+          <SimpleCard className="valign-right" cardClass="colored">
             <strong className="card__strong">
               PLUSIEURS INSTANCES GOUVERNENT L’ASSOCIATION :
             </strong>
@@ -68,7 +68,7 @@ export default () => (
 
         <div className="col s12 m8 offset-m2">
           <div className="events__cardContainer">
-            <SimpleCard cardClass="blue">
+            <SimpleCard cardClass="colored">
               <strong className="card__strong">26 évènements</strong>
 
               <br />
@@ -106,7 +106,7 @@ export default () => (
           </div>
 
           <div className="valign-right">
-            <StatCard icone="people" cardClass="blue">
+            <StatCard icone="people" cardClass="colored">
               <strong>1,5 million de salariés</strong>
               <span>dans les hauts-de-france :</span>
               <strong>30 %</strong>

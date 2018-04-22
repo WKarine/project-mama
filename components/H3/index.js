@@ -1,4 +1,4 @@
-import { categoryColors } from "../../constantes/colors";
+import { brandColors } from "../../constantes/colors";
 
 const H3 = ({ id, children }) => (
   <div className="col s12">
@@ -11,7 +11,7 @@ const H3 = ({ id, children }) => (
         }
 
         h3:before {
-          background-color: ${categoryColors.grey};
+          background-color: #f0f0f0;
           content: "";
           display: inline-block;
           height: 1rem;

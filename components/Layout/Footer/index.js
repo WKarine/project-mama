@@ -1,4 +1,4 @@
-import { categoryColors } from "../../../constantes/colors";
+import { brandColors } from "../../../constantes/colors";
 import Link from "next/link";
 
 const Footer = props => (
@@ -77,10 +77,18 @@ const Footer = props => (
       </ul>
     </div>
 
-    <div className="footer-copyright">© 2014 Copyright Text</div>
+    <div className="footer-copyright">
+      <Link href="https://www.polesantetravail.fr/mentions-legales/">
+        <a>mentions légales</a>
+      </Link>
+      |
+      <Link href="/team-mama">
+        <a>Made with love by Team-Mama</a>
+      </Link>
+    </div>
     <style jsx>{`
       .page-footer {
-        background-color: ${categoryColors.blue};
+        background-color: ${brandColors.actual};
         display: flex;
         flex-wrap: wrap;
       }
@@ -97,6 +105,7 @@ const Footer = props => (
         display: flex;
         flex-direction: column;
         justify-content: center;
+        align-items: center;
       }
 
       .footer__logo {
@@ -152,8 +161,8 @@ const Footer = props => (
       }
 
       .btn-flat {
-        color: whitesmoke;
-        border: 1px solid whitesmoke;
+        color: white;
+        border: 1px solid white;
         width: 12rem;
       }
 
@@ -166,18 +175,29 @@ const Footer = props => (
       }
 
       .btn-flat:hover {
-        border-color: ${categoryColors.orange} !important;
-        color: ${categoryColors.orange} !important;
+        border-color: ${brandColors.actual} !important;
+        color: ${brandColors.actual} !important;
+        background-color: white;
         transition: all 0.5s;
+      }
+
+      .footer__link {
+        border-bottom: 1px solid transparent;
+      }
+
+      .footer__link:hover {
+        border-bottom: 1px solid white;
       }
 
       .footer-copyright {
         flex-basis: 100%;
-        justify-content: center;
+        justify-content: flex-end;
       }
 
-      .footer__link:hover {
-        color: ${categoryColors.orange} !important;
+      .footer-copyright a {
+        color: white !important;
+        font-size: 0.7rem;
+        padding: 0 0.5rem;
       }
     `}</style>
   </footer>

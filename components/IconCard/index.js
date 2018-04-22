@@ -1,10 +1,10 @@
 import classNames from "classnames";
 
-import { categoryColors } from "../../constantes/colors";
+import { brandColors } from "../../constantes/colors";
 
 const IconCard = ({ cardClass, dataList }) => {
   const classes = classNames("icon-card", "card", {
-    green: cardClass === "green",
+    colored: cardClass === "colored",
     white: cardClass === "white"
   });
 
@@ -25,14 +25,14 @@ const IconCard = ({ cardClass, dataList }) => {
         .icon-card {
           overflow-x: hidden;
         }
-        .icon-card.card.green {
-          background-color: ${categoryColors.green};
-          color: whitesmoke;
+        .icon-card.card.colored {
+          background-color: ${brandColors.actual};
+          color: white;
         }
 
         .icon-card.card.white {
           background-color: white;
-          color: ${categoryColors.green};
+          color: ${brandColors.actual};
         }
 
         .icon-card.card .card__left {
@@ -40,12 +40,12 @@ const IconCard = ({ cardClass, dataList }) => {
           flex-direction: column;
         }
 
-        .icon-card.card.green .card__left {
-          border-right: 2px solid whitesmoke;
+        .icon-card.card.colored .card__left {
+          border-right: 2px solid white;
         }
 
         .icon-card.card.white .card__left {
-          border-right: 2px solid ${categoryColors.green};
+          border-right: 2px solid ${brandColors.actual};
         }
 
         .icon-card .card__section {
@@ -53,12 +53,12 @@ const IconCard = ({ cardClass, dataList }) => {
           padding: 2rem 0;
         }
 
-        .icon-card.card.green .card__section:not(:last-child) {
-          border-bottom: 3px dashed whitesmoke;
+        .icon-card.card.colored .card__section:not(:last-child) {
+          border-bottom: 3px dashed white;
         }
 
         .icon-card.card.white .card__section:not(:last-child) {
-          border-bottom: 3px dashed ${categoryColors.green};
+          border-bottom: 3px dashed ${brandColors.actual};
         }
 
         .icon-card .card__left,

@@ -34,7 +34,7 @@ const Page404 = () => (
       }
 
       span {
-        color: ${brandColors.purple};
+        color: ${brandColors.actual};
         font-size: 7rem;
       }
 
@@ -45,7 +45,7 @@ const Page404 = () => (
       }
 
       a {
-        color: ${brandColors.purple};
+        color: ${brandColors.actual};
         font-size: 2rem;
       }
     `}</style>

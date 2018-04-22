@@ -5,18 +5,12 @@ import News from "../components/News";
 import Loader from "../components/Loader";
 import Link from "next/link";
 
-import { sideNavColors } from "../constantes/colors";
-import { categoryColors, indexColors } from "../constantes/colors";
+import { brandColors } from "../constantes/colors";
 import { indexDimensions } from "../constantes/dimensions";
 
 import Services from "../services";
 
 class Index extends React.Component {
-  // static async getInitialProps({ req }) {
-  //   const news = await Services.news.getNews();
-
-  //   return news;
-  // }
   state = {
     isLoading: true,
     news: []
@@ -82,8 +76,8 @@ class Index extends React.Component {
 
           .intro__title {
             background-color: rgba(255, 255, 255, 0.2);
-            border-top: 3px solid whitesmoke;
-            color: ${indexColors.intro.color};
+            border-top: 3px solid white;
+            color: white;
             margin-top: 20vh;
             font-size: 3rem;
             text-align: center;
@@ -109,7 +103,7 @@ class Index extends React.Component {
           }
 
           .intro__discover {
-            background: ${categoryColors.blue};
+            background: ${brandColors.actual};
             right: 20%;
           }
 
@@ -122,7 +116,7 @@ class Index extends React.Component {
           }
 
           .intro__survey {
-            color: ${indexColors.intro.color};
+            color: white;
             left: 20%;
           }
 
@@ -143,7 +137,7 @@ class Index extends React.Component {
           .intro__discover:hover,
           .intro__discover:active,
           .intro__discover:focus {
-            background-color: ${categoryColors.hover.blue};
+            background-color: ${brandColors.actualHover};
             transform: translateY(-0.1rem);
           }
 

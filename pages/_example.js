@@ -32,7 +32,7 @@ export default () => (
         <div className="col s12 m6 offset-m3">
           <IconCard
             dataList={dataList}
-            cardClass="green"
+            cardClass="colored"
             direction="horizontal"
           />
         </div>

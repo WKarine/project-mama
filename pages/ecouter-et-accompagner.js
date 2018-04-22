@@ -154,7 +154,7 @@ export default () => (
         </div>
 
         <div className="col s12">
-          <IconCard cardClass="green" dataList={dataList} />
+          <IconCard cardClass="colored" dataList={dataList} />
         </div>
 
         <div className="col s12">
@@ -162,7 +162,7 @@ export default () => (
         </div>
 
         <div className="col s12">
-          <IconCard cardClass="green" dataList={dataList_3} />
+          <IconCard cardClass="colored" dataList={dataList_3} />
         </div>
 
         <H3>Ergonomie - Métrologie</H3>
@@ -200,7 +200,7 @@ export default () => (
         </div>
 
         <div className="col s12 m6">
-          <StatCard className="risques-chimiques" cardClass="blue">
+          <StatCard className="risques-chimiques" cardClass="colored">
             <strong>27 %</strong>
             <span>
               D’ACTIONS RÉALISÉES EN PLUS QU’EN 2016 À EFFECTIFS CONSTANTS
@@ -215,7 +215,7 @@ export default () => (
         </div>
 
         <div className="col s12 m6">
-          <StatCard className="risques-chimiques" cardClass="blue">
+          <StatCard className="risques-chimiques" cardClass="colored">
             <strong>74 %</strong>
             <span>
               DES ACTIONS RÉALISÉES RELÈVENT DE LA DÉMARCHE DE PRÉVENTION
@@ -231,7 +231,7 @@ export default () => (
         </div>
 
         <div className="col s12">
-          <StatCard cardClass="blue">
+          <StatCard cardClass="colored">
             <strong>471</strong>
             <span>DEMANDES D’INTERVENTION PARVENUES AU SERVICE ERGONOMIE</span>
           </StatCard>
@@ -246,7 +246,7 @@ export default () => (
         </div>
 
         <div className="col s12">
-          <StatCard cardClass="blue">
+          <StatCard cardClass="colored">
             <strong>272</strong>
             <span>ACTIONS RÉALISÉES</span>
           </StatCard>
@@ -311,7 +311,7 @@ export default () => (
         </div>
 
         <div className="col s12 m6">
-          <StatCard cardClass="blue">
+          <StatCard cardClass="colored">
             <strong>332</strong>
             <span>
               DEMANDES D’INTERVENTION PARVENUES AU SERVICE TOXICOLOGIE
@@ -327,7 +327,7 @@ export default () => (
         </div>
 
         <div className="col s12">
-          <StatCard cardClass="blue">
+          <StatCard cardClass="colored">
             <strong>285</strong>
             <span>ACTIONS RÉALISÉES EN 2017</span>
           </StatCard>
@@ -342,7 +342,7 @@ export default () => (
         </div>
 
         <div className="col s12">
-          <StatCard cardClass="blue s12 m6">
+          <StatCard cardClass="colored s12 m6">
             <strong>274</strong>
             <span>ENTREPRISES CONCERNÉES</span>
             <strong>28 826</strong>
@@ -390,7 +390,7 @@ export default () => (
         </div>
 
         <div className="col s12">
-          <StatCard cardClass="blue">
+          <StatCard cardClass="colored">
             <strong>30</strong>
             <span>ÉTUDES ET ENQUÊTES EN DIRECTION DES ENTREPRISES</span>
             <strong>34</strong>
@@ -537,7 +537,7 @@ export default () => (
         </div>
 
         <div className="col s12">
-          <StatCard icone="local_bar" cardClass="blue">
+          <StatCard icone="local_bar" cardClass="colored">
             <strong>80</strong>
             <span>Consultations</span>
             <strong>173</strong>
@@ -628,7 +628,7 @@ export default () => (
         </div>
 
         <div className="col s12 m6">
-          <StatCard cardClass="blue">
+          <StatCard cardClass="colored">
             <strong>3 564</strong>
             <span>SALARIÉS FORMES</span>
 

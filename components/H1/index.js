@@ -1,4 +1,4 @@
-import { categoryColors } from "../../constantes/colors";
+import { brandColors } from "../../constantes/colors";
 
 const H1 = ({ id, children }) => (
   <div className="col s12">
@@ -7,7 +7,7 @@ const H1 = ({ id, children }) => (
       {`
       h1 {
         text-align: center;
-        color: ${categoryColors.blue};
+        color: ${brandColors.actual};
         font-variant: small-caps;
         font-size: 3rem;
         margin-bottom: 3rem;
@@ -25,7 +25,7 @@ const H1 = ({ id, children }) => (
         margin: 0 auto;
         width: 50%;
         padding-top: 20px;
-        border-bottom: 0.25rem solid ${categoryColors.blue};
+        border-bottom: 0.25rem solid ${brandColors.actual};
       `}
     </style>
   </div>

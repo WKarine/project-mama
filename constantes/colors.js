@@ -1,47 +1,31 @@
-// GLOBAL
+function shadeColor(color, percent) {
+  const f = parseInt(color.slice(1), 16),
+    t = percent < 0 ? 0 : 255,
+    p = percent < 0 ? percent * -1 : percent,
+    R = f >> 16,
+    G = (f >> 8) & 0x00ff,
+    B = f & 0x0000ff;
+  return (
+    "#" +
+    (
+      0x1000000 +
+      (Math.round((t - R) * p) + R) * 0x10000 +
+      (Math.round((t - G) * p) + G) * 0x100 +
+      (Math.round((t - B) * p) + B)
+    )
+      .toString(16)
+      .slice(1)
+  );
+}
+
 const brandColors = {
   pink: "#E6306D",
-  purple: "#53378B",
+  purple: "#60387e",
   green: "#B1C903",
-  orange: "#F29400",
-  fontColor: "whitesmoke"
+  orange: "#F29400"
 };
 
-const categoryColors = {
-  blue: "#0082c8",
-  green: "#20bf6b",
-  grey: "#d9d9d9",
-  orange: "#F29400",
-  blueGradient: `linear-gradient(
-    to top,
-    #667db6,
-    #0082c8,
-    #0082c8,
-    #667db6
-  )`,
-  hover: {
-    blue: "#2579b7"
-  },
-  fontColor: "whitesmoke"
-};
+brandColors.actual = brandColors.purple;
+brandColors.actualHover = shadeColor(brandColors.purple, -0.25);
 
-// COMPONENTS
-const sideNavColors = {
-  backgroundColor: categoryColors.blue,
-  backgroundGradient: categoryColors.blueGradient,
-  fontColor: "whitesmoke",
-  scrollBar: categoryColors.blue
-};
-
-sideNavColors.logo = {
-  backgroundColor: sideNavColors.fontColor
-};
-
-// PAGES
-const indexColors = {
-  intro: {
-    color: "whitesmoke"
-  }
-};
-
-export { brandColors, categoryColors, sideNavColors, indexColors };
+export { brandColors };

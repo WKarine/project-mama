@@ -39,7 +39,7 @@ export default () => (
             </Link>
           </div>
           <div className="valign-right">
-            <StatCard cardClass="blue">
+            <StatCard cardClass="colored">
               <strong>1 724</strong>
               <span>ENTREPRISES CONCERNEES</span>
 
@@ -53,7 +53,7 @@ export default () => (
 
         <div className="col s12 valign">
           <div className="valign-left">
-            <StatCard cardClass="blue">
+            <StatCard cardClass="colored">
               <strong>429</strong>
               <span>ENTREPRISES CONCERNEES</span>
 
@@ -87,7 +87,7 @@ export default () => (
             </ScrollAnimation>
           </div>
           <div className="valign-right">
-            <StatCard cardClass="blue">
+            <StatCard cardClass="colored">
               <strong>511</strong>
               <span>ENTREPRISES CONCERNEES</span>
 

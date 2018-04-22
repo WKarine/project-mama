@@ -8,8 +8,6 @@ const sideNavDimensions = {
   }
 };
 
-sideNavDimensions.logo.width = sideNavDimensions.logo.height;
-
 const loaderDimensions = {
   height: "5rem",
   width: "5rem",

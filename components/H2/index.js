@@ -1,4 +1,4 @@
-import { categoryColors } from "../../constantes/colors";
+import { brandColors } from "../../constantes/colors";
 import ScrollAnimation from "react-animate-on-scroll";
 
 const H2 = ({ id, children }) => (
@@ -14,7 +14,7 @@ const H2 = ({ id, children }) => (
         }
 
         h2:before {
-          background-color: ${categoryColors.blue};
+          background-color: ${brandColors.actual};
           content: "";
           display: inline-block;
           height: 1.5rem;

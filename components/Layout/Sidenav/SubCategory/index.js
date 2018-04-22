@@ -27,7 +27,7 @@ const SubCategory = ({ href, title, subCategoryLinks }) => (
       }
 
       .sub-category {
-        color: ${sideNavColors.fontColor};
+        color: white;
         font-size: 1.5rem;
         font-variant: small-caps;
         letter-spacing: 0.1rem;
