@@ -37,12 +37,12 @@ class Index extends React.Component {
           ) : (
             <section className="intro z-depth-1">
               <div className="col s12 m6 offset-m3">
-                <h1 className="intro__title">Rapport annuel d'activités</h1>
+                <h1 className="intro__title">
+                  Rapport annuel d'activités 2017
+                </h1>
               </div>
 
               <div className="col s12">
-                <span className="year"> 2017 </span>
-
                 <a className="intro__survey waves-effect waves-light  btn-flat">
                   <i className="material-icons left">question_answer</i>accéder
                   au questionnaire
