@@ -22,11 +22,11 @@ const Layout = ({ children }) => (
         rel="stylesheet"
       />
 
+      <link rel="stylesheet" href="static/vendors/materialize.min.css" />
       <link
         rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"
       />
-      <link rel="stylesheet" href="static/vendors/materialize.min.css" />
       <link rel="stylesheet" href="static/css/index.css" />
       <title>Pôle Santé Travail: Rapport Annuel d'Activités</title>
     </Head>

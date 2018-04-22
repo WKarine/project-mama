@@ -15,7 +15,7 @@ export default () => (
 
         <H2 id="qui-sommes-nous">qui sommes-nous ?</H2>
 
-        <div className="col s12 m4">
+        <div className="col s12 m5">
           <SimpleCard cardClass="white">
             Association Paritaire sans but lucratif, PÔLE SANTÉ TRAVAIL
             bénéficie du statut d'association de type loi 1901.<br />
@@ -32,7 +32,7 @@ export default () => (
           </SimpleCard>
         </div>
 
-        <div className="col s12 m4 offset-m4">
+        <div className="col s12 m6">
           <SimpleCard cardClass="blue">
             <strong className="card__strong">
               PLUSIEURS INSTANCES GOUVERNENT L’ASSOCIATION :
@@ -94,7 +94,7 @@ export default () => (
           <H2>les chiffres clés</H2>
         </div>
 
-        <div className="col s12 m4">
+        <div className="col s12 m5 offset m1">
           <StatCard icone="people" cardClass="blue">
             <strong>1,5 million de salariés</strong>
             <span>dans les hauts-de-france :</span>
@@ -103,7 +103,7 @@ export default () => (
           </StatCard>
         </div>
 
-        <div className="col s12 m4 offset-m4">
+        <div className="col s12 m5 offset-m1">
           <StatCard icone="home" cardClass="white">
             <strong>32 252</strong>
             <span>entreprises adhérentes</span>
