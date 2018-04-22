@@ -20,22 +20,6 @@ const categoryLinks = [
     }
   ],
   [
-    "cartographie des entreprises",
-    "cartographie-entreprises",
-    {
-      textContent: "Un territoire contrasté",
-      href: "territoire-contraste"
-    },
-    {
-      textContent: "Le profil des entreprises",
-      href: "profil-entreprises"
-    },
-    {
-      textContent: "L'état de santé des salariés",
-      href: "etat-de-sante"
-    }
-  ],
-  [
     "veiller sur la santé",
     "veiller-sante",
     {
