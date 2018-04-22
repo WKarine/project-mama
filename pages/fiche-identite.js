@@ -66,7 +66,7 @@ export default () => (
 
         <H2>les évènements marquant de l'année</H2>
 
-        <div className="col s12 m4">
+        <div className="col s12 m8 offset-m2">
           <div className="events__cardContainer">
             <SimpleCard cardClass="blue">
               <strong className="card__strong">26 évènements</strong>
@@ -85,7 +85,7 @@ export default () => (
           </div>
         </div>
 
-        <div className="col s12 m8">
+        <div className="col s12">
           <Carousel />
         </div>
 
