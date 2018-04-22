@@ -9,7 +9,7 @@ const H1 = ({ id, children }) => (
         text-align: center;
         color: ${categoryColors.blue};
         font-variant: small-caps;
-        font-size: 2rem;
+        font-size: 3rem;
         margin-bottom: 3rem;
       }
 
