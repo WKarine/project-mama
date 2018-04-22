@@ -227,7 +227,7 @@ section formation - graphique pie */}
                 left: 111
               }}
               innerRadius={0.55}
-              colors="d320c"
+              colors="nivo"
               colorBy="id"
               borderColor="inherit:darker(0.6)"
               radialLabelsSkipAngle={0}
