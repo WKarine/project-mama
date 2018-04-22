@@ -15,8 +15,8 @@ export default () => (
 
         <H2 id="qui-sommes-nous">qui sommes-nous ?</H2>
 
-        <div className="col s12 m5">
-          <SimpleCard cardClass="white">
+        <div className="col s12 valign">
+          <SimpleCard className="valign-left" cardClass="white">
             Association Paritaire sans but lucratif, PÔLE SANTÉ TRAVAIL
             bénéficie du statut d'association de type loi 1901.<br />
             Agréée par le Ministère du travail pour exercer ses missions de
@@ -30,13 +30,12 @@ export default () => (
             Toutes les entreprises de ce secteur adhèrent à PÔLE SANTÉ TRAVAIL
             avec le paiement d’une cotisation.
           </SimpleCard>
-        </div>
 
-        <div className="col s12 m6">
-          <SimpleCard cardClass="blue">
+          <SimpleCard className="valign-right" cardClass="blue">
             <strong className="card__strong">
               PLUSIEURS INSTANCES GOUVERNENT L’ASSOCIATION :
             </strong>
+
             <ul className="card__list">
               <li>
                 un conseil d’administration paritaire avec un collège employeurs
@@ -94,24 +93,26 @@ export default () => (
           <H2>les chiffres clés</H2>
         </div>
 
-        <div className="col s12 m5 offset m1">
-          <StatCard icone="people" cardClass="blue">
-            <strong>1,5 million de salariés</strong>
-            <span>dans les hauts-de-france :</span>
-            <strong>30 %</strong>
-            <span>sont suivis par pôle santé travail</span>
-          </StatCard>
-        </div>
+        <div className="col s12 valign">
+          <div className="valign-left">
+            <StatCard icone="home" cardClass="white">
+              <strong>32 252</strong>
+              <span>entreprises adhérentes</span>
+              <strong>476 848</strong>
+              <span>salariés suivis dont</span>
+              <strong>23 496</strong>
+              <span>salariés intérimaires</span>
+            </StatCard>
+          </div>
 
-        <div className="col s12 m5 offset-m1">
-          <StatCard icone="home" cardClass="white">
-            <strong>32 252</strong>
-            <span>entreprises adhérentes</span>
-            <strong>476 848</strong>
-            <span>salariés suivis dont</span>
-            <strong>23 496</strong>
-            <span>salariés intérimaires</span>
-          </StatCard>
+          <div className="valign-right">
+            <StatCard icone="people" cardClass="blue">
+              <strong>1,5 million de salariés</strong>
+              <span>dans les hauts-de-france :</span>
+              <strong>30 %</strong>
+              <span>sont suivis par pôle santé travail</span>
+            </StatCard>
+          </div>
         </div>
 
         <div className="col s12">
@@ -119,19 +120,6 @@ export default () => (
         </div>
       </div>
     </div>
-    <style jsx>{`
-      .events__cardContainer {
-        height: 350px;
-        display: flex;
-        justify-content: center;
-        align-items: flex-end;
-      }
-
-      @media only screen and (max-width: 992px) {
-        .events__cardContainer {
-          height: initial;
-        }
-      }
-    `}</style>
+    <style jsx>{``}</style>
   </Layout>
 );

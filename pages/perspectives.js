@@ -259,31 +259,6 @@ export default () => (
         text-align: center;
       }
 
-      .valign {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-
-      @media only screen and (max-width: 992px) {
-        .valign {
-          flex-wrap: wrap;
-        }
-      }
-
-      .valign-left,
-      .valign-right {
-        margin: 1rem;
-        flex-basis: 50%;
-      }
-
-      @media only screen and (max-width: 992px) {
-        .valign-left,
-        .valign-right {
-          flex-basis: 100%;
-        }
-      }
-
       i.valign-left,
       i.valign-right {
         display: flex;
