@@ -23,12 +23,12 @@ const StatCard = ({ cardClass, icone, children, className }) => {
           }
 
           .stat-card strong {
-            font-size: 3rem;
+            font-size: 2rem;
             font-variant: small-caps;
           }
 
           .stat-card span {
-            font-size: 1rem;
+            font-size: 1.5rem;
             font-variant: small-caps;
           }
 
@@ -42,6 +42,7 @@ const StatCard = ({ cardClass, icone, children, className }) => {
 
           .stat-card.card-white {
             background-color: white;
+            border: 1px solid ${categoryColors.blue};
           }
 
           .stat-card.card-white .material-icons {

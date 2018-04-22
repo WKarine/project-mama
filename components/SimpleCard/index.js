@@ -50,6 +50,7 @@ const SimpleCard = ({ cardClass, children, className }) => {
 
           .simple-card.white {
             background-color: white !important;
+            border: 1px solid ${categoryColors.blue};
           }
 
           .simple-card p {
