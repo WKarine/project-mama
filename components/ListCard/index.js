@@ -46,7 +46,7 @@ const ListCard = () => (
       }
 
       .list-card li {
-        font-size: 1rem;
+        font-size: 0.8rem;
       }
 
       .list-card span {
@@ -55,7 +55,7 @@ const ListCard = () => (
         text-align: right;
         padding-right: 2rem;
         width: 5rem;
-        font-size: 2rem;
+        font-size: 1.5rem;
       }
 
       .list-card__container {
