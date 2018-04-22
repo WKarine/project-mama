@@ -1,8 +1,13 @@
 import Layout from "../components/Layout";
 import { brandColors } from "../constantes/colors";
+import Head from "next/head";
 
 const Page404 = () => (
   <Layout>
+    <head>
+      <meta http-equiv="refresh" content="5; url=/" />
+    </head>
+
     <div className="container">
       <div className="error">
         <span>4</span>
@@ -14,7 +19,8 @@ const Page404 = () => (
       </div>
 
       <p>
-        Vous êtes perdu? Retournez à la visite <a href="/">ICI</a>
+        Vous êtes perdu? Retournez à la visite <a href="/">ICI</a> <br />
+        Sinon, vous allez être redirigé sur la page d'accueil dans 5 secondes.
       </p>
     </div>
 
