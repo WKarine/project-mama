@@ -3,24 +3,33 @@ import { brandColors } from "../../constantes/colors";
 import { loaderDimensions } from "../../constantes/dimensions";
 
 const Loader = () => (
-  <div className="loader">
-    <div className="circle loader-orange" />
-    <div className="line">
-      <div className="circle loader-green" />
-      <div className="circle loader-purple" />
+  <div className="loader-container">
+    <div className="loader">
+      <div className="circle loader-orange" />
+      <div className="line">
+        <div className="circle loader-green" />
+        <div className="circle loader-purple" />
+      </div>
+      <div className="circle loader-pink" />
     </div>
-    <div className="circle loader-pink" />
     <style jsx>
       {`
+        .loader-container {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 100vh;
+          overflow: hidden;
+        }
+
         .loader {
           animation: turn 1s ease infinite normal;
           border-radius: 100%;
-          height: ${loaderDimensions.height};
+          height: 5rem;
           margin: auto;
-          position: absolute;
-          top: calc(50% - (${loaderDimensions.height} / 2));
-          left: calc(50% - (${loaderDimensions.height} / 2));
-          width: ${loaderDimensions.width};
+          top: calc(50% - 2.5rem);
+          left: calc(50% - 2.5rem);
+          width: 5rem;
         }
 
         @keyframes turn {
@@ -34,9 +43,9 @@ const Loader = () => (
         .circle {
           border-radius: 100%;
           display: block;
-          height: ${loaderDimensions.circle.height};
+          height: 1.25rem;
           position: relative;
-          width: ${loaderDimensions.circle.width};
+          width: 1.25rem;
         }
 
         /* Loader orange + keyframes attribué */
@@ -64,7 +73,7 @@ const Loader = () => (
         .line {
           display: flex;
           justify-content: space-between;
-          margin-top: 1rem;
+          margin-top: 12.5px;
           position: relative;
         }
 
@@ -95,7 +104,7 @@ const Loader = () => (
             transform: translateY(0);
           }
           50% {
-            transform: translateX(1rem);
+            transform: translateX(-13px);
           }
           100% {
             transform: translateY(0);
@@ -108,18 +117,16 @@ const Loader = () => (
           animation: bottom 1s ease-in-out infinite normal;
           background-color: ${brandColors.pink};
           margin: auto;
-          margin-top: 1rem;
+          margin-top: 10px;
         }
 
         @keyframes bottom {
           0% {
             transform: translateY(0);
           }
-
           50% {
             transform: translateY(-13px);
           }
-
           100% {
             transform: translateY(0);
           }

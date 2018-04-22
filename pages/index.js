@@ -2,6 +2,7 @@ import Head from "next/head";
 
 import Layout from "../components/Layout";
 import News from "../components/News";
+import Loader from "../components/Loader";
 
 import { sideNavColors } from "../constantes/colors";
 import { categoryColors, indexColors } from "../constantes/colors";
@@ -10,35 +11,50 @@ import { indexDimensions } from "../constantes/dimensions";
 import Services from "../services";
 
 class Index extends React.Component {
-  static async getInitialProps({ req }) {
-    const news = await Services.news.getNews();
+  // static async getInitialProps({ req }) {
+  //   const news = await Services.news.getNews();
 
-    return news;
+  //   return news;
+  // }
+  state = {
+    isLoading: true,
+    news: []
+  };
+
+  async componentWillMount() {
+    this.setState({
+      news: await Services.news.getNews(),
+      isLoading: false
+    });
   }
 
   render() {
     return (
       <Layout>
         <div className="row">
-          <section className="intro z-depth-1">
-            <div className="col s12 m6 offset-m3">
-              <h1 className="intro__title">Rapport annuel d'activités</h1>
-            </div>
+          {this.state.isLoading ? (
+            <Loader />
+          ) : (
+            <section className="intro z-depth-1">
+              <div className="col s12 m6 offset-m3">
+                <h1 className="intro__title">Rapport annuel d'activités</h1>
+              </div>
 
-            <div className="col s12">
-              <span className="year"> 2017 </span>
+              <div className="col s12">
+                <span className="year"> 2017 </span>
 
-              <a className="intro__survey waves-effect waves-light  btn-flat">
-                <i className="material-icons left">question_answer</i>accéder au
-                questionnaire
-              </a>
+                <a className="intro__survey waves-effect waves-light  btn-flat">
+                  <i className="material-icons left">question_answer</i>accéder
+                  au questionnaire
+                </a>
 
-              <a className="intro__discover waves-effect waves-light btn-large">
-                <i className="material-icons left">insert_chart</i>commencer la
-                visite
-              </a>
-            </div>
-          </section>
+                <a className="intro__discover waves-effect waves-light btn-large">
+                  <i className="material-icons left">insert_chart</i>commencer
+                  la visite
+                </a>
+              </div>
+            </section>
+          )}
         </div>
         <style jsx>{`
           .intro {
