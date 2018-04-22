@@ -3,7 +3,7 @@ import ScrollAnimation from "react-animate-on-scroll";
 
 const H2 = ({ id, children }) => (
   <div className="col s12">
-    <ScrollAnimation animateIn="slideInUp" duration="0.4">
+    <ScrollAnimation animateIn="slideInUp" duration={0.4}>
       <h2 id={id}>{children}</h2>
     </ScrollAnimation>
     <style jsx>
