@@ -1,7 +1,6 @@
 import Link from "next/link";
 
 import { sideNavColors } from "../../../../../constantes/colors";
-import { sideNavDimensions } from "../../../../../constantes/dimensions";
 
 const SubCategoryLink = ({ href, children }) => (
   <li key={href}>
@@ -13,7 +12,7 @@ const SubCategoryLink = ({ href, children }) => (
       {`
         .sub-category-link {
           color: white;
-          font-size: ${sideNavDimensions.subCategory.fontSize};
+          font-size: 0.8rem;
           letter-spacing: 0.1rem;
           text-indent: 2rem;
         }

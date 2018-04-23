@@ -1,6 +1,5 @@
 // Merci La Rouquine
 import { brandColors } from "../../constantes/colors";
-import { loaderDimensions } from "../../constantes/dimensions";
 
 const Loader = () => (
   <div className="loader-container">
