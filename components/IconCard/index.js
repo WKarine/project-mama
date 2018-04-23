@@ -16,7 +16,7 @@ const IconCard = ({ cardClass, dataList }) => {
             {data.iconProvider === "materialize" ? (
               <i className="card__icon large material-icons">{data.icon}</i>
             ) : (
-              <i className={`card__icon fab ${data.icon} fa-5x`} />
+              <i className={`card__icon ${data.icon} fa-5x`} />
             )}
             <p className="card__textContent">{data.textContent}</p>
           </div>
