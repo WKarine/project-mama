@@ -1,30 +1,27 @@
 import Link from "next/link";
 
 const PanelAdmin = () => (
-  // <div className="avatar">
-  //   <img src="" />
-  // </div>
-
   <ul>
     <li>
       <Link href="">
-        <a class="waves-effect waves-light btn">Google Analytics</a>
+        <a className="waves-effect waves-light btn">Contact</a>
       </Link>
     </li>
     <li>
       <Link href="">
-        <a class="waves-effect waves-light btn">Contact</a>
-      </Link>
-    </li>
-
-    <li>
-      <Link href="">
-        <a class="waves-effect waves-light btn">Résultats du sondage</a>
+        <a className="waves-effect waves-light btn">Google Analytics</a>
       </Link>
     </li>
     <li>
       <Link href="">
-        <a class="waves-effect waves-light btn">Personnaliser les catégories</a>
+        <a className="waves-effect waves-light btn">Résultats du sondage</a>
+      </Link>
+    </li>
+    <li>
+      <Link href="">
+        <a className="waves-effect waves-light btn">
+          Personnaliser les catégories
+        </a>
       </Link>
     </li>
     <style jsx>{`
@@ -32,7 +29,7 @@ const PanelAdmin = () => (
         width: 100%;
       }
       li {
-        display: inline-block;
+        margin: 2rem;
         text-align: center;
       }
     `}</style>
