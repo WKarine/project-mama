@@ -12,43 +12,47 @@ import StatCard from "../components/StatCard";
 
 const dataList = [
   {
-    icon: "battery_alert",
+    icon: "fas fa-handshake",
     textContent: "Accueils Nouvel Adhérent",
-    stat: 1879
+    stat: 1879,
+    iconProvider: "fa"
   },
   {
-    icon: "battery_alert",
+    icon: "far fa-address-book",
     textContent: "Fiches d'entreprise crées en 2017",
-    stat: 3978
+    stat: 3978,
+    iconProvider: "fa"
   }
 ];
 
 const dataList_2 = [
   {
-    icon: "battery_alert",
+    icon: "fas fa-folder-open",
     textContent: "Aides au DUER",
-    stat: 273
+    stat: 273,
+    iconProvider: "fa"
   },
   {
-    icon: "battery_alert",
+    icon: "fas fa-utensils",
     textContent: "Educations sanitaires",
-    stat: 67
+    stat: 67,
+    iconProvider: "fa"
   }
 ];
 
 const dataList_3 = [
   {
-    icon: "home",
+    icon: "fas fa-info-circle",
     textContent: "Accueils Nouvel Adhérent (Réunions collectives)",
     stat: 140
   },
   {
-    icon: "battery_alert",
+    icon: "far fa-edit",
     textContent: "Fiches d'entreprise mises à jour en 2017",
     stat: 608
   },
   {
-    icon: "battery_alert",
+    icon: "far fa-comments",
     textContent:
       "Informations sur les risques professionnels et les moyens de prévention",
     stat: 1268
