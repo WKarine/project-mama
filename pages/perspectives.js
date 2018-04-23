@@ -250,6 +250,10 @@ export default () => (
        width:100%;
       }
 
+      .legend {
+        width: 100%;
+      }
+
       p {
         text-align: justify;
       }
