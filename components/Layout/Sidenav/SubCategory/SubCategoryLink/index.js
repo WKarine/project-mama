@@ -4,7 +4,7 @@ import { sideNavColors } from "../../../../../constantes/colors";
 
 const SubCategoryLink = ({ href, children }) => (
   <li key={href}>
-    <Link href={href}>
+    <Link href={href} prefetch>
       <a className="sub-category-link waves-effect">{children}</a>
     </Link>
 
@@ -15,6 +15,7 @@ const SubCategoryLink = ({ href, children }) => (
           font-size: 0.8rem;
           letter-spacing: 0.1rem;
           text-indent: 2rem;
+          user-select: none;
         }
 
         .sub-category-link:focus,
