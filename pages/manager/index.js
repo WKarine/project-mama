@@ -11,26 +11,40 @@ import PanelAdmin from "./PanelAdmin";
 
 class Manager extends React.Component {
   state = {
-    isConnected: false
+    isConnected: false,
+    email: "",
+    error: false
   };
 
-  componentDidMount() {
+  async componentWillMount() {
     if (!firebase.apps.length) {
       firebase.initializeApp(config);
     }
-
-    const test = firebase
-      .auth()
-      .signInWithEmailAndPassword("team.mamaf3@gmail.com", "team@mama69")
-      .catch(function(error) {
-        // Rediriger + message erreur
-      });
-
-    console.dir(test);
   }
 
-  state = {
-    isConnected: true
+  handleSubmit = e => {
+    e.preventDefault();
+    const email = e.currentTarget.elements.email.value;
+    const password = e.currentTarget.elements.password.value;
+
+    firebase
+      .auth()
+      .signInWithEmailAndPassword(email, password)
+      .then(user => {
+        this.setState({
+          isConnected: true,
+          email: user.email,
+          error: false
+        });
+
+        localStorage.setItem("isConnected", true);
+      })
+      .catch(error => {
+        // Rediriger + message erreur
+        this.setState({
+          error: true
+        });
+      });
   };
 
   render() {
@@ -40,8 +54,13 @@ class Manager extends React.Component {
           <div className="row">
             <H1>Admin</H1>
 
+            {this.state.error && <p>Tupuducul</p>}
             <div className="col s12 m8 offset-m2">
-              {this.state.isConnected ? <PanelAdmin /> : <ConnectionForm />}
+              {this.state.isConnected ? (
+                <PanelAdmin email={this.state.email} />
+              ) : (
+                <ConnectionForm onSubmit={this.handleSubmit} />
+              )}
             </div>
           </div>
         </div>
