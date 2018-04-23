@@ -115,8 +115,22 @@ export default () => (
           </div>
         </div>
 
-        <div className="col s12">
-          <ListCard />
+        <div className="col s12 valign">
+          <div className="valign-left">
+            <ListCard />
+          </div>
+          <div className="valign-right">
+            <StatCard cardClass="white">
+              <strong>12</strong> <span>secteurs géographiques</span>
+              <i className="large material-icons">home</i>
+              <strong>184</strong> <span>centres de santé au travail au sein des
+              entreprises</span>
+              <i className="large material-icons">people</i>
+              <strong>24</strong> <span>centres de santé au travail</span>
+              <i className="large material-icons">airport_shuttle</i>
+              <strong>5</strong> <span>centres de santé au travail mobiles</span>
+            </StatCard>
+          </div>
         </div>
       </div>
     </div>

@@ -10,21 +10,29 @@ import H3 from "../components/H3";
 
 const dataList = [
   {
-    icon: "battery_alert",
+    icon: "fa-accessible-icon",
     textContent: "cardiologie",
-    stat: 838
+    stat: 838,
+    iconProvider: "fa"
   },
-  { icon: "battery_alert", textContent: "débriefing", stat: 91 },
+  {
+    icon: "battery_alert",
+    textContent: "débriefing",
+    stat: 91,
+    iconProvider: "materialize"
+  },
   {
     icon: "battery_alert",
     textContent: "dermatologie",
-    stat: 280
+    stat: 280,
+    iconProvider: "materialize"
   },
   { icon: "battery_alert", textContent: "neurologie", stat: 290 },
   {
     icon: "battery_alert",
     textContent: "ophtalmologie",
-    stat: 217
+    stat: 217,
+    iconProvider: "materialize"
   }
 ];
 
@@ -33,23 +41,41 @@ const dataList_2 = [
   {
     icon: "battery_alert",
     textContent: "pneumologie",
-    stat: 983
+    stat: 983,
+    iconProvider: "materialize"
   },
-  { icon: "battery_alert", textContent: "psychiatrie", stat: 337 },
+  {
+    icon: "battery_alert",
+    textContent: "psychiatrie",
+    stat: 337,
+    iconProvider: "materialize"
+  },
   {
     icon: "battery_alert",
     textContent: "psychologie",
-    stat: 988
+    stat: 988,
+    iconProvider: "materialize"
   },
-  { icon: "battery_alert", textContent: "rhumatologie", stat: 243 }
+  {
+    icon: "battery_alert",
+    textContent: "rhumatologie",
+    stat: 243,
+    iconProvider: "materialize"
+  }
 ];
 
 const dataList_3 = [
-  { icon: "battery_alert", textContent: "prélèvements effectués", stat: 10787 },
+  {
+    icon: "battery_alert",
+    textContent: "prélèvements effectués",
+    stat: 10787,
+    iconProvider: "materiliaze"
+  },
   {
     icon: "battery_alert",
     textContent: "analyses effectuées",
-    stat: 64684
+    stat: 64684,
+    iconProvider: "materialize"
   }
 ];
 export default () => (

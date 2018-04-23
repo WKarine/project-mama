@@ -2,7 +2,9 @@ import { brandColors } from "../../constantes/colors";
 
 const Build = () => (
   <div className="build">
-    <i className="material-icons large">build</i>
+    <p>Cette section est en construction</p>
+    <i className="material-icons large animated swing infinite">build</i>
+
     <style jsx>{`
       .build {
         align-items: center;

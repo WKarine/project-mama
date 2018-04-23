@@ -16,7 +16,7 @@ export default () => (
               <img
                 className="responsive-img photo-director"
                 src="static/images/perspectives/hardy.png"
-                alt="director"
+                alt="directeur"
               />
               <span className="card-title legend">
                 Louis-Marie Hardy, <br />Directeur général Pôle Santé Travail
@@ -244,6 +244,14 @@ export default () => (
       .photo-director + .legend {
         background-color: rgba(0, 0, 0, 0.3);
         text-align: center;
+      }
+      
+      .legend{
+       width:100%;
+      }
+
+      .legend {
+        width: 100%;
       }
 
       p {
