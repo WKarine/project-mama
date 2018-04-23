@@ -7,6 +7,7 @@ import H3 from "../components/H3";
 import SimpleCard from "../components/SimpleCard";
 import IconCard from "../components/IconCard";
 import StatCard from "../components/StatCard";
+import Build from "../components/Build";
 
 const dataList = [
   {
@@ -65,25 +66,25 @@ export default () => (
         <H2>L'aide à l'évaluation des risques</H2>
 
         <div className="col s12">
-          <p>Section en construction</p>
+          <Build />
         </div>
 
         <H2 id="conseils-en-entreprise">Conseils en entreprise</H2>
 
         <div className="col s12">
-          <p>Section en construction</p>
+          <Build />
         </div>
 
         <H3 className="third-title">Etudes de postes</H3>
 
         <div className="col s12">
-          <p>Section en construction</p>
+          <Build />
         </div>
 
         <H3 className="third-title">Organisation de travail</H3>
 
         <div className="col s12">
-          <p>Section en construction</p>
+          <Build />
         </div>
 
         <H2 id="action-en-milieu-de-travail">
@@ -285,11 +286,6 @@ export default () => (
                 </a>
               </Link>
             </div>
-          </SimpleCard>
-        </div>
-
-        <div className="col s12">
-          <SimpleCard cardClass="white col s12 m6">
             <strong>VISITE D’ENTREPRISE ACCOMPAGNÉE VISITE DIAGNOSTIC</strong>
             <p>
               Prestation qui consiste à accompagner un médecin du travail lors
@@ -664,6 +660,10 @@ export default () => (
 
       .risques-chimiques {
         min-height: 30rem;
+      }
+
+      .build {
+        height: 20vh !important;
       }
     `}</style>
   </Layout>

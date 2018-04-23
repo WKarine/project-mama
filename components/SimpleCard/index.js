@@ -65,6 +65,19 @@ const SimpleCard = ({ cardClass, children, className }) => {
             font-size: 1.5rem;
             font-variant: small-caps;
           }
+
+          strong {
+            display: block;
+            text-align: center;
+            font-size: 1.2rem;
+            font-weight: bold;
+          }
+          .evrest,
+          .toxilist {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 1rem;
+          }
         `}
       </style>
     </div>

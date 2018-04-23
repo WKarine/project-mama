@@ -492,7 +492,7 @@ export default () => (
         </div>
       </div>
     </div>
-    <style jsx>{`
+    <style jsx global>{`
       .photo-roue {
         height: 50%;
       }
@@ -500,6 +500,9 @@ export default () => (
       strong {
         font-size: 22px;
         font-weight: bold;
+      }
+      .build {
+        height: 20vh !important;
       }
     `}</style>
   </Layout>
