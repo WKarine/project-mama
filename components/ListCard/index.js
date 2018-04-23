@@ -45,23 +45,25 @@ const ListCard = () => (
         text-align: center;
       }
 
+      .list-card__left {
+        padding-right:2rem;
+      }
+
       .list-card li {
-        font-size: 0.8rem;
+        font-size: 1rem;
       }
 
       .list-card span {
         color: ${brandColors.actual};
         display: inline-block;
         text-align: right;
-        padding-right: 2rem;
-        width: 5rem;
+        padding-right: 0.5rem;
         font-size: 1.5rem;
       }
 
       .list-card__container {
         display: flex;
-        justify-content: center;
-        align-items: center;
+        justify-content: space-around;
       }
     `}</style>
   </div>
