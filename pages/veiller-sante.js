@@ -7,6 +7,7 @@ import SimpleCard from "../components/SimpleCard";
 import H1 from "../components/H1";
 import H2 from "../components/H2";
 import H3 from "../components/H3";
+import Build from "../components/Build";
 
 const dataList = [
   {
@@ -96,6 +97,7 @@ export default () => (
               title="schema"
             />
           </a>
+          <span>Cliquez sur l'image pour l'agrandir</span>
         </div>
 
         <H2 id="parcours-de-sante">
@@ -208,6 +210,7 @@ export default () => (
               title="roue"
             />
           </a>
+          <span>Cliquez sur l'image pour l'agrandir</span>
         </div>
 
         <H3>Présentation des acteurs</H3>
@@ -404,89 +407,92 @@ export default () => (
         <H2 id="tracabilite">La traçabilité des actions</H2>
 
         <div className="col s12">
-          <p>Section en construction</p>
+          <Build />
         </div>
 
         <H2 id="suivi-en-chiffres">Le suivi de santé en chiffres</H2>
 
-        <div className="col s12 m3">
-          <StatCard icone="people" cardClass="colored">
-            <strong>30 068</strong>
+        <div className="col s12 valign">
+          <div className="valign-left">
+            <StatCard icone="people" cardClass="colored">
+              <strong>30 068</strong>
 
-            <p>Examens d'aptitude à l'embauche</p>
+              <p>Examens d'aptitude à l'embauche</p>
 
-            <strong>17 459</strong>
+              <strong>17 459</strong>
 
-            <p>Examens d'aptitude périodiques</p>
+              <p>Examens d'aptitude périodiques</p>
 
-            <strong>6 634</strong>
+              <strong>6 634</strong>
 
-            <p>Examens à la demande du salarié</p>
-          </StatCard>
+              <p>Examens à la demande du salarié</p>
+            </StatCard>
+          </div>
+          <div className="valign-right">
+            <StatCard icone="content_paste" cardClass="white">
+              <strong>7 601</strong>
+
+              <p>Examens à la demande de l'employeur</p>
+
+              <strong>8 715</strong>
+
+              <p>Examens à la demande du médecin du travail</p>
+
+              <strong>11 709</strong>
+
+              <p>Examens de pré-reprise</p>
+            </StatCard>
+          </div>
         </div>
 
-        <div className="col s12 m3">
-          <StatCard icone="people" cardClass="colored">
-            <strong>7 601</strong>
+        <div className="col s12 valign">
+          <div className="valign-left">
+            <StatCard icone="accessible" cardClass="white">
+              <strong>82 450</strong>
 
-            <p>Examens à la demande de l'employeur</p>
+              <p>Avis d'aptitude</p>
 
-            <strong>8 715</strong>
+              <strong>4 510</strong>
 
-            <p>Examens à la demande du médecin du travail</p>
+              <p>Avis d'inaptitude</p>
 
-            <strong>11 709</strong>
+              <strong>4 508</strong>
 
-            <p>Examens de pré-reprise</p>
-          </StatCard>
-        </div>
+              <p>Salariés déclarés inaptes</p>
 
-        <div className="col s12 m3">
-          <StatCard icone="people" cardClass="colored">
-            <strong>82 450</strong>
+              <strong>14 265</strong>
 
-            <p>Avis d'aptitude</p>
+              <p>Propositions d'aménagements</p>
+            </StatCard>
+          </div>
 
-            <strong>4 510</strong>
+          <div className="valign-right">
+            <StatCard icone="assignment" cardClass="colored">
+              <strong>44 336</strong>
 
-            <p>Avis d'inaptitude</p>
+              <p>VIP à l'embauche réalisées par les médecins</p>
 
-            <strong>4 508</strong>
+              <strong>21 717</strong>
 
-            <p>Salariés déclarés inaptes</p>
+              <p>VIP à l'embauche réalisées par les infirmiers</p>
 
-            <strong>14 265</strong>
+              <strong>20 811</strong>
 
-            <p>Propositions d'aménagements</p>
-          </StatCard>
-        </div>
+              <p>VIP périodiques réalisées par les médecins</p>
 
-        <div className="col s12 m3">
-          <StatCard icone="people" cardClass="colored">
-            <strong>44 336</strong>
+              <strong>225</strong>
 
-            <p>VIP à l'embauche réalisées par les médecins</p>
+              <p>Visites intermédiaires (postes à risques) par les médecins</p>
 
-            <strong>21 717</strong>
+              <strong>2 961</strong>
 
-            <p>VIP à l'embauche réalisées par les infirmiers</p>
-
-            <strong>20 811</strong>
-
-            <p>VIP périodiques réalisées par les médecins</p>
-
-            <strong>225</strong>
-
-            <p>Visites intermédiaires (postes à risques) par les médecins</p>
-
-            <strong>2 961</strong>
-
-            <p>Visites intermédiaires par les infirmiers</p>
-          </StatCard>
+              <p>Visites intermédiaires par les infirmiers</p>
+            </StatCard>
+          </div>
         </div>
       </div>
     </div>
-    <style jsx>{`
+    <style jsx global>{`
       .photo-roue {
         height: 50%;
       }
@@ -494,6 +500,9 @@ export default () => (
       strong {
         font-size: 22px;
         font-weight: bold;
+      }
+      .build {
+        height: 20vh !important;
       }
     `}</style>
   </Layout>
