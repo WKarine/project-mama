@@ -246,6 +246,10 @@ export default () => (
         text-align: center;
       }
 
+      .legend {
+        width: 100%;
+      }
+
       p {
         text-align: justify;
       }
