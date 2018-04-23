@@ -58,10 +58,16 @@ export default () => (
         </div>
 
         <div className="col s12 center-align">
-          <img
-            className="responsive-img"
-            src="static/images/identite/carte_2017_sans_chiffre.png"
-          />
+          <a
+            href="static/images/identite/carte_2018_avec_chiffres.png"
+            target="_blank"
+          >
+            <img
+              className="responsive-img"
+              src="static/images/identite/carte_2018_avec_chiffres.png"
+            />
+          </a>
+          <span>Cliquez sur l'image pour l'agrandir</span>
         </div>
 
         <H2>les évènements marquant de l'année</H2>
@@ -123,12 +129,13 @@ export default () => (
             <StatCard cardClass="white">
               <strong>12</strong> <span>secteurs géographiques</span>
               <i className="large material-icons">home</i>
-              <strong>184</strong> <span>centres de santé au travail au sein des
-              entreprises</span>
+              <strong>184</strong>{" "}
+              <span>centres de santé au travail au sein des entreprises</span>
               <i className="large material-icons">people</i>
               <strong>24</strong> <span>centres de santé au travail</span>
               <i className="large material-icons">airport_shuttle</i>
-              <strong>5</strong> <span>centres de santé au travail mobiles</span>
+              <strong>5</strong>{" "}
+              <span>centres de santé au travail mobiles</span>
             </StatCard>
           </div>
         </div>
