@@ -1,4 +1,6 @@
 import Link from "next/link";
+import { ResponsivePie } from "@nivo/pie";
+import { ResponsiveBar } from "@nivo/bar";
 
 import Layout from "../components/Layout";
 import H1 from "../components/H1";
@@ -10,7 +12,7 @@ import StatCard from "../components/StatCard";
 
 const dataList = [
   {
-    icon: "home",
+    icon: "battery_alert",
     textContent: "Accueils Nouvel Adhérent",
     stat: 1879
   },
@@ -50,6 +52,163 @@ const dataList_3 = [
     textContent:
       "Informations sur les risques professionnels et les moyens de prévention",
     stat: 1268
+  }
+];
+
+// data graphics ergonomie
+
+const data = [
+  {
+    id: "Risques psycho sociaux",
+    label: "rps",
+    value: 30,
+    color: "hsl(13, 70%, 50%)"
+  },
+  {
+    id: "Métrologie",
+    label: "metro",
+    value: 76,
+    color: "hsl(340, 70%, 50%)"
+  },
+  {
+    id: "Amiante",
+    label: "amiante",
+    value: 65,
+    color: "hsl(340, 70%, 50%)"
+  },
+
+  {
+    id: "Conseil Evaluation",
+    label: "evrp",
+    value: 11,
+    color: "hsl(86, 70%, 50%)"
+  },
+  {
+    id: "Ergonomie",
+    label: "ergo",
+    value: 284,
+    color: "hsl(62, 70%, 50%)"
+  },
+  {
+    id: "Sensibilisation",
+    label: "sensibilisation",
+    value: 5,
+    color: "hsl(272, 70%, 50%)"
+  }
+];
+
+const data1 = [
+  {
+    type: "Diagnostic",
+    number: 154,
+    numberColor: "hsl(218, 70%, 50%)"
+  },
+  {
+    type: "Conseil",
+    number: 72,
+    numberColor: "hsl(218, 70%, 50%)"
+  },
+  {
+    type: "Accompagnement",
+    number: 29,
+    numberColor: "hsl(218, 70%, 50%)"
+  },
+  {
+    type: "Maintien dans l'emploi",
+    number: 12,
+    numberColor: "hsl(218, 70%, 50%)"
+  },
+  {
+    type: "Autres types *",
+    number: 5,
+    numberColor: "hsl(218, 70%, 50%)"
+  }
+];
+
+// data graphics toxicologie
+
+const data2 = [
+  {
+    id: "Etude toxicologique",
+    label: "etude",
+    value: 26,
+    color: "hsl(340, 70%, 50%)"
+  },
+  {
+    id: "Accompagnement",
+    label: "accomp",
+    value: 1,
+    color: "hsl(272, 70%, 50%)"
+  },
+  {
+    id: "Diagnostic",
+    label: "diag",
+    value: 33,
+    color: "hsl(340, 70%, 50%)"
+  },
+  {
+    id: "Conseil",
+    label: "conseil",
+    value: 26,
+    color: "hsl(86, 70%, 50%)"
+  },
+  {
+    id: "Sensibilisation",
+    label: "sensib",
+    value: 4,
+    color: "hsl(62, 70%, 50%)"
+  },
+  {
+    id: "FDS",
+    label: "fds",
+    value: 191,
+    color: "hsl(13, 70%, 50%)"
+  },
+  {
+    id: "Demarche EVRP",
+    label: "evrp",
+    value: 4,
+    color: "hsl(272, 70%, 50%)"
+  }
+];
+
+// data graphics toxicologie
+const data3 = [
+  {
+    type: "Risques chimiques",
+    number: 237,
+    numberColor: "hsl(218, 70%, 50%)"
+  },
+  {
+    type: "CMR",
+    number: 40,
+    numberColor: "hsl(218, 70%, 50%)"
+  },
+  {
+    type: "Autres types *",
+    number: 8,
+    numberColor: "hsl(218, 70%, 50%)"
+  }
+];
+// data graphics PST Formation
+const data4 = [
+  {
+    id: "Formation des formateurs SST",
+    label: "sst",
+    value: 83,
+    color: "hsl(340, 70%, 50%)"
+  },
+  {
+    id: "Formation catalogue",
+    label: "catalogue",
+    value: 560,
+    color: "hsl(272, 70%, 50%)"
+  },
+  {
+    id: "Bilan de compétences",
+    label: "compétences",
+    value: 98,
+    color: "hsl(340, 70%, 50%)"
   }
 ];
 
@@ -230,22 +389,145 @@ export default () => (
           </StatCard>
         </div>
 
-        <div className="col s12">
+        <div className="col s12 m6">
           <StatCard cardClass="colored">
             <strong>471</strong>
             <span>DEMANDES D’INTERVENTION PARVENUES AU SERVICE ERGONOMIE</span>
           </StatCard>
         </div>
 
-        <div className="col s12">
-          <p>ici graphique en cercle</p>
+        <div className="col s12 m6">
+          <div className="chart-container">
+            <ResponsivePie
+              data={data}
+              margin={{
+                top: 55,
+                right: 115,
+                bottom: 0,
+                left: 111
+              }}
+              innerRadius={0.55}
+              colors="d320c"
+              colorBy="id"
+              borderColor="inherit:darker(0.6)"
+              radialLabelsSkipAngle={0}
+              radialLabelsTextXOffset={8}
+              radialLabelsTextColor="#333333"
+              radialLabelsLinkOffset={3}
+              radialLabelsLinkDiagonalLength={26}
+              radialLabelsLinkHorizontalLength={36}
+              radialLabelsLinkStrokeWidth={1}
+              radialLabelsLinkColor="inherit"
+              slicesLabelsSkipAngle={0}
+              slicesLabelsTextColor="#333333"
+              animate={false}
+              motionStiffness={110}
+              motionDamping={16}
+              legends={[
+                {
+                  anchor: "bottom",
+                  direction: "row",
+                  translateY: 56,
+                  itemWidth: 100,
+                  itemHeight: 14,
+                  symbolSize: 14,
+                  symbolShape: "circle"
+                }
+              ]}
+            />
+          </div>
         </div>
 
-        <div className="col s12">
-          <p>ici graphique en batons</p>
+        <div className="col s12 m6">
+          <div className="chart-container">
+            <ResponsiveBar
+              data={data1}
+              keys={["number"]}
+              indexBy="type"
+              margin={{
+                top: 50,
+                right: 20,
+                bottom: 100,
+                left: 60
+              }}
+              padding={0.3}
+              colors="d320b"
+              colorBy="id"
+              defs={[
+                {
+                  id: "dots",
+                  type: "patternDots",
+                  background: "inherit",
+                  color: "#38bcb2",
+                  size: 4,
+                  padding: 1,
+                  stagger: true
+                },
+                {
+                  id: "lines",
+                  type: "patternLines",
+                  background: "inherit",
+                  color: "#eed312",
+                  rotation: -45,
+                  lineWidth: 6,
+                  spacing: 10
+                }
+              ]}
+              fill={[
+                {
+                  match: {
+                    id: ""
+                  },
+                  id: ""
+                },
+                {
+                  match: {
+                    id: ""
+                  },
+                  id: ""
+                }
+              ]}
+              borderColor="inherit:darker(1.6)"
+              axisBottom={{
+                orient: "bottom",
+                tickSize: 12,
+                tickPadding: 5,
+                tickRotation: 35,
+                legend: "",
+                legendPosition: "center",
+                legendOffset: 36
+              }}
+              axisLeft={{
+                orient: "left",
+                tickSize: 5,
+                tickPadding: 5,
+                tickRotation: 0,
+                legend: "",
+                legendPosition: "center",
+                legendOffset: -40
+              }}
+              labelSkipWidth={12}
+              labelTextColor="#ffffff"
+              animate={true}
+              motionStiffness={90}
+              motionDamping={15}
+              legends={[
+                {
+                  dataFrom: "keys",
+                  anchor: "bottom-right",
+                  direction: "column",
+                  translateX: 120,
+                  itemWidth: 100,
+                  itemHeight: 20,
+                  itemsSpacing: 2,
+                  symbolSize: 20
+                }
+              ]}
+            />
+          </div>
         </div>
 
-        <div className="col s12">
+        <div className="col s12 m6">
           <StatCard cardClass="colored">
             <strong>272</strong>
             <span>ACTIONS RÉALISÉES</span>
@@ -285,11 +567,6 @@ export default () => (
                 </a>
               </Link>
             </div>
-          </SimpleCard>
-        </div>
-
-        <div className="col s12">
-          <SimpleCard cardClass="white col s12 m6">
             <strong>VISITE D’ENTREPRISE ACCOMPAGNÉE VISITE DIAGNOSTIC</strong>
             <p>
               Prestation qui consiste à accompagner un médecin du travail lors
@@ -323,26 +600,146 @@ export default () => (
             </span>
             <strong>1 968</strong>
             <span>FDS CRÉÉES EN 2017</span>
-          </StatCard>
-        </div>
-
-        <div className="col s12">
-          <StatCard cardClass="colored">
             <strong>285</strong>
             <span>ACTIONS RÉALISÉES EN 2017</span>
           </StatCard>
         </div>
 
         <div className="col s12">
-          <p>ici graphique en cercle</p>
+          <p>Répartition des actions réalisées par thématique</p>
+          <div className="chart-container">
+            <ResponsivePie
+              data={data2}
+              margin={{
+                top: 55,
+                right: 135,
+                bottom: 0,
+                left: 111
+              }}
+              innerRadius={0.55}
+              colors="d320c"
+              colorBy="id"
+              borderColor="inherit:darker(0.6)"
+              radialLabelsSkipAngle={0}
+              radialLabelsTextXOffset={8}
+              radialLabelsTextColor="#333333"
+              radialLabelsLinkOffset={3}
+              radialLabelsLinkDiagonalLength={26}
+              radialLabelsLinkHorizontalLength={36}
+              radialLabelsLinkStrokeWidth={1}
+              radialLabelsLinkColor="inherit"
+              slicesLabelsSkipAngle={0}
+              slicesLabelsTextColor="#333333"
+              animate={false}
+              motionStiffness={110}
+              motionDamping={16}
+              legends={[
+                {
+                  anchor: "bottom",
+                  direction: "row",
+                  translateY: 56,
+                  itemWidth: 100,
+                  itemHeight: 14,
+                  symbolSize: 14,
+                  symbolShape: "circle"
+                }
+              ]}
+            />
+          </div>
         </div>
 
         <div className="col s12">
-          <p>ici graphique en batons</p>
+          <p>Répartition des actions réalisées par typologie</p>
+          <div className="chart-container">
+            <ResponsiveBar
+              data={data3}
+              keys={["number"]}
+              indexBy="type"
+              margin={{
+                top: 50,
+                right: 15,
+                bottom: 100,
+                left: 60
+              }}
+              padding={0.3}
+              colors="set2"
+              colorBy="id"
+              defs={[
+                {
+                  id: "dots",
+                  type: "patternDots",
+                  background: "inherit",
+                  color: "#38bcb2",
+                  size: 4,
+                  padding: 1,
+                  stagger: true
+                },
+                {
+                  id: "lines",
+                  type: "patternLines",
+                  background: "inherit",
+                  color: "#eed312",
+                  rotation: -45,
+                  lineWidth: 6,
+                  spacing: 10
+                }
+              ]}
+              fill={[
+                {
+                  match: {
+                    id: ""
+                  },
+                  id: ""
+                },
+                {
+                  match: {
+                    id: ""
+                  },
+                  id: ""
+                }
+              ]}
+              borderColor="inherit:darker(1.6)"
+              axisBottom={{
+                orient: "bottom",
+                tickSize: 12,
+                tickPadding: 5,
+                tickRotation: 35,
+                legend: "",
+                legendPosition: "center",
+                legendOffset: 36
+              }}
+              axisLeft={{
+                orient: "left",
+                tickSize: 5,
+                tickPadding: 5,
+                tickRotation: 0,
+                legend: "",
+                legendPosition: "center",
+                legendOffset: -40
+              }}
+              labelSkipWidth={12}
+              labelTextColor="#FFFFF"
+              animate={true}
+              motionStiffness={90}
+              motionDamping={15}
+              legends={[
+                {
+                  dataFrom: "keys",
+                  anchor: "bottom-right",
+                  direction: "column",
+                  translateX: 120,
+                  itemWidth: 100,
+                  itemHeight: 20,
+                  itemsSpacing: 2,
+                  symbolSize: 20
+                }
+              ]}
+            />
+          </div>
         </div>
 
         <div className="col s12">
-          <StatCard cardClass="colored s12 m6">
+          <StatCard cardClass="colored">
             <strong>274</strong>
             <span>ENTREPRISES CONCERNÉES</span>
             <strong>28 826</strong>
@@ -363,18 +760,6 @@ export default () => (
             <p>
               La majorité des études sont réalisées grâce à la mise en place de
             </p>
-            <strong className="evrest">L'Observatoire EVREST</strong>
-            <p>
-              Ceci étant des questionnaires spécifiques commencent à être
-              utilisés.
-            </p>
-            <p>
-              Ces questionnaires demandent plus de temps de préparation et
-              d’analyse. Toutes les étapes de l’étude doivent être créées (Mise
-              en forme du questionnaire, création du masque de saisie, saisie
-              des données, analyses et rendus).
-            </p>
-
             <div className="evrest">
               <Link href="http://evrest.istnf.fr">
                 <a target="_blank">
@@ -386,6 +771,16 @@ export default () => (
                 </a>
               </Link>
             </div>
+            <p>
+              Ceci étant des questionnaires spécifiques commencent à être
+              utilisés.
+            </p>
+            <p>
+              Ces questionnaires demandent plus de temps de préparation et
+              d’analyse. Toutes les étapes de l’étude doivent être créées (Mise
+              en forme du questionnaire, création du masque de saisie, saisie
+              des données, analyses et rendus).
+            </p>
           </SimpleCard>
         </div>
 
@@ -419,21 +814,17 @@ export default () => (
                 salariés ayant été exposés à l’amiante
               </li>
             </ul>
+
             <strong>PROJET DRIVES</strong>
 
             <p>(33 SITES – 27 MÉDECINS DU TRAVAIL CONCERNÉS)</p>
-
-            <li>
-              Déploiement du projet concernant les DRIVES en hyper et
-              supermarché afin d’élaborer des actions de prévention, en
-              partenariat avec la CARSAT
-            </li>
-          </SimpleCard>
-        </div>
-
-        <div className="col s12">
-          <SimpleCard cardClass="white">
             <ul className="card__list">
+              <li>
+                Déploiement du projet concernant les DRIVES en hyper et
+                supermarché afin d’élaborer des actions de prévention, en
+                partenariat avec la CARSAT
+              </li>
+
               <li>Communication</li>
               <li>Production de documents</li>
               <li>
@@ -470,7 +861,7 @@ export default () => (
         </H2>
 
         <div className="col s12 m4">
-          <SimpleCard cardClass="white">
+          <SimpleCard cardClass="colored">
             <p>
               Les consommations et addictions ont un impact réel sur l’état de
               santé du salarié.
@@ -523,7 +914,11 @@ export default () => (
                 Intervenant en Prévention des Risques Professionnels
               </li>
             </ul>
+          </SimpleCard>
+        </div>
 
+        <div className="col s12 m4">
+          <SimpleCard cardClass="colored">
             <p>
               Le PRADD est un outil d’aide pour les équipes santé travail. C’est
               le médecin du travail qui doit initier avec son équipe la question
@@ -537,7 +932,7 @@ export default () => (
         </div>
 
         <div className="col s12">
-          <StatCard icone="local_bar" cardClass="colored">
+          <StatCard icone="local_bar" cardClass="white">
             <strong>80</strong>
             <span>Consultations</span>
             <strong>173</strong>
@@ -563,7 +958,7 @@ export default () => (
         </H2>
 
         <div className="col s12 m6">
-          <SimpleCard cardClass="white">
+          <SimpleCard cardClass="colored">
             <p>
               Organisme de formation créé en 1997 par les services de santé au
               travail de la métropole lilloise, PST formation a pour objectif de
@@ -582,7 +977,7 @@ export default () => (
         </div>
 
         <div className="col s12 m6">
-          <SimpleCard cardClass="white">
+          <SimpleCard cardClass="colored">
             <strong>
               UNE OFFRE DE SERVICE COMPLÈTE EN SANTÉ ET SÉCURITÉ AU TRAVAIL
             </strong>
@@ -598,7 +993,7 @@ export default () => (
           </SimpleCard>
         </div>
 
-        <div className="col s12 m6">
+        <div className="col s12">
           <SimpleCard cardClass="white">
             <strong>
               UNE OFFRE DE SERVICE COMPLÈTE EN SANTÉ ET SÉCURITÉ AU TRAVAIL
@@ -640,7 +1035,48 @@ export default () => (
         </div>
 
         <div className="col s12 m6">
-          <span>ici graphique en cercle</span>
+          <div className="chart-container">
+            {/* chapitre Ecouter et accompagner 
+section formation - graphique pie */}
+            <p>Répartition des actions réalisées</p>
+            <ResponsivePie
+              data={data4}
+              margin={{
+                top: 55,
+                right: 135,
+                bottom: 79,
+                left: 111
+              }}
+              innerRadius={0.55}
+              colors="nivo"
+              colorBy="id"
+              borderColor="inherit:darker(0.6)"
+              radialLabelsSkipAngle={0}
+              radialLabelsTextXOffset={8}
+              radialLabelsTextColor="#333333"
+              radialLabelsLinkOffset={3}
+              radialLabelsLinkDiagonalLength={26}
+              radialLabelsLinkHorizontalLength={36}
+              radialLabelsLinkStrokeWidth={1}
+              radialLabelsLinkColor="inherit"
+              slicesLabelsSkipAngle={0}
+              slicesLabelsTextColor="#333333"
+              animate={false}
+              motionStiffness={110}
+              motionDamping={16}
+              legends={[
+                {
+                  anchor: "bottom",
+                  direction: "row",
+                  translateY: 56,
+                  itemWidth: 100,
+                  itemHeight: 14,
+                  symbolSize: 14,
+                  symbolShape: "circle"
+                }
+              ]}
+            />
+          </div>
         </div>
       </div>
     </div>
@@ -664,6 +1100,23 @@ export default () => (
 
       .risques-chimiques {
         min-height: 30rem;
+      }
+
+      .toxilist {
+        text-align: center;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+      }
+
+      .evrest {
+        text-align: center;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+      }
+      .pst {
+        text-align: center;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
       }
     `}</style>
   </Layout>
