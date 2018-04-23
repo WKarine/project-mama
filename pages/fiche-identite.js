@@ -70,7 +70,7 @@ export default () => (
           <span>Cliquez sur l'image pour l'agrandir</span>
         </div>
 
-        <H2>les évènements marquant de l'année</H2>
+        <H2 id="evenement-annees">les évènements marquant de l'année</H2>
 
         <div className="col s12 m8 offset-m2">
           <div className="events__cardContainer">
@@ -96,7 +96,7 @@ export default () => (
         </div>
 
         <div className="col s12">
-          <H2>les chiffres clés</H2>
+          <H2 id="chiffres-cles">les chiffres clés</H2>
         </div>
 
         <div className="col s12 valign">
