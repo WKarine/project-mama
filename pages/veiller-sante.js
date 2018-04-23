@@ -100,7 +100,7 @@ export default () => (
         <H3>Dispositif de surveillance</H3>
 
         <div className="col s12 m6 offset-m3">
-          <a href="static/images/suivi-sante/schema.png">
+          <a href="static/images/suivi-sante/schema.png" target="_blank">
             <img
               className="responsive-img photo-schema"
               src="static/images/suivi-sante/schema.png"
@@ -213,7 +213,7 @@ export default () => (
         </div>
 
         <div className="col s12 m5">
-          <a href="static/images/suivi-sante/roue.png">
+          <a href="static/images/suivi-sante/roue.png" target="_blank">
             <img
               className="responsive-img photo-roue col s6"
               src="static/images/suivi-sante/roue.png"
