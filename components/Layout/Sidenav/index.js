@@ -16,7 +16,6 @@ class Sidenav extends React.Component {
 
     const $subCategories = document.querySelectorAll(".collapsible");
     M.Collapsible.init($subCategories);
-    // M.AutoInit();
   }
 
   render() {
@@ -28,7 +27,7 @@ class Sidenav extends React.Component {
           <Link href="/">
             <a className="logo-container">
               <img
-                title="Revenir sur l'accueil"
+                title="Revenir à l'accueil"
                 className="logo"
                 src="static/images/logo.jpg"
               />
