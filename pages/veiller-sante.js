@@ -429,7 +429,7 @@ export default () => (
             </StatCard>
           </div>
           <div className="valign-right">
-            <StatCard icone="content_paste" cardClass="colored">
+            <StatCard icone="content_paste" cardClass="white">
               <strong>7 601</strong>
 
               <p>Examens à la demande de l'employeur</p>
@@ -447,7 +447,7 @@ export default () => (
 
         <div className="col s12 valign">
           <div className="valign-left">
-            <StatCard icone="accessible" cardClass="colored">
+            <StatCard icone="accessible" cardClass="white">
               <strong>82 450</strong>
 
               <p>Avis d'aptitude</p>
