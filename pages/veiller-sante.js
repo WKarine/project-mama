@@ -486,13 +486,7 @@ class VeillerSante extends React.Component {
           }
 
           .photo-roue {
-            width: 500px;
-          }
-
-          @media only screen and (max-width: 992px) {
-            .photo-roue {
-              width: 250px;
-            }
+            width: 250px;
           }
         `}</style>
       </Layout>
