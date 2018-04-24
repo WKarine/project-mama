@@ -84,7 +84,11 @@ const Footer = props => (
           </a>
         </li>
         <li>
-          <a className="waves-effect btn-flat">
+          <a
+            className="waves-effect btn-flat"
+            href="static/images/pdf/rapport-annuel-2017.pdf"
+            target="_blank"
+          >
             <i className="material-icons left">cloud_download</i>
             PDF
           </a>
