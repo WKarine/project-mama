@@ -14,9 +14,8 @@ import Build from "../components/Build";
 
 import Services from "../services";
 
-// data graphics toxicologie
+import ScrollAnimation from "react-animate-on-scroll";
 
-// data graphics PST Formation
 
 class EcouterEtAccompagner extends React.Component {
   state = {
@@ -70,9 +69,11 @@ class EcouterEtAccompagner extends React.Component {
                 </p>
               </div>
               <div className="col s12 center-align">
-                <strong className="amt">
-                  20 425 Action en Milieu de Travail réalisées en 2017
-                </strong>
+                <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut">
+                  <strong className="amt">
+                    20 425 Action en Milieu de Travail réalisées en 2017
+                  </strong>
+                </ScrollAnimation>
               </div>
               <div className="col s12">
                 <SimpleCard cardClass="white">
@@ -183,39 +184,50 @@ class EcouterEtAccompagner extends React.Component {
               </div>
               <div className="col s12 m6">
                 <StatCard className="risques-chimiques" cardClass="colored">
-                  <strong>27 %</strong>
-                  <span>
-                    D’ACTIONS RÉALISÉES EN PLUS QU’EN 2016 À EFFECTIFS CONSTANTS
-                  </span>
+                  <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut">
+                    <strong>27 %</strong>
+                    <span>
+                      D’ACTIONS RÉALISÉES EN PLUS QU’EN 2016 À EFFECTIFS
+                      CONSTANTS
+                    </span>
+                  </ScrollAnimation>
 
-                  <strong>57 %</strong>
-                  <span>
-                    DES THÉMATIQUES INVESTIGUÉES RELÈVENT DE L’ORGANISATION DU
-                    TRAVAIL (CONDITIONS DE TRAVAIL/TMS ET RPS)
-                  </span>
+                  <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut">
+                    <strong>57 %</strong>
+                    <span>
+                      DES THÉMATIQUES INVESTIGUÉES RELÈVENT DE L’ORGANISATION DU
+                      TRAVAIL (CONDITIONS DE TRAVAIL/TMS ET RPS)
+                    </span>
+                  </ScrollAnimation>
                 </StatCard>
               </div>
               <div className="col s12 m6">
                 <StatCard className="risques-chimiques" cardClass="colored">
-                  <strong>74 %</strong>
-                  <span>
-                    DES ACTIONS RÉALISÉES RELÈVENT DE LA DÉMARCHE DE PRÉVENTION
-                    COLLECTIVE
-                  </span>
+                  <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut">
+                    <strong>74 %</strong>
+                    <span>
+                      DES ACTIONS RÉALISÉES RELÈVENT DE LA DÉMARCHE DE
+                      PRÉVENTION COLLECTIVE
+                    </span>{" "}
+                  </ScrollAnimation>
 
-                  <strong>94 %</strong>
-                  <span>
-                    DES ACTIONS RÉALISÉES RELÈVENT D’ACTIVITÉS EXPERTES (CONSEIL
-                    / DIAGNOSTIC / ACCOMPAGNEMENT)
-                  </span>
+                  <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut">
+                    <strong>94 %</strong>
+                    <span>
+                      DES ACTIONS RÉALISÉES RELÈVENT D’ACTIVITÉS EXPERTES
+                      (CONSEIL / DIAGNOSTIC / ACCOMPAGNEMENT)
+                    </span>
+                  </ScrollAnimation>
                 </StatCard>
               </div>
               <div className="col s12">
                 <StatCard cardClass="colored">
-                  <strong>471</strong>
-                  <span>
-                    DEMANDES D’INTERVENTION PARVENUES AU SERVICE ERGONOMIE
-                  </span>
+                  <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut">
+                    <strong>471</strong>
+                    <span>
+                      DEMANDES D’INTERVENTION PARVENUES AU SERVICE ERGONOMIE
+                    </span>
+                  </ScrollAnimation>
                 </StatCard>
               </div>
               <H3>
@@ -350,8 +362,10 @@ class EcouterEtAccompagner extends React.Component {
               </div>
               <div className="col s12">
                 <StatCard cardClass="colored">
-                  <strong>272</strong>
-                  <span>ACTIONS RÉALISÉES</span>
+                  <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut">
+                    <strong>272</strong>
+                    <span>ACTIONS RÉALISÉES</span>
+                  </ScrollAnimation>
                 </StatCard>
               </div>
               <H3>Risque chimique</H3>
@@ -411,19 +425,30 @@ class EcouterEtAccompagner extends React.Component {
               </div>
               <div className="col s12">
                 <StatCard cardClass="colored">
-                  <strong>332</strong>
-                  <span>
-                    DEMANDES D’INTERVENTION PARVENUES AU SERVICE TOXICOLOGIE
-                  </span>
+                  <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut">
+                    <strong>332</strong>
+                    <span>
+                      DEMANDES D’INTERVENTION PARVENUES AU SERVICE TOXICOLOGIE
+                    </span>
+                  </ScrollAnimation>
 
-                  <strong>56 %</strong>
-                  <span>
-                    DU TEMPS DE TRAVAIL CONCERNE LES INTERVENTIONS EN ENTREPRISE
-                  </span>
-                  <strong>1 968</strong>
-                  <span>FDS CRÉÉES EN 2017</span>
-                  <strong>285</strong>
-                  <span>ACTIONS RÉALISÉES EN 2017</span>
+                  <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut">
+                    <strong>56 %</strong>
+                    <span>
+                      DU TEMPS DE TRAVAIL CONCERNE LES INTERVENTIONS EN
+                      ENTREPRISE
+                    </span>
+                  </ScrollAnimation>
+
+                  <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut">
+                    <strong>1 968</strong>
+                    <span>FDS CRÉÉES EN 2017</span>
+                  </ScrollAnimation>
+
+                  <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut">
+                    <strong>285</strong>
+                    <span>ACTIONS RÉALISÉES EN 2017</span>
+                  </ScrollAnimation>
                 </StatCard>
               </div>
               <H3>
@@ -560,10 +585,15 @@ class EcouterEtAccompagner extends React.Component {
 
               <div className="col s12">
                 <StatCard cardClass="colored">
-                  <strong>274</strong>
-                  <span>ENTREPRISES CONCERNÉES</span>
-                  <strong>28 826</strong>
-                  <span>SALARIÉS CONCERNÉS</span>
+                  <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut">
+                    <strong>274</strong>
+                    <span>ENTREPRISES CONCERNÉES</span>
+                  </ScrollAnimation>
+
+                  <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut">
+                    <strong>28 826</strong>
+                    <span>SALARIÉS CONCERNÉS</span>
+                  </ScrollAnimation>
                 </StatCard>
               </div>
 
@@ -607,10 +637,15 @@ class EcouterEtAccompagner extends React.Component {
 
               <div className="col s12">
                 <StatCard cardClass="colored">
-                  <strong>30</strong>
-                  <span>ÉTUDES ET ENQUÊTES EN DIRECTION DES ENTREPRISES</span>
-                  <strong>34</strong>
-                  <span>ACTIONS REALISEES</span>
+                  <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut">
+                    <strong>30</strong>
+                    <span>ÉTUDES ET ENQUÊTES EN DIRECTION DES ENTREPRISES</span>
+                  </ScrollAnimation>
+
+                  <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut">
+                    <strong>34</strong>
+                    <span>ACTIONS REALISEES</span>
+                  </ScrollAnimation>
                 </StatCard>
               </div>
 
@@ -857,8 +892,10 @@ class EcouterEtAccompagner extends React.Component {
 
               <div className="col s12">
                 <StatCard cardClass="colored">
-                  <strong>3 564</strong>
-                  <span>SALARIÉS FORMES</span>
+                  <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut">
+                    <strong>3 564</strong>
+                    <span>SALARIÉS FORMES</span>
+                  </ScrollAnimation>
 
                   <strong>60</strong>
                   <span>
