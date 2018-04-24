@@ -33,7 +33,6 @@ class EcouterEtAccompagner extends React.Component {
   }
 
   render() {
-    console.log(this.state.data);
     return (
       <Layout>
         <div className="container">
