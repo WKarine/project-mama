@@ -5,7 +5,6 @@ import SimpleCard from "../components/SimpleCard";
 import Carousel from "../components/Carousel";
 import StatCard from "../components/StatCard";
 import ListCard from "../components/ListCard";
-import IconCard from "../components/IconCard";
 
 import { brandColors } from "../constantes/colors";
 

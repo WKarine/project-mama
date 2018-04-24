@@ -1,5 +1,7 @@
 import classNames from "classnames";
 
+import ScrollAnimation from "react-animate-on-scroll";
+
 import { brandColors } from "../../constantes/colors";
 
 const IconCard = ({ cardClass, dataList }) => {
@@ -13,15 +15,19 @@ const IconCard = ({ cardClass, dataList }) => {
       {dataList.map(data => (
         <div className="card__section" key={data.textContent}>
           <div className="card__left">
-            {data.iconProvider === "materialize" ? (
-              <i className="card__icon large material-icons">{data.icon}</i>
-            ) : (
-              <i className={`card__icon ${data.icon} fa-5x`} />
-            )}
-            <p className="card__textContent">{data.textContent}</p>
+            <ScrollAnimation animateIn="fadeInLeft">
+              {data.iconProvider === "materialize" ? (
+                <i className="card__icon large material-icons">{data.icon}</i>
+              ) : (
+                <i className={`card__icon ${data.icon} fa-5x`} />
+              )}
+              <p className="card__textContent">{data.textContent}</p>
+            </ScrollAnimation>
           </div>
           <div className="card__right">
-            <span className="card__stat">{data.stat}</span>
+            <ScrollAnimation animateIn="fadeInRight">
+              <span className="card__stat">{data.stat}</span>
+            </ScrollAnimation>
           </div>
         </div>
       ))}
