@@ -20,6 +20,7 @@ export default class NewsService {
 
       newsData.forEach(doc => {
         news = doc.data();
+        return news;
       });
 
       return news;

@@ -1,11 +1,11 @@
 import NewsService from "./NewsService";
 import UsersService from "./UsersService";
-import ChartsService from "./ChartsService";
+import DataService from "./DataService";
 
 const Services = {
   news: new NewsService(),
   users: new UsersService(),
-  charts: new ChartsService()
+  data: new DataService()
 };
 
 export default Services;
