@@ -4,7 +4,7 @@ const Build = ({ size = "small" }) => (
   <div className="build">
     <p>
       <span>en construction</span>
-      <i className="material-icons large animated swing infinite">build</i>
+      {/* <i className="material-icons large animated swing infinite">build</i> */}
     </p>
     <style jsx>{`
       .build {
@@ -19,7 +19,6 @@ const Build = ({ size = "small" }) => (
       .build p {
         align-items: center;
         color: white;
-        clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
         background-color: ${brandColors.orange} !important;
         display: flex;
         flex-direction: column;
