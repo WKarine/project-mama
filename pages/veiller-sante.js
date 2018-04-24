@@ -9,6 +9,8 @@ import H2 from "../components/H2";
 import H3 from "../components/H3";
 import Build from "../components/Build";
 
+import { brandColors } from "../constantes/colors";
+
 const dataList = [
   {
     icon: "fas fa-heartbeat",
@@ -100,7 +102,7 @@ export default () => (
         <H3>Dispositif de surveillance</H3>
 
         <div className="col s12 m6 offset-m3">
-          <a href="static/images/suivi-sante/schema.png">
+          <a href="static/images/suivi-sante/schema.png" target="_blank">
             <img
               className="responsive-img photo-schema"
               src="static/images/suivi-sante/schema.png"
@@ -213,7 +215,7 @@ export default () => (
         </div>
 
         <div className="col s12 m5">
-          <a href="static/images/suivi-sante/roue.png">
+          <a href="static/images/suivi-sante/roue.png" target="_blank">
             <img
               className="responsive-img photo-roue col s6"
               src="static/images/suivi-sante/roue.png"
@@ -500,6 +502,16 @@ export default () => (
             </StatCard>
           </div>
         </div>
+
+        <div className="col s12 m6 offset-m7">
+          <a
+            href="/ecouter-et-accompagner"
+            className="intro__discover waves-effect waves-light btn-large"
+          >
+            <i className="material-icons left">insert_chart</i>Continuer la
+            visite
+          </a>
+        </div>
       </div>
     </div>
     <style jsx global>{`
@@ -513,6 +525,10 @@ export default () => (
       }
       .build {
         height: 20vh !important;
+      }
+
+      .intro__discover {
+        background-color: ${brandColors.actual};
       }
     `}</style>
   </Layout>

@@ -57,21 +57,36 @@ const Footer = props => (
     <div className="footer__section footer__buttonsContainer">
       <ul className="footer__buttons">
         <li>
-          <a className="waves-effect btn-flat">
+          <a
+            className="waves-effect btn-flat"
+            href="https://www.polesantetravail.fr/contact/#contact-form"
+          >
             <i className="material-icons left">message</i>
             Contact
           </a>
         </li>
         <li>
-          <a className="waves-effect btn-flat">
+          <a
+            className="waves-effect btn-flat"
+            href="https://www.polesantetravail.fr/contact/#centre"
+          >
             <i className="material-icons left">people</i>
             Votre agence
           </a>
         </li>
         <li>
-          <a className="waves-effect btn-flat">
+          <a
+            className="waves-effect btn-flat"
+            href="https://twitter.com/PST_Nord"
+          >
             <i className="material-icons left">cloud</i>
             Twitter
+          </a>
+        </li>
+        <li>
+          <a className="waves-effect btn-flat">
+            <i className="material-icons left">cloud_download</i>
+            PDF
           </a>
         </li>
       </ul>
@@ -91,12 +106,16 @@ const Footer = props => (
         background-color: ${brandColors.actual};
         display: flex;
         flex-wrap: wrap;
+        width: calc(100% - 300px);
+        margin-left: 300px;
       }
 
       @media only screen and (max-width: 992px) {
         .page-footer {
           align-items: center;
           flex-wrap: wrap;
+          margin-left: 0;
+          width: 100%;
         }
       }
 

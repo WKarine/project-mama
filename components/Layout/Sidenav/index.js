@@ -4,7 +4,6 @@ import CategoryLink from "./CategoryLink";
 import SubCategory from "./SubCategory";
 
 import { brandColors } from "../../../constantes/colors";
-import { sideNavDimensions } from "../../../constantes/dimensions";
 
 class Sidenav extends React.Component {
   componentDidMount() {
@@ -17,7 +16,6 @@ class Sidenav extends React.Component {
 
     const $subCategories = document.querySelectorAll(".collapsible");
     M.Collapsible.init($subCategories);
-    // M.AutoInit();
   }
 
   render() {
@@ -28,7 +26,11 @@ class Sidenav extends React.Component {
         <ul id="slide-out" className="sidenav sidenav-fixed z-depth-1">
           <Link href="/">
             <a className="logo-container">
-              <img title="Revenir sur l'accueil" className="logo" src="static/images/logo.jpg" />
+              <img
+                title="Revenir à l'accueil"
+                className="logo"
+                src="static/images/logo.jpg"
+              />
             </a>
           </Link>
 

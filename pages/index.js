@@ -6,7 +6,6 @@ import Loader from "../components/Loader";
 import Link from "next/link";
 
 import { brandColors } from "../constantes/colors";
-import { indexDimensions } from "../constantes/dimensions";
 
 import Services from "../services";
 
@@ -48,7 +47,10 @@ class Index extends React.Component {
                     au questionnaire
                   </a>
                 </Link>
-                <a className="intro__discover waves-effect waves-light btn-large">
+                <a
+                  href="/perspectives"
+                  className="intro__discover waves-effect waves-light btn-large"
+                >
                   <i className="material-icons left">insert_chart</i>commencer
                   la visite
                 </a>

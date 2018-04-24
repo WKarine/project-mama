@@ -5,6 +5,8 @@ import H3 from "../components/H3";
 import SimpleCard from "../components/SimpleCard";
 import StatCard from "../components/StatCard";
 
+import { brandColors } from "../constantes/colors";
+
 export default () => (
   <Layout>
     <div className="container">
@@ -199,12 +201,26 @@ export default () => (
             </figure>
           </SimpleCard>
         </div>
+
+        <div className="col s12 m6 offset-m7">
+          <a
+            href="/bilan-financier"
+            className="intro__discover waves-effect waves-light btn-large"
+          >
+            <i className="material-icons left">insert_chart</i>Continuer la
+            visite
+          </a>
+        </div>
       </div>
     </div>
 
     <style jsx>{`
       img {
         border-radius: 10%;
+      }
+
+      .intro__discover {
+        background-color: ${brandColors.green};
       }
     `}</style>
   </Layout>

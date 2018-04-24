@@ -7,6 +7,8 @@ import StatCard from "../components/StatCard";
 import ListCard from "../components/ListCard";
 import IconCard from "../components/IconCard";
 
+import { brandColors } from "../constantes/colors";
+
 export default () => (
   <Layout>
     <div className="container">
@@ -58,13 +60,19 @@ export default () => (
         </div>
 
         <div className="col s12 center-align">
-          <img
-            className="responsive-img"
-            src="static/images/identite/carte_2017_sans_chiffre.png"
-          />
+          <a
+            href="static/images/identite/carte_2018_avec_chiffres.png"
+            target="_blank"
+          >
+            <img
+              className="responsive-img"
+              src="static/images/identite/carte_2018_avec_chiffres.png"
+            />
+          </a>
+          <span>Cliquez sur l'image pour l'agrandir</span>
         </div>
 
-        <H2>les évènements marquant de l'année</H2>
+        <H2 id="evenement-annees">les évènements marquant de l'année</H2>
 
         <div className="col s12 m8 offset-m2">
           <div className="events__cardContainer">
@@ -90,7 +98,7 @@ export default () => (
         </div>
 
         <div className="col s12">
-          <H2>les chiffres clés</H2>
+          <H2 id="chiffres-cles">les chiffres clés</H2>
         </div>
 
         <div className="col s12 valign">
@@ -114,25 +122,40 @@ export default () => (
             </StatCard>
           </div>
         </div>
-
-        <div className="col s12">
-          <ListCard />
+        <div className="col s12 valign">
+          <div className="valign-left">
+            <ListCard />
+          </div>
+          <div className="valign-right">
+            <StatCard cardClass="white">
+              <strong>12</strong> <span>secteurs géographiques</span>
+              <i className="large material-icons">home</i>
+              <strong>184</strong>{" "}
+              <span>centres de santé au travail au sein des entreprises</span>
+              <i className="large material-icons">people</i>
+              <strong>24</strong> <span>centres de santé au travail</span>
+              <i className="large material-icons">airport_shuttle</i>
+              <strong>5</strong>{" "}
+              <span>centres de santé au travail mobiles</span>
+            </StatCard>
+          </div>
         </div>
 
-        <div className="col s12 m8 offset-m2">
-          <StatCard cardClass="white">
-            <strong>12</strong> <span>secteurs géographiques</span>
-            <i className="large material-icons">home</i>
-            <strong>184</strong>{" "}
-            <span>centres de santé au travail au sein des entreprises</span>
-            <i className="large material-icons">people</i>
-            <strong>24</strong> <span>centres de santé au travail</span>
-            <i className="large material-icons">airport_shuttle</i>
-            <strong>5</strong> <span>centres de santé au travail mobiles</span>
-          </StatCard>
+        <div className="col s12 m6 offset-m7">
+          <a
+            href="/cartographie-entreprises"
+            className="intro__discover waves-effect waves-light btn-large"
+          >
+            <i className="material-icons left">insert_chart</i>Continuer la
+            visite
+          </a>
         </div>
       </div>
     </div>
-    <style jsx>{``}</style>
+    <style jsx>{`
+      .intro__discover {
+        background-color: ${brandColors.green};
+      }
+    `}</style>
   </Layout>
 );
