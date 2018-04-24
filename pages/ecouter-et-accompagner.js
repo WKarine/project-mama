@@ -884,11 +884,13 @@ class EcouterEtAccompagner extends React.Component {
                     <span>SALARIÉS FORMES</span>
                   </ScrollAnimation>
 
-                  <strong>60</strong>
-                  <span>
-                    SALARIÉS SUIVIS POTENTIELLEMENT PAR UN PSYCHOLOGUE DU
-                    TRAVAIL
-                  </span>
+                  <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut">
+                    <strong>60</strong>
+                    <span>
+                      SALARIÉS SUIVIS POTENTIELLEMENT PAR UN PSYCHOLOGUE DU
+                      TRAVAIL
+                    </span>
+                  </ScrollAnimation>
                 </StatCard>
               </div>
 
