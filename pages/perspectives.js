@@ -231,6 +231,15 @@ export default () => (
               du travail de demain.
             </p>
           </div>
+          <div className="col s12 m6 offset-m7">
+            <a
+              href="/fiche-identite"
+              className="intro__discover waves-effect waves-light btn-large"
+            >
+              <i className="material-icons left">insert_chart</i>Continuer la
+              visite
+            </a>
+          </div>
         </div>
       </div>
     </div>
@@ -245,9 +254,9 @@ export default () => (
         background-color: rgba(0, 0, 0, 0.3);
         text-align: center;
       }
-      
-      .legend{
-       width:100%;
+
+      .legend {
+        width: 100%;
       }
 
       .legend {
@@ -272,6 +281,10 @@ export default () => (
         display: flex;
         justify-content: center;
         align-items: center;
+      }
+
+      .intro__discover {
+        background-color: ${brandColors.orange};
       }
     `}</style>
   </Layout>

@@ -11,6 +11,8 @@ import IconCard from "../components/IconCard";
 import StatCard from "../components/StatCard";
 import Build from "../components/Build";
 
+import { brandColors } from "../constantes/colors";
+
 const dataList = [
   {
     icon: "fas fa-handshake",
@@ -1083,6 +1085,15 @@ section formation - graphique pie */}
             />
           </div>
         </div>
+        <div className="col s12 m6 offset-m7">
+            <a
+              href="/mener-des-actions"
+              className="intro__discover waves-effect waves-light btn-large"
+            >
+              <i className="material-icons left">insert_chart</i>Continuer la
+              visite
+            </a>
+          </div>
       </div>
     </div>
 
@@ -1122,6 +1133,10 @@ section formation - graphique pie */}
         text-align: center;
         margin-top: 2rem;
         margin-bottom: 2rem;
+      }
+
+      .intro__discover {
+        background-color: ${brandColors.pink};
       }
 
       .build {
