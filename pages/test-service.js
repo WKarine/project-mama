@@ -4,32 +4,22 @@ import Layout from "../components/Layout";
 
 const data = [
   {
-    id: "Formation des formateurs SST",
-    label: "sst",
-    value: 83,
-    color: "hsl(340, 70%, 50%)"
+    icon: "fas fa-syringe",
+    textContent: "prélèvements effectués",
+    stat: 10787,
+    iconProvider: "fa"
   },
   {
-    id: "Formation catalogue",
-    label: "catalogue",
-    value: 560,
-    color: "hsl(272, 70%, 50%)"
-  },
-  {
-    id: "Bilan de compétences",
-    label: "compétences",
-    value: 98,
-    color: "hsl(340, 70%, 50%)"
+    icon: "fas fa-vial",
+    textContent: "analyses effectuées",
+    stat: 64684,
+    iconProvider: "fa"
   }
 ];
 
 class TestService extends React.Component {
   async componentWillMount() {
-    // const charts = await Services.data.setData(
-    //   "ecouter-et-accompagner",
-    //   "toxiInternautes",
-    //   data
-    // );
+    await Services.data.setData("veiller-sante", "iconCard-3", data);
     // await Services.data.setData(
     //   "ecouter-et-accompagner",
     //   "typesFormation",

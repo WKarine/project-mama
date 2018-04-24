@@ -12,134 +12,9 @@ import IconCard from "../components/IconCard";
 import StatCard from "../components/StatCard";
 import Build from "../components/Build";
 
-<<<<<<< HEAD
-import { brandColors } from "../constantes/colors";
-
-const dataList = [
-  {
-    icon: "fas fa-handshake",
-    textContent: "Accueils Nouvel Adhérent",
-    stat: 1879,
-    iconProvider: "fa"
-  },
-  {
-    icon: "far fa-address-book",
-    textContent: "Fiches d'entreprise crées en 2017",
-    stat: 3978,
-    iconProvider: "fa"
-  }
-];
-
-const dataList_2 = [
-  {
-    icon: "fas fa-folder-open",
-    textContent: "Aides au DUER",
-    stat: 273,
-    iconProvider: "fa"
-  },
-  {
-    icon: "fas fa-utensils",
-    textContent: "Educations sanitaires",
-    stat: 67,
-    iconProvider: "fa"
-  }
-];
-
-const dataList_3 = [
-  {
-    icon: "fas fa-info-circle",
-    textContent: "Accueils Nouvel Adhérent (Réunions collectives)",
-    stat: 140
-  },
-  {
-    icon: "far fa-edit",
-    textContent: "Fiches d'entreprise mises à jour en 2017",
-    stat: 608
-  },
-  {
-    icon: "far fa-comments",
-    textContent:
-      "Informations sur les risques professionnels et les moyens de prévention",
-    stat: 1268
-  }
-];
-
-// data graphics ergonomie
-
-const data = [
-  {
-    id: "Risques psycho sociaux",
-    label: "rps",
-    value: 30,
-    color: "hsl(13, 70%, 50%)"
-  },
-  {
-    id: "Métrologie",
-    label: "metro",
-    value: 76,
-    color: "hsl(340, 70%, 50%)"
-  },
-  {
-    id: "Amiante",
-    label: "amiante",
-    value: 65,
-    color: "hsl(340, 70%, 50%)"
-  },
-
-  {
-    id: "Conseil Evaluation",
-    label: "evrp",
-    value: 11,
-    color: "hsl(86, 70%, 50%)"
-  },
-  {
-    id: "Ergonomie",
-    label: "ergo",
-    value: 284,
-    color: "hsl(62, 70%, 50%)"
-  },
-  {
-    id: "Sensibilisation",
-    label: "sensibilisation",
-    value: 5,
-    color: "hsl(272, 70%, 50%)"
-  }
-];
-
-const data1 = [
-  {
-    type: "Diagnostic",
-    number: 154,
-    numberColor: "hsl(218, 70%, 50%)"
-  },
-  {
-    type: "Conseil",
-    number: 72,
-    numberColor: "hsl(218, 70%, 50%)"
-  },
-  {
-    type: "Accompagnement",
-    number: 29,
-    numberColor: "hsl(218, 70%, 50%)"
-  },
-  {
-    type: "Maintien dans l'emploi",
-    number: 12,
-    numberColor: "hsl(218, 70%, 50%)"
-  },
-  {
-    type: "Autres types *",
-    number: 5,
-    numberColor: "hsl(218, 70%, 50%)"
-  }
-];
-=======
 import Services from "../services";
->>>>>>> 2f3cd168912c9faaa0b15583cb7b73d4f5528490
 
-// data graphics toxicologie
-
-// data graphics PST Formation
+import ScrollAnimation from "react-animate-on-scroll";
 
 class EcouterEtAccompagner extends React.Component {
   state = {
@@ -148,11 +23,15 @@ class EcouterEtAccompagner extends React.Component {
   };
   async componentWillMount() {
     const page = this.props.url.pathname.slice(1);
+    console.log(this.props);
+    console.log(page);
 
     this.setState({
       isLoading: false,
-      data: await Services.data.getData()
+      data: await Services.data.getData(page)
     });
+
+    console.dir(this.state.data);
   }
 
   render() {
@@ -193,9 +72,11 @@ class EcouterEtAccompagner extends React.Component {
                 </p>
               </div>
               <div className="col s12 center-align">
-                <strong className="amt">
-                  20 425 Action en Milieu de Travail réalisées en 2017
-                </strong>
+                <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut">
+                  <strong className="amt">
+                    20 425 Action en Milieu de Travail réalisées en 2017
+                  </strong>
+                </ScrollAnimation>
               </div>
               <div className="col s12">
                 <SimpleCard cardClass="white">
@@ -306,39 +187,50 @@ class EcouterEtAccompagner extends React.Component {
               </div>
               <div className="col s12 m6">
                 <StatCard className="risques-chimiques" cardClass="colored">
-                  <strong>27 %</strong>
-                  <span>
-                    D’ACTIONS RÉALISÉES EN PLUS QU’EN 2016 À EFFECTIFS CONSTANTS
-                  </span>
+                  <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut">
+                    <strong>27 %</strong>
+                    <span>
+                      D’ACTIONS RÉALISÉES EN PLUS QU’EN 2016 À EFFECTIFS
+                      CONSTANTS
+                    </span>
+                  </ScrollAnimation>
 
-                  <strong>57 %</strong>
-                  <span>
-                    DES THÉMATIQUES INVESTIGUÉES RELÈVENT DE L’ORGANISATION DU
-                    TRAVAIL (CONDITIONS DE TRAVAIL/TMS ET RPS)
-                  </span>
+                  <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut">
+                    <strong>57 %</strong>
+                    <span>
+                      DES THÉMATIQUES INVESTIGUÉES RELÈVENT DE L’ORGANISATION DU
+                      TRAVAIL (CONDITIONS DE TRAVAIL/TMS ET RPS)
+                    </span>
+                  </ScrollAnimation>
                 </StatCard>
               </div>
               <div className="col s12 m6">
                 <StatCard className="risques-chimiques" cardClass="colored">
-                  <strong>74 %</strong>
-                  <span>
-                    DES ACTIONS RÉALISÉES RELÈVENT DE LA DÉMARCHE DE PRÉVENTION
-                    COLLECTIVE
-                  </span>
+                  <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut">
+                    <strong>74 %</strong>
+                    <span>
+                      DES ACTIONS RÉALISÉES RELÈVENT DE LA DÉMARCHE DE
+                      PRÉVENTION COLLECTIVE
+                    </span>{" "}
+                  </ScrollAnimation>
 
-                  <strong>94 %</strong>
-                  <span>
-                    DES ACTIONS RÉALISÉES RELÈVENT D’ACTIVITÉS EXPERTES (CONSEIL
-                    / DIAGNOSTIC / ACCOMPAGNEMENT)
-                  </span>
+                  <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut">
+                    <strong>94 %</strong>
+                    <span>
+                      DES ACTIONS RÉALISÉES RELÈVENT D’ACTIVITÉS EXPERTES
+                      (CONSEIL / DIAGNOSTIC / ACCOMPAGNEMENT)
+                    </span>
+                  </ScrollAnimation>
                 </StatCard>
               </div>
               <div className="col s12">
                 <StatCard cardClass="colored">
-                  <strong>471</strong>
-                  <span>
-                    DEMANDES D’INTERVENTION PARVENUES AU SERVICE ERGONOMIE
-                  </span>
+                  <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut">
+                    <strong>471</strong>
+                    <span>
+                      DEMANDES D’INTERVENTION PARVENUES AU SERVICE ERGONOMIE
+                    </span>
+                  </ScrollAnimation>
                 </StatCard>
               </div>
               <H3>
@@ -473,8 +365,10 @@ class EcouterEtAccompagner extends React.Component {
               </div>
               <div className="col s12">
                 <StatCard cardClass="colored">
-                  <strong>272</strong>
-                  <span>ACTIONS RÉALISÉES</span>
+                  <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut">
+                    <strong>272</strong>
+                    <span>ACTIONS RÉALISÉES</span>
+                  </ScrollAnimation>
                 </StatCard>
               </div>
               <H3>Risque chimique</H3>
@@ -498,7 +392,6 @@ class EcouterEtAccompagner extends React.Component {
                     Dépistage des CMR et analyse des principaux risques. FDS
                     saisies et consultables dans TOXILIST.
                   </p>
-
                   <div className="toxilist">
                     <Link href="https://www.toxilist.fr/">
                       <a target="_blank">
@@ -526,7 +419,6 @@ class EcouterEtAccompagner extends React.Component {
                     Sur une thématique précise, avec ou sans métrologie, mise en
                     place de plan de prévention, accompagnement méthodologique…
                   </p>
-
                   <strong>
                     ACCOMPAGNEMENT DANS LA MISE EN PLACE DE PLAN DE PRÉVENTION
                   </strong>
@@ -534,19 +426,27 @@ class EcouterEtAccompagner extends React.Component {
               </div>
               <div className="col s12">
                 <StatCard cardClass="colored">
-                  <strong>332</strong>
-                  <span>
-                    DEMANDES D’INTERVENTION PARVENUES AU SERVICE TOXICOLOGIE
-                  </span>
-
-                  <strong>56 %</strong>
-                  <span>
-                    DU TEMPS DE TRAVAIL CONCERNE LES INTERVENTIONS EN ENTREPRISE
-                  </span>
-                  <strong>1 968</strong>
-                  <span>FDS CRÉÉES EN 2017</span>
-                  <strong>285</strong>
-                  <span>ACTIONS RÉALISÉES EN 2017</span>
+                  <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut">
+                    <strong>332</strong>
+                    <span>
+                      DEMANDES D’INTERVENTION PARVENUES AU SERVICE TOXICOLOGIE
+                    </span>
+                  </ScrollAnimation>
+                  <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut">
+                    <strong>56 %</strong>
+                    <span>
+                      DU TEMPS DE TRAVAIL CONCERNE LES INTERVENTIONS EN
+                      ENTREPRISE
+                    </span>
+                  </ScrollAnimation>
+                  <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut">
+                    <strong>1 968</strong>
+                    <span>FDS CRÉÉES EN 2017</span>
+                  </ScrollAnimation>
+                  <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut">
+                    <strong>285</strong>
+                    <span>ACTIONS RÉALISÉES EN 2017</span>
+                  </ScrollAnimation>
                 </StatCard>
               </div>
               <H3>
@@ -683,10 +583,15 @@ class EcouterEtAccompagner extends React.Component {
 
               <div className="col s12">
                 <StatCard cardClass="colored">
-                  <strong>274</strong>
-                  <span>ENTREPRISES CONCERNÉES</span>
-                  <strong>28 826</strong>
-                  <span>SALARIÉS CONCERNÉS</span>
+                  <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut">
+                    <strong>274</strong>
+                    <span>ENTREPRISES CONCERNÉES</span>
+                  </ScrollAnimation>
+
+                  <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut">
+                    <strong>28 826</strong>
+                    <span>SALARIÉS CONCERNÉS</span>
+                  </ScrollAnimation>
                 </StatCard>
               </div>
 
@@ -730,10 +635,15 @@ class EcouterEtAccompagner extends React.Component {
 
               <div className="col s12">
                 <StatCard cardClass="colored">
-                  <strong>30</strong>
-                  <span>ÉTUDES ET ENQUÊTES EN DIRECTION DES ENTREPRISES</span>
-                  <strong>34</strong>
-                  <span>ACTIONS REALISEES</span>
+                  <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut">
+                    <strong>30</strong>
+                    <span>ÉTUDES ET ENQUÊTES EN DIRECTION DES ENTREPRISES</span>
+                  </ScrollAnimation>
+
+                  <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut">
+                    <strong>34</strong>
+                    <span>ACTIONS REALISEES</span>
+                  </ScrollAnimation>
                 </StatCard>
               </div>
 
@@ -804,14 +714,12 @@ class EcouterEtAccompagner extends React.Component {
                 Apporter des réponses adaptées face aux problématiques de
                 consommation de drogues et d'alcool sur le lieu de travail
               </H2>
-
               <div className="col s12 m4">
                 <SimpleCard cardClass="colored">
                   <p>
                     Les consommations et addictions ont un impact réel sur
                     l’état de santé du salarié.
                   </p>
-
                   <p>
                     Les conduites individuelles sous l’emprise de drogues ou
                     d’alcool représentent un risque à évaluer et à prendre en
@@ -820,24 +728,20 @@ class EcouterEtAccompagner extends React.Component {
                     traitée comme telle. Mais aujourd’hui encore, c’est un sujet
                     tabou en entreprise.
                   </p>
-
                   <p>
                     Depuis la loi du 20 juillet 2011, la prévention des
                     addictions et consommations est une mission de service pour
                     la santé au travail.
                   </p>
-
                   <p>
                     C’est pourquoi, PÔLE SANTÉ TRAVAIL a initié le Pôle
                     Ressources en ADDictologie (PRADD) qui propose :
                   </p>
                 </SimpleCard>
               </div>
-
               <div className="col s12 m4">
                 <SimpleCard cardClass="white">
                   <p>Pour les salariés des :</p>
-
                   <ul className="card__list">
                     <li>
                       Entretiens d’accompagnement (bilans – orientations –
@@ -853,9 +757,7 @@ class EcouterEtAccompagner extends React.Component {
                       jours)
                     </li>
                   </ul>
-
                   <p>Pour les entreprises des :</p>
-
                   <ul className="card__list">
                     <li>Actions type « forum »</li>
                     <li>
@@ -866,7 +768,6 @@ class EcouterEtAccompagner extends React.Component {
                   </ul>
                 </SimpleCard>
               </div>
-
               <div className="col s12 m4">
                 <SimpleCard cardClass="colored">
                   <p>
@@ -881,7 +782,6 @@ class EcouterEtAccompagner extends React.Component {
                   </p>
                 </SimpleCard>
               </div>
-
               <div className="col s12">
                 <StatCard icone="local_bar" cardClass="white">
                   <strong>80</strong>
@@ -894,7 +794,6 @@ class EcouterEtAccompagner extends React.Component {
                   <span>Entreprises accompagnées</span>
                 </StatCard>
               </div>
-
               <H2 id="maintien-emploi">
                 Accompagner les entreprises et les salariés dans la recherche de
                 solutions pour le maintien dans l'emploi
@@ -980,8 +879,10 @@ class EcouterEtAccompagner extends React.Component {
 
               <div className="col s12">
                 <StatCard cardClass="colored">
-                  <strong>3 564</strong>
-                  <span>SALARIÉS FORMES</span>
+                  <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut">
+                    <strong>3 564</strong>
+                    <span>SALARIÉS FORMES</span>
+                  </ScrollAnimation>
 
                   <strong>60</strong>
                   <span>
@@ -1032,127 +933,6 @@ class EcouterEtAccompagner extends React.Component {
                 />
               </div>
             </div>
-<<<<<<< HEAD
-          </SimpleCard>
-        </div>
-
-        <div className="col s12 m6">
-          <StatCard cardClass="colored">
-            <strong>3 564</strong>
-            <span>SALARIÉS FORMES</span>
-
-            <strong>60</strong>
-            <span>
-              SALARIÉS SUIVIS POTENTIELLEMENT PAR UN PSYCHOLOGUE DU TRAVAIL
-            </span>
-          </StatCard>
-        </div>
-
-        <div className="col s12 m6">
-          <div className="chart-container">
-            {/* chapitre Ecouter et accompagner 
-section formation - graphique pie */}
-            <p>Répartition des actions réalisées</p>
-            <ResponsivePie
-              data={data4}
-              margin={{
-                top: 55,
-                right: 135,
-                bottom: 79,
-                left: 111
-              }}
-              innerRadius={0.55}
-              colors="nivo"
-              colorBy="id"
-              borderColor="inherit:darker(0.6)"
-              radialLabelsSkipAngle={0}
-              radialLabelsTextXOffset={8}
-              radialLabelsTextColor="#333333"
-              radialLabelsLinkOffset={3}
-              radialLabelsLinkDiagonalLength={26}
-              radialLabelsLinkHorizontalLength={36}
-              radialLabelsLinkStrokeWidth={1}
-              radialLabelsLinkColor="inherit"
-              slicesLabelsSkipAngle={0}
-              slicesLabelsTextColor="#333333"
-              animate={false}
-              motionStiffness={110}
-              motionDamping={16}
-              legends={[
-                {
-                  anchor: "bottom",
-                  direction: "row",
-                  translateY: 56,
-                  itemWidth: 100,
-                  itemHeight: 14,
-                  symbolSize: 14,
-                  symbolShape: "circle"
-                }
-              ]}
-            />
-          </div>
-        </div>
-        <div className="col s12 m6 offset-m7">
-            <a
-              href="/mener-des-actions"
-              className="intro__discover waves-effect waves-light btn-large"
-            >
-              <i className="material-icons left">insert_chart</i>Continuer la
-              visite
-            </a>
-          </div>
-      </div>
-    </div>
-
-    <style jsx global>{`
-      .amt {
-        display: inline-block;
-        padding: 1rem 0;
-        font-size: 1.5rem;
-      }
-
-      @media only screen and (min-width: 992px) {
-        .ergo__intro {
-          height: 25rem;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          text-align: justify;
-        }
-      }
-
-      .risques-chimiques {
-        min-height: 30rem;
-      }
-
-      .toxilist {
-        text-align: center;
-        margin-top: 2rem;
-        margin-bottom: 2rem;
-      }
-
-      .evrest {
-        text-align: center;
-        margin-top: 2rem;
-        margin-bottom: 2rem;
-      }
-      .pst {
-        text-align: center;
-        margin-top: 2rem;
-        margin-bottom: 2rem;
-      }
-
-      .intro__discover {
-        background-color: ${brandColors.pink};
-      }
-
-      .build {
-        height: 20vh !important;
-      }
-    `}</style>
-  </Layout>
-);
-=======
           )}
         </div>
 
@@ -1162,7 +942,6 @@ section formation - graphique pie */}
             padding: 1rem 0;
             font-size: 1.5rem;
           }
-
           @media only screen and (min-width: 992px) {
             .ergo__intro {
               height: 25rem;
@@ -1172,17 +951,14 @@ section formation - graphique pie */}
               text-align: justify;
             }
           }
-
           .risques-chimiques {
             min-height: 30rem;
           }
-
           .toxilist {
             text-align: center;
             margin-top: 2rem;
             margin-bottom: 2rem;
           }
-
           .evrest {
             text-align: center;
             margin-top: 2rem;
@@ -1193,7 +969,6 @@ section formation - graphique pie */}
             margin-top: 2rem;
             margin-bottom: 2rem;
           }
-
           .build {
             height: 20vh !important;
           }
@@ -1204,4 +979,3 @@ section formation - graphique pie */}
 }
 
 export default EcouterEtAccompagner;
->>>>>>> 2f3cd168912c9faaa0b15583cb7b73d4f5528490

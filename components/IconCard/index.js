@@ -94,6 +94,12 @@ const IconCard = ({ cardClass, dataList }) => {
         .icon-card .card__stat {
           font-size: 3rem;
         }
+
+        @media only screen and (max-width: 992px) {
+          .icon-card .card__stat {
+            font-size: 2rem;
+          }
+        }
       `}</style>
     </div>
   );

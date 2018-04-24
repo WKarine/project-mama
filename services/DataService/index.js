@@ -19,7 +19,9 @@ export default class DataService {
       const dataSnapshot = await dataRef.get();
 
       dataSnapshot.forEach(doc => {
-        data = doc.data();
+        if (doc.id === page) {
+          data = doc.data();
+        }
       });
 
       return data;
