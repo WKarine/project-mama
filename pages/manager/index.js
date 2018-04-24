@@ -1,18 +1,22 @@
 import firebase from "firebase/app";
 import auth from "firebase/auth";
 
-import config from "../../constantes/firebase-config";
-
 import Layout from "../../components/Layout";
-
 import H1 from "../../components/H1";
 import ConnectionForm from "./ConnectionForm";
 import PanelAdmin from "./PanelAdmin";
+import Loader from "../../components/Loader";
 
+import config from "../../constantes/firebase-config";
+import { brandColors } from "../../constantes/colors";
+
+// TODO: proper session management
 class Manager extends React.Component {
   state = {
     isConnected: false,
     email: "",
+    // isConnected: true,
+    // email: "sguilbert@polesantetravail.fr",
     error: false
   };
 
@@ -24,8 +28,9 @@ class Manager extends React.Component {
 
   handleSubmit = e => {
     e.preventDefault();
-    const email = e.currentTarget.elements.email.value;
-    const password = e.currentTarget.elements.password.value;
+    e.persist();
+    const email = e.target.elements.email.value;
+    const password = e.target.elements.password.value;
 
     firebase
       .auth()
@@ -37,14 +42,23 @@ class Manager extends React.Component {
           error: false
         });
 
-        localStorage.setItem("isConnected", true);
+        M.toast({ html: "Bonjour !", classes: "rounded" });
       })
       .catch(error => {
-        // Rediriger + message erreur
+        // message erreur
         this.setState({
           error: true
         });
       });
+  };
+
+  onDisconnect = e => {
+    this.setState({
+      isConnected: false,
+      email: ""
+    });
+
+    M.toast({ html: "Bye!" });
   };
 
   render() {
@@ -52,20 +66,26 @@ class Manager extends React.Component {
       <Layout>
         <div className="container">
           <div className="row">
-            <H1>Admin</H1>
-
-            {this.state.error && <p>Tupuducul</p>}
-            <div className="col s12 m8 offset-m2">
-              {this.state.isConnected ? (
-                <PanelAdmin email={this.state.email} />
-              ) : (
-                <ConnectionForm onSubmit={this.handleSubmit} />
-              )}
-            </div>
+            <H1>MANAGER</H1>
+            {this.state.isConnected ? (
+              <PanelAdmin
+                email={this.state.email}
+                onDisconnect={this.onDisconnect}
+              />
+            ) : (
+              <ConnectionForm
+                error={this.state.error}
+                onSubmit={this.handleSubmit}
+              />
+            )}
           </div>
         </div>
 
-        <style jsx>{``}</style>
+        <style jsx global>{`
+          .toast {
+            background-color: ${brandColors.actual} !important;
+          }
+        `}</style>
       </Layout>
     );
   }
