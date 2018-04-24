@@ -4,6 +4,7 @@ import H2 from "../components/H2";
 import H3 from "../components/H3";
 import SimpleCard from "../components/SimpleCard";
 import StatCard from "../components/StatCard";
+import Link from "next/link";
 
 import { brandColors } from "../constantes/colors";
 
@@ -92,22 +93,51 @@ export default () => (
 
         <H3>Les supports d'information et de communication</H3>
 
-        <div className="col s12 m6">
-          <StatCard cardClass="white">
+        <div className="col s12">
+          <StatCard cardClass="colored">
             <strong>138</strong>
             <span>Supports réalisés ou mis à jour</span>
           </StatCard>
         </div>
 
-        <div className="col s12 m6">
-          <StatCard cardClass="white">
-            <span>Mettre les images des docs</span>
-          </StatCard>
+        <div className="col s12 m3">
+          <img
+            className="responsive-img photo-support1"
+            src="static/images/mettre-des-moyens/screen1.png"
+            alt="support1"
+            title="Cliquez ici pour visiter notre site"
+          />
+        </div>
+        <div className="col s12 m3">
+          <img
+            className="responsive-img photo-support2"
+            src="static/images/mettre-des-moyens/screen2.png"
+            alt="support2"
+            title="Cliquez ici pour visiter notre site"
+          />
+        </div>
+
+        <div className="col s12 m3">
+          <img
+            className="responsive-img photo-support3"
+            src="static/images/mettre-des-moyens/screen3.png"
+            alt="support3"
+            title="Cliquez ici pour visiter notre site"
+          />
+        </div>
+
+        <div className="col s12 m3">
+          <img
+            className="responsive-img photo-support4"
+            src="static/images/mettre-des-moyens/screen4.png"
+            alt="support4"
+            title="Cliquez ici pour visiter notre site"
+          />
         </div>
 
         <H3>Le Web/Site Web de Pôle Santé Travail</H3>
 
-        <div className="col s12 m8">
+        <div className="col s12">
           <SimpleCard cardClass="colored">
             <div className="col s12 m6">
               <StatCard cardClass="white">
@@ -150,7 +180,7 @@ export default () => (
           </SimpleCard>
         </div>
 
-        <div className="col s12 m4">
+        <div className="col s12 m6">
           <StatCard cardClass="white">
             <strong>8/10</strong>
             <span>Note globale du site</span>
@@ -158,10 +188,23 @@ export default () => (
           </StatCard>
         </div>
 
+        <div className="card-image col s12 m6">
+          <Link href="https://www.polesantetravail.fr/">
+            <a target="_blank">
+              <img
+                className="responsive-img photo-site"
+                src="static/images/mettre-des-moyens/site.png"
+                alt="site pole sante travail"
+                title="Cliquez ici pour visiter notre site"
+              />
+            </a>
+          </Link>
+        </div>
+
         <H2 id="immobiliers-investissements">Immobiliers et investissements</H2>
 
         <div className="col s12 m6">
-          <SimpleCard cardClass="white">
+          <SimpleCard cardClass="colored">
             <p>AMENAGEMENTS</p>
             <ul className="card__list">
               <li>Somain</li>
@@ -181,14 +224,14 @@ export default () => (
           <SimpleCard cardClass="white">
             <strong>OUVERTURE DES CENTRES</strong>
 
-            <p>Lomme Humanicité</p>
-            <ul className="card__list">
-              <li>OUVERTURE EN FEVRIER 2017</li>
-            </ul>
-            <p>Douai Dorignies</p>
-            <ul className="card__list">
-              <li>OUVERTURE EN DECEMBRE 2017</li>
-            </ul>
+            <p>LOMME HUMANICITE</p>
+
+            <span>OUVERTURE EN FEVRIER 2017</span>
+
+            <p>DOUAI DORIGNIES</p>
+
+            <span>OUVERTURE EN DECEMBRE 2017</span>
+
             <figure>
               <img
                 className="responsive-img photo-centre-douai"
@@ -215,10 +258,6 @@ export default () => (
     </div>
 
     <style jsx>{`
-      img {
-        border-radius: 10%;
-      }
-
       .intro__discover {
         background-color: ${brandColors.green};
       }

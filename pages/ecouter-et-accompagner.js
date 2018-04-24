@@ -16,7 +16,6 @@ import Services from "../services";
 
 import ScrollAnimation from "react-animate-on-scroll";
 
-
 class EcouterEtAccompagner extends React.Component {
   state = {
     isLoading: true,
@@ -393,7 +392,6 @@ class EcouterEtAccompagner extends React.Component {
                     Dépistage des CMR et analyse des principaux risques. FDS
                     saisies et consultables dans TOXILIST.
                   </p>
-
                   <div className="toxilist">
                     <Link href="https://www.toxilist.fr/">
                       <a target="_blank">
@@ -421,7 +419,6 @@ class EcouterEtAccompagner extends React.Component {
                     Sur une thématique précise, avec ou sans métrologie, mise en
                     place de plan de prévention, accompagnement méthodologique…
                   </p>
-
                   <strong>
                     ACCOMPAGNEMENT DANS LA MISE EN PLACE DE PLAN DE PRÉVENTION
                   </strong>
@@ -435,7 +432,6 @@ class EcouterEtAccompagner extends React.Component {
                       DEMANDES D’INTERVENTION PARVENUES AU SERVICE TOXICOLOGIE
                     </span>
                   </ScrollAnimation>
-
                   <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut">
                     <strong>56 %</strong>
                     <span>
@@ -443,12 +439,10 @@ class EcouterEtAccompagner extends React.Component {
                       ENTREPRISE
                     </span>
                   </ScrollAnimation>
-
                   <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut">
                     <strong>1 968</strong>
                     <span>FDS CRÉÉES EN 2017</span>
                   </ScrollAnimation>
-
                   <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut">
                     <strong>285</strong>
                     <span>ACTIONS RÉALISÉES EN 2017</span>
@@ -720,14 +714,12 @@ class EcouterEtAccompagner extends React.Component {
                 Apporter des réponses adaptées face aux problématiques de
                 consommation de drogues et d'alcool sur le lieu de travail
               </H2>
-
               <div className="col s12 m4">
                 <SimpleCard cardClass="colored">
                   <p>
                     Les consommations et addictions ont un impact réel sur
                     l’état de santé du salarié.
                   </p>
-
                   <p>
                     Les conduites individuelles sous l’emprise de drogues ou
                     d’alcool représentent un risque à évaluer et à prendre en
@@ -736,24 +728,20 @@ class EcouterEtAccompagner extends React.Component {
                     traitée comme telle. Mais aujourd’hui encore, c’est un sujet
                     tabou en entreprise.
                   </p>
-
                   <p>
                     Depuis la loi du 20 juillet 2011, la prévention des
                     addictions et consommations est une mission de service pour
                     la santé au travail.
                   </p>
-
                   <p>
                     C’est pourquoi, PÔLE SANTÉ TRAVAIL a initié le Pôle
                     Ressources en ADDictologie (PRADD) qui propose :
                   </p>
                 </SimpleCard>
               </div>
-
               <div className="col s12 m4">
                 <SimpleCard cardClass="white">
                   <p>Pour les salariés des :</p>
-
                   <ul className="card__list">
                     <li>
                       Entretiens d’accompagnement (bilans – orientations –
@@ -769,9 +757,7 @@ class EcouterEtAccompagner extends React.Component {
                       jours)
                     </li>
                   </ul>
-
                   <p>Pour les entreprises des :</p>
-
                   <ul className="card__list">
                     <li>Actions type « forum »</li>
                     <li>
@@ -782,7 +768,6 @@ class EcouterEtAccompagner extends React.Component {
                   </ul>
                 </SimpleCard>
               </div>
-
               <div className="col s12 m4">
                 <SimpleCard cardClass="colored">
                   <p>
@@ -797,7 +782,6 @@ class EcouterEtAccompagner extends React.Component {
                   </p>
                 </SimpleCard>
               </div>
-
               <div className="col s12">
                 <StatCard icone="local_bar" cardClass="white">
                   <strong>80</strong>
@@ -810,7 +794,6 @@ class EcouterEtAccompagner extends React.Component {
                   <span>Entreprises accompagnées</span>
                 </StatCard>
               </div>
-
               <H2 id="maintien-emploi">
                 Accompagner les entreprises et les salariés dans la recherche de
                 solutions pour le maintien dans l'emploi
@@ -959,7 +942,6 @@ class EcouterEtAccompagner extends React.Component {
             padding: 1rem 0;
             font-size: 1.5rem;
           }
-
           @media only screen and (min-width: 992px) {
             .ergo__intro {
               height: 25rem;
@@ -969,17 +951,14 @@ class EcouterEtAccompagner extends React.Component {
               text-align: justify;
             }
           }
-
           .risques-chimiques {
             min-height: 30rem;
           }
-
           .toxilist {
             text-align: center;
             margin-top: 2rem;
             margin-bottom: 2rem;
           }
-
           .evrest {
             text-align: center;
             margin-top: 2rem;
@@ -990,7 +969,6 @@ class EcouterEtAccompagner extends React.Component {
             margin-top: 2rem;
             margin-bottom: 2rem;
           }
-
           .build {
             height: 20vh !important;
           }
