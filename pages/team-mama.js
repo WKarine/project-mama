@@ -9,7 +9,7 @@ export default () => (
     <div className="container">
       <H1>Team-Mama</H1>
       <div className="row">
-        <div className="col s12 m3">
+        <div className="col s12 m6">
           <ScrollAnimation animateIn="bounceInLeft">
             <div className="card">
               <div className="card-image">
@@ -31,7 +31,7 @@ export default () => (
           </ScrollAnimation>
         </div>
 
-        <div className="col s12 m3">
+        <div className="col s12 m6">
           <ScrollAnimation animateIn="bounceInDown">
             <div className="card">
               <div className="card-image">
@@ -53,7 +53,7 @@ export default () => (
           </ScrollAnimation>
         </div>
 
-        <div className="col s12 m3">
+        <div className="col s12 m6">
           <ScrollAnimation animateIn="bounceInUp">
             <div className="card">
               <div className="card-image">
@@ -75,7 +75,7 @@ export default () => (
           </ScrollAnimation>
         </div>
 
-        <div className="col s12 m3">
+        <div className="col s12 m6">
           <ScrollAnimation animateIn="bounceInRight">
             <div className="card">
               <div className="card-image">
@@ -103,6 +103,11 @@ export default () => (
       img {
         width: 150px;
       }
+
+      .card-image {
+        max-height: 400px;
+      }
+
       .card-title,
       strong {
         font-size: 1.5rem;
