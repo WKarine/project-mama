@@ -107,7 +107,7 @@ export default () => (
 
         <H3>Le Web/Site Web de Pôle Santé Travail</H3>
 
-        <div className="col s12 m8">
+        <div className="col s12">
           <SimpleCard cardClass="colored">
             <div className="col s12 m6">
               <StatCard cardClass="white">
@@ -150,12 +150,24 @@ export default () => (
           </SimpleCard>
         </div>
 
-        <div className="col s12 m4">
+        <div className="col s12 m6">
           <StatCard cardClass="white">
             <strong>8/10</strong>
             <span>Note globale du site</span>
             <p>Obtenue après enquête</p>
           </StatCard>
+        </div>
+
+        <div className="card-image col s12 m6">
+          <Link href="http://www.chodevant.fr/">
+            <a target="_blank">
+              <img
+                className="responsive-img photo-site"
+                src="static/images/mettre-des-moyens/site.png"
+                alt="site pole sante travail"
+              />
+            </a>
+          </Link>
         </div>
 
         <H2 id="immobiliers-investissements">Immobiliers et investissements</H2>
