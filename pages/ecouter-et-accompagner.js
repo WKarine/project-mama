@@ -24,11 +24,15 @@ class EcouterEtAccompagner extends React.Component {
   };
   async componentWillMount() {
     const page = this.props.url.pathname.slice(1);
+    console.log(this.props);
+    console.log(page);
 
     this.setState({
       isLoading: false,
-      data: await Services.data.getData()
+      data: await Services.data.getData(page)
     });
+
+    console.dir(this.state.data);
   }
 
   render() {
