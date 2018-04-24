@@ -58,7 +58,11 @@ const SimpleCard = ({ cardClass, children, className }) => {
           }
 
           .simple-card.white p {
-            color: ${brandColors.actual};
+            color: initial !important;
+          }
+
+          .simple-card.white strong {
+            color: ${brandColors.actual} !important;
           }
 
           .simple-card .card__strong {
