@@ -19,6 +19,17 @@ const H3 = ({ id, children }) => (
           margin-right: 1rem;
           width: 1rem;
         }
+
+        @media only screen and (max-width: 992px) {
+          h3 {
+            text-align: center;
+            font-size: 1.5rem;
+          }
+
+          h3:before {
+            display: none;
+          }
+        }
       `}
     </style>
   </div>
