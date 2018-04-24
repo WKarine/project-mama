@@ -47,7 +47,10 @@ class Index extends React.Component {
                     au questionnaire
                   </a>
                 </Link>
-                <a className="intro__discover waves-effect waves-light btn-large">
+                <a
+                  href="/perspectives"
+                  className="intro__discover waves-effect waves-light btn-large"
+                >
                   <i className="material-icons left">insert_chart</i>commencer
                   la visite
                 </a>

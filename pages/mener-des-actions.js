@@ -6,6 +6,8 @@ import H2 from "../components/H2";
 
 import StatCard from "../components/StatCard";
 
+import { brandColors } from "../constantes/colors";
+
 import ScrollAnimation from "react-animate-on-scroll";
 
 export default () => (
@@ -96,11 +98,24 @@ export default () => (
             </StatCard>
           </div>
         </div>
+        <div className="col s12 m6 offset-m7">
+          <a
+            href="/mettre-des-moyens"
+            className="intro__discover waves-effect waves-light btn-large"
+          >
+            <i className="material-icons left">insert_chart</i>Continuer la
+            visite
+          </a>
+        </div>
       </div>
     </div>
     <style jsx>{`
       p {
         text-align: center;
+      }
+
+      .intro__discover {
+        background-color: ${brandColors.orange};
       }
     `}</style>
   </Layout>

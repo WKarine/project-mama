@@ -7,6 +7,8 @@ import StatCard from "../components/StatCard";
 import ListCard from "../components/ListCard";
 import IconCard from "../components/IconCard";
 
+import { brandColors } from "../constantes/colors";
+
 export default () => (
   <Layout>
     <div className="container">
@@ -138,8 +140,22 @@ export default () => (
             </StatCard>
           </div>
         </div>
+
+        <div className="col s12 m6 offset-m7">
+          <a
+            href="/cartographie-entreprises"
+            className="intro__discover waves-effect waves-light btn-large"
+          >
+            <i className="material-icons left">insert_chart</i>Continuer la
+            visite
+          </a>
+        </div>
       </div>
     </div>
-    <style jsx>{``}</style>
+    <style jsx>{`
+      .intro__discover {
+        background-color: ${brandColors.green};
+      }
+    `}</style>
   </Layout>
 );
