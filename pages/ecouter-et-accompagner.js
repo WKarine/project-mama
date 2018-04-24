@@ -1123,6 +1123,10 @@ section formation - graphique pie */}
         margin-top: 2rem;
         margin-bottom: 2rem;
       }
+
+      .build {
+        height: 20vh !important;
+      }
     `}</style>
   </Layout>
 );
