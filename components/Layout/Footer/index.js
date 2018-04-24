@@ -106,12 +106,16 @@ const Footer = props => (
         background-color: ${brandColors.actual};
         display: flex;
         flex-wrap: wrap;
+        width: calc(100% - 300px);
+        margin-left: 300px;
       }
 
       @media only screen and (max-width: 992px) {
         .page-footer {
           align-items: center;
           flex-wrap: wrap;
+          margin-left: 0;
+          width: 100%;
         }
       }
 

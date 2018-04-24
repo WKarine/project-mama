@@ -120,7 +120,6 @@ export default () => (
             </StatCard>
           </div>
         </div>
-
         <div className="col s12 valign">
           <div className="valign-left">
             <ListCard />

@@ -5,7 +5,7 @@ export default () => (
   <Layout>
     <div className="container">
       <div className="row">
-        <Build />
+        <Build size="big" />
       </div>
     </div>
 

@@ -11,72 +11,82 @@ import Build from "../components/Build";
 
 const dataList = [
   {
-    icon: "fa-accessible-icon",
+    icon: "fas fa-heartbeat",
     textContent: "cardiologie",
     stat: 838,
     iconProvider: "fa"
   },
   {
-    icon: "battery_alert",
+    icon: "fas fa-comment-dots",
     textContent: "débriefing",
     stat: 91,
-    iconProvider: "materialize"
+    iconProvider: "fa"
   },
   {
-    icon: "battery_alert",
+    icon: "fas fa-allergies",
     textContent: "dermatologie",
     stat: 280,
+    iconProvider: "fa"
+  },
+  {
+    icon: "device_hub",
+    textContent: "neurologie",
+    stat: 290,
     iconProvider: "materialize"
   },
-  { icon: "battery_alert", textContent: "neurologie", stat: 290 },
   {
-    icon: "battery_alert",
+    icon: "fas fa-eye",
     textContent: "ophtalmologie",
     stat: 217,
-    iconProvider: "materialize"
+    iconProvider: "fa"
   }
 ];
 
 const dataList_2 = [
-  { icon: "battery_alert", textContent: "orl", stat: 750 },
   {
-    icon: "battery_alert",
-    textContent: "pneumologie",
-    stat: 983,
+    icon: "hearing",
+    textContent: "orl",
+    stat: 750,
     iconProvider: "materialize"
   },
   {
-    icon: "battery_alert",
+    icon: "fab fa-pagelines",
+    textContent: "pneumologie",
+    stat: 983,
+    iconProvider: "fa"
+  },
+  {
+    icon: "settings",
     textContent: "psychiatrie",
     stat: 337,
     iconProvider: "materialize"
   },
   {
-    icon: "battery_alert",
+    icon: "new_releases",
     textContent: "psychologie",
     stat: 988,
     iconProvider: "materialize"
   },
   {
-    icon: "battery_alert",
+    icon: "fas fa-file-medical",
     textContent: "rhumatologie",
-    stat: 243,
-    iconProvider: "materialize"
+    stat: 988,
+    iconProvider: "fa"
   }
 ];
 
 const dataList_3 = [
   {
-    icon: "battery_alert",
+    icon: "fas fa-syringe",
     textContent: "prélèvements effectués",
     stat: 10787,
-    iconProvider: "materiliaze"
+    iconProvider: "fa"
   },
   {
-    icon: "battery_alert",
+    icon: "fas fa-vial",
     textContent: "analyses effectuées",
     stat: 64684,
-    iconProvider: "materialize"
+    iconProvider: "fa"
   }
 ];
 export default () => (
@@ -167,7 +177,7 @@ export default () => (
           </p>
 
           <div className="statsCards-container">
-            <IconCard cardClass="white" dataList={dataList_3} />
+            <IconCard cardClass="colored" dataList={dataList_3} />
           </div>
         </div>
 
@@ -216,7 +226,7 @@ export default () => (
         <H3>Présentation des acteurs</H3>
 
         <div className="col s12 m6">
-          <SimpleCard cardClass="white">
+          <SimpleCard cardClass="colored">
             <strong>Le médecin du travail</strong>
 
             <p>
@@ -369,7 +379,7 @@ export default () => (
             </ul>
           </SimpleCard>
 
-          <SimpleCard cardClass="white">
+          <SimpleCard cardClass="colored">
             <strong>L'ASSISTANT SANTÉ TRAVAIL </strong>
 
             <p>Le repérage et l’identification des risques sur le terrain </p>

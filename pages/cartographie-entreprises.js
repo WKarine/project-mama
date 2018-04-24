@@ -26,7 +26,7 @@ export default () => (
         <div className="col s12">
           <p>blabla</p>
         </div> */}
-        <Build />
+        <Build size="big" />
       </div>
     </div>
     <style jsx>{``}</style>

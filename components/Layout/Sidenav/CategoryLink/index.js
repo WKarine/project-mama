@@ -4,7 +4,7 @@ import { sideNavColors } from "../../../../constantes/colors";
 
 const CategoryLink = ({ href, textContent }) => (
   <li key={textContent}>
-    <Link href={href}>
+    <Link href={href} prefetch>
       <a className="category-link waves-effect">{textContent}</a>
     </Link>
     <style jsx>
@@ -16,6 +16,7 @@ const CategoryLink = ({ href, textContent }) => (
           letter-spacing: 0.1rem;
           margin-left: 0;
           padding-left: 3rem;
+          user-select: none;
         }
 
         .category-link:focus,

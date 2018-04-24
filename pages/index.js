@@ -6,7 +6,6 @@ import Loader from "../components/Loader";
 import Link from "next/link";
 
 import { brandColors } from "../constantes/colors";
-import { indexDimensions } from "../constantes/dimensions";
 
 import Services from "../services";
 
